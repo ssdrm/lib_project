@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>레이아웃</title>
+	
+	<script src='jquery-1.8.2.min.js'></script>
+	<style type="text/css">
+	li{list-style:none;}
+	
+
+	#wrap{width:1100px;height:800px;background:blue;}
+	
+	#header{width:1100px;height:130px;margin-left:0px;margin-bottom:10px;background:yellow;  position:relative; }
+	#middle{width:1100px;float:left;background:green;}
+	#siderbar{width:250px;height:500px;float:left;margin-left:10px;margin-right:10px;background:gray;}
+	#content{width:700px;height:500px;float:left;background:red;}
+	#footer{width:900px;height:130px;float:left;margin-left:50px;margin-top:10px;background:orange;}
+	#headerleft{width:250px;height:100px;margin-left:10px;margin-top:20px;background:green;float:left;}
+	#navbox{width:800px;height:60px;margin-top:20px;margin-left:10px;background:gray;float:left;}
+	#nav {
+   
+   	
+  	
+ }
+  #nav ul, #nav li {
+  margin:0;
+  padding:0;
+ }
+ #nav li {
+  position:relative;
+  list-style:none;
+  float:left;
+  margin-right:5px;
+ }
+ #nav a {
+  display:block;
+  padding: 1em 2em;
+  font-weight:bold;
+  text-decoration:none;
+ }
+ #nav li ul {
+  position:absolute;
+  top:3.5em;
+  width: 500px;
+  display:none; /* li의 자식인 ul을 숨겨둡니다. */
+ }
+  #nav li.on ul {
+  display:block; /* 활성화된 li의 자식인 ul만 보여줍니다. */
+ }
+ #header {background:yellow;}
+ #nav a {background:#fff; color:#000;}
+ #nav .on a,
+ #nav li li a {background:#390; color:#fff;} 
+	</style>
+</head>
+<script>
+  $(function(){
+   
+ $('#nav li').bind('mouseenter keyup', function() { 
+  $(this).addClass('on').siblings().removeClass(); 
+ }); 
+  }); 
+</script>
+
+<body>
+
+	<div id="wrap">
+		<div id="header">
+		<div id="headerleft">로고들어갈곳</div>
+		<div id="navbox">
+		<div id="nav">
+
+		<ul>
+     <li class="on"> 
+       <a href="/">자료검색</a>
+       <ul>
+         <li>
+           <a href="#">메뉴1</a>
+         </li>
+         <li>
+           <a href="#">메뉴2</a>
+         </li>
+         <li>
+           <a href="#">메뉴3</a>
+         </li>
+       </ul>
+     </li>
+     
+     <li>
+       <a href="#">도서관서비스 </a>
+       <ul>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+       </ul>
+     </li>
+     <li>
+       <a href="#">MYLibrary</a>
+       <ul>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+       </ul>
+     </li>
+
+     <li>
+       <a href="#">알림마당</a>
+       <ul>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+       </ul>
+     </li>
+     <li>
+       <a href="#">도서관이용안내</a>
+       <ul>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+         <li>
+           <a href="#">메뉴</a>
+         </li>
+       </ul>
+     </li>
+ </ul>
+ 	</div>
+ </div>
+</div>
+			
+		<div id="middle">
+			<div id="siderbar">sidebar</div>
+			<div id="content">content</div>
+		</div>
+		<div id="footer">footer</div>
+	</div>
+</div>
+</body>
+</html>
