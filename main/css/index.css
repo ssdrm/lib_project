@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+/* 가운데정렬 */
+#wrap {
+	width:960px; margin:0 auto; background-color:#fff
+}
+
+/* 구분선 */
+#line1 {
+	width:960px; height:5px;background-color:#1049A9;
+}
+#line2 {
+	width:960px; height:5px;background-color:#1049A9;
+}
+#line3 {
+	width:960px; height:3px;background-color:#1049A9;
+}
+
+/* header 정렬 */
+#header {
+	width:100%; height:100px; background-color:#fff;
+	border-bottom: 1px solid #999;
+	border-radius: 15px 15px 0 0;
+}
+
+#header_left{
+	width: 300px; float:left;display:inline; color:#FFF;
+	padding:10px; height:80px;
+}
+#header_right{
+	width:500px;float:right;text-align:right;display:inline; padding:40px 30px 0 0;
+}
+
+/* main page */
+#libmain{
+	width:960px;
+	height:640px;
+}
+/* navigation */
+#navibar {
+	width:960px; height:30px;background-color:#fff;
+}
+#navibar ul {
+	margin:0;padding:0;
+}
+#navibar ul li {
+	float:left;
+	background-color:#6A92D4;
+	display:block;
+	width:190px;
+	text-align:center;
+	padding:0px; 
+	text-decoration:none;
+	margin-right:2px;
+}
+#navibar ul li ol{
+	background-color:#fff;
+}
+#navibar ul li ol li{
+	background-color:#fff;
+}

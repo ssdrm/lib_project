@@ -1,26 +1,37 @@
 <!DOCTYPE html>
-<html lang = "ko">
+<html>
 <head>
-	<meta charset = "utf-8">
-	<title>main</title>
+<meta charset=UTF-8>
+<title>Main</title>
+<link href = "css/reset.css" rel = "stylesheet" type = "text/css">
+<link href = "css/reset2.css" rel="stylesheet" type = "text/css">
+<link href = "css/index.css" rel = "stylesheet" type = "text/css">
+<link href = "css/usernavi.css" rel = "stylesheet" type = "text/css">
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.UI.min.js"></script>
+<script src="js/jquery.navi.js"></script>
 </head>
 <body>
+
 	<div id = "wrap">
+	<form action = "" method="post">
 		<div id = "header">
 			<div id = "header_left">
-				<a herf=""><img src="img/logo.gif" alt="logo"></a>
+				<a href=""><img src="img/logo.gif" alt="logo" width="280px" height="70px"></a>
 			</div>
 			<div id = "header_right">
-				<form action = "" method="post">
+				
 				<input type="text" value="ID" id="id">
 				<input type="password" value="1234" id="password">
 				<a href=""><img src="img/btn_login.gif" alt="login"></a>
-				<a href=""><img src="img/btnidsearch.gif" alt="search"></a>
+				<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
 			</div>
 		</div>
 		<div id = "line1">
 		</div>
 		<div id = "libmain">
+		
 			<div id = "navibar">
 				<ul>
 					<li>자료검색
@@ -63,30 +74,46 @@
 					</li>
 				</ul>
 			</div>
+		
 			<div id = "mainserchbar"> <!--여기에 사진넣을꺼다.-->
 				<input type="text" value="통합검색" id="searchbar">
 				<a href=""><img src="img/btn_msearch.gif"></a>
 				<a href=""><img src="img/btn_searchdetail.gif"></a>
 			</div>
-			<div id = "userbar">
-				<ul id="user">
-					<li>대촐현황 / 연장 </li>
-					<li>자료구입 / 신청</li>
-					<li>현재날씨 / 현재시간</li>
-					<li>개인정보관리</li>
-					<li>도서관 오는길</li>
-				</ul>
-				<ul id="admin">
-					<li>대출현황조회</li>
-					<li>신청된자료조회</li>
-					<li>도서관리</li>
-					<li>회원관리</li>
-					<li>-0-;</li>
-				</ul>
-
-
+		
+		
+			
+			<!-- 사용자에 따른 네비게이션 바 -->
+			<div id = "bar">
+				<div id = "user">
+				<p>사용자모드 나중에 지우거나 다른글로 교체</p>
+					<nav id = "usernav">
+						<ul class = "clear">
+							<li class = "focus"><a href="">대촐현황 / 연장 </a></li>
+							<li><a href="">자료구입 / 신청</a></li>
+							<li><a href="">현재날씨 / 현재시간</a></li>
+							<li><a href="">개인정보관리</a></li>
+							<li><a href="">도서관 오는길</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div id = "admin">
+				<p>관리자모드 나중에 지우거나 다른글로 교체</p>
+					<nav id = "adminnav">
+						<ul class = "clear">
+							<li class = "focus"><a href="">대출현황조회</a></li>
+							<li><a href="">신청된자료조회</a></li>
+							<li><a href="">도서관리</a></li>
+							<li><a href="">회원관리</a></li>
+							<li><a href="">-0-;</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
+		
+		
+		
 		<div id = "line2">
 		</div>
 		<div id = "libother">
@@ -95,7 +122,7 @@
 			</div>
 			<div id = "other_mid">
 				<ul>
-					<li><span>공지사항</span></a>
+					<li><span>공지사항</span>
 						<div>
 							<ul>
 								<li>이런 이런 공지사항</li>
@@ -105,7 +132,7 @@
 							</ul>
 					    </div>
 					</li>
-					<li><span>QandA</span></a>
+					<li><span>QandA</span>
 						<div>
 							<ul>
 								<li>이런 저런 큐엔에이</li>
@@ -124,6 +151,7 @@
 		<div id = "footer">
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
 		</div>
+		</form>
 	</div>
 </body>
 </html>
