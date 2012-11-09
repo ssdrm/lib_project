@@ -18,7 +18,11 @@ select{width:110px;background-color:#1E90FF;font-weight:bold;}
 span{font-weight:bold;font-size:30px;margin-left:30px;}
 body{background-color:#26ffff;font-weight:bold;width:960px;}
 table{width:730px;}
-
+ul{margin:0;padding:0;}
+ul> li{float:left;list-style-type:none;padding:1px;}
+ul>li>a{ text-decoration:none;text-decoration:none;color:black;}
+ul> li a.selected{background-color:red;}
+ul> li a:hover{background-color:yellow;}
 </style>
 </head>
 
@@ -30,10 +34,18 @@ table{width:730px;}
 
 	<div id="form">
 	<span>통합검색</span>
-			<div id="search">&nbsp;&nbsp;&nbsp;&nbsp;키워드&nbsp;&nbsp; 전방일치&nbsp;&nbsp; 완전일치 </div>
+			<div id="search">
+				<ul>
+					<li><a href="">&nbsp;&nbsp;&nbsp;키워드&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">&nbsp;&nbsp;전방일치&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">완전일치 </a>
+					</li>
+				</div>
 		<div id="box">
 		<form action="#" method= "post">
-		<table border="1">
+		<table >
 			
 				<tr>
 					<td>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>연속간행물 </title>
+<style type="text/css">
+select{width:110px;background-color:#1E90FF;font-weight:bold;}
+
+#select1{width:50px;}
+#select2{width:50px;}
+#warp{width:960px;height:600px;background:#26ffff;}
+#form{width:850px;height:500px;background:#26ffff;margin-left:100px;margin-top:30px; }
+#box{width:700px;height:200px;background-color:white;border;margin-left:30px;padding:50px;border-style:ridge;border-width:10px;margin-top:32px;}
+#search{width:230px;background-color:#26ffff;float:right;border-style:ridge;border-width: 10px;background-color:#1E90FF;font-weight:bold;}
+#chekm{width:730px;background-color:white;margin-top:20px;}
+#number{width:730px;background-color:white;margin-top:20px;}
+#butt{width:300px;background-color:white;margin-top:40px;margin-left:250px;}
+#title{font-weight:bold;font-size:30px;margin-left:30px;background-color:#26ffff;padding-top:10px;width:200px;}
+body{background-color:#26ffff;font-weight:bold;width:960px;}
+table{width:730px;}
+ul{margin:0;padding:0;}
+ul> li{float:left;list-style-type:none;padding:1px;}
+ul>li>a{ text-decoration:none;text-decoration:none;color:black;}
+ul> li a.selected{background-color:red;}
+ul> li a:hover{background-color:yellow;}
+</style>
+</head>
+
+<body>
+<div id="warp">
+	
+	
+		
+
+	<div id="form">
+	<div id="title">연속간행물 </div>
+			<div id="search">
+				<ul>
+					<li><a href="">&nbsp;&nbsp;&nbsp;키워드&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">&nbsp;&nbsp;전방일치&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">완전일치 </a>
+					</li>
+				</div>
+		<div id="box">
+		<form action="#" method= "post">
+		<table >
+			
+				<tr>
+					<td>
+						<select >
+							<option>서명 
+								<option>저자 
+										</select>
+											&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+											&nbsp;&nbsp;&nbsp;
+										<select>
+											<option>and 
+												<option>or
+												</select>
+									</td>
+								</tr>
+								<tr>
+					<td>
+						<select >
+							<option>저자   
+								<option>서명    
+									
+										</select>
+										&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+									
+										
+									</td>
+								</tr>
+							
+						</table>
+						</form>
+						
+					<div id="number">
+						발행년
+						<input type=text>ㅡ 
+						<input type=text>
+						쪽당 출력 건수 
+						<select id="select1">
+							<option>10
+							<option>9
+								<option>8
+									<option>7
+										<option>6
+											<option>5
+												<option>4
+													<option>3
+														<option>2
+															<option>1
+															</select>
+
+							최대검색권수 
+							<select id="select2">
+							<option>500
+							<option>400
+							<option>300
+							<option>200
+							<option>100
+							</select>
+							</div>
+							<div id="butt">
+							<input type="button" value="    검색    ">&nbsp;&nbsp;
+							<input type="button" value="검색 History">
+							</div>
+
+	</div>
+	
+</div>
+</div>
+
+
+
+
+</body>
+</html>
