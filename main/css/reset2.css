@@ -87,6 +87,7 @@ a:hover, a:active {
 
 /* img를 포함한 a요소의 보더, 패딩 초기화 설정 */
 a img {
+	
 	border: 0; 
 	padding: 0;
 }

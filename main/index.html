@@ -16,6 +16,8 @@
 </head>
 <body>
 
+
+
 	<div id = "wrap">
 	<form action = "" method="post">
 		<div id = "header">
@@ -32,55 +34,70 @@
 		</div>
 		<div id = "line1">
 		</div>
+		
+		<div id = "navibar">
+				
+			<ul>
+				<li><a href=""><span>자료검색</span></a>
+					<div>
+						<ol>
+							<li class="first"><a href="">통합검색</a></li>
+							<li><a href="">연속간행물</a></li>
+							<li><a href="">고서</a></li>
+							<li class="last"><a href="">테마가 있는 서재</a></li>
+						</ol>
+					</div>
+				</li>
+					
+				<li><a href=""><span>도서관 서비스</span></a> 
+					<div>
+						<ol>
+							<li class="first"><a href="">자료구입신청/조회</a></li>
+							<li><a href="">대출조회/연장</a></li>
+							<li class="last"><a href="">도서예약</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>알림마당</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="">공지사항</a></li>
+							<li class="last"><a href="">질의응답</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>도서관 이용안내</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="">도서관 소개</a></li>
+							<li class="last"><a href="">도서관 오는길</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>마이페이지</span></a>
+					<div>
+						<ol>
+					 		<li class="first"><a href="">개인정보관리</a></li>
+							<li><a href="">자료구입신청/조회</a></li>
+							<li><a href="">대출현황조회/연장</a></li>
+							<li><a href="">개인연락사항</a></li>
+							<li class="last"><a href="">검색 히스토리</a></li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
 		<div id = "libmain">
 		
-			<div id = "navibar">
-				<ul>
-					<li>자료검색
-						<ol>
-							<li>통합검색</li>
-							<li>연속간행물</li>
-							<li>고서</li>
-							<li>테마가 있는 서재</li>
-						</ol>
-					</li>
-						
-					<li>도서관 서비스 
-						<ol>
-							<li>자료구입신청/조회</li>
-							<li>대출조회/연장</li>
-							<li>도서예약</li>
-						</ol>
-					</li>
-					<li>알림마당
-						<ol>
-						 	<li>공지사항</li>
-							<li>질의응답</li>
-						</ol>
-					</li>
-
-					<li>도서관 이용안내
-						<ol>
-						 	<li>도서관 소개</li>
-							<li>도서관 오는길</li>
-						</ol>
-					</li>
-					<li>마이페이지
-						<ol>
-						 	<li>개인정보관리</li>
-							<li>자료구입신청/조회</li>
-							<li>대출현황조회/연장</li>
-							<li>개인연락사항</li>
-							<li>검색 히스토리</li>
-						</ol>
-					</li>
-				</ul>
-			</div>
-		
-			<div id = "mainserchbar"> <!--여기에 사진넣을꺼다.-->
-				<input type="text" value="통합검색" id="searchbar">
-				<a href=""><img src="img/btn_msearch.gif"></a>
-				<a href=""><img src="img/btn_searchdetail.gif"></a>
+			
+			<div id = "mainimage">
+			<!--여기에 사진넣을꺼다.-->
+				<div id = "mainserch">
+						<input type="text" value="통합검색" id="searchbar">
+						<a href=""><img src="img/btn_msearch.gif"></a>
+						<a href=""><img src="img/btn_searchdetail.gif"></a>
+				</div>
 			</div>
 		
 		
@@ -93,7 +110,7 @@
 						<ul class = "clear">
 							<li class = "focus"><a href="">대촐현황 / 연장 </a></li>
 							<li><a href="">자료구입 / 신청</a></li>
-							<li><a href="">현재날씨 / 현재시간</a></li>
+							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
 							<li><a href="">도서관 오는길</a></li>
 						</ul>
@@ -145,7 +162,40 @@
 				</ul>
 			</div>
 			<div id = "other_right">
-				theme with lib
+				<ul>
+					<li><a href="#"><span>환경</span></a>
+						<div>
+							<ul>
+								<li><a href="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+								<li>환경 이런 글</li>
+							</ul>
+					  </div>
+					</li>
+					<li><a href="#"><span>인물</span></a>
+						<div>
+							<ul>
+								<li><a href=""></a></li>
+								<li>인물 이런 글</li>
+							</ul>
+					  </div>
+					</li>
+					<li><a href="#"><span>문화</span></a>
+						<div>
+							<ul>
+								<li><a href=""></a></li>
+								<li>문화 이런 글</li>
+							</ul>
+					  </div>
+					</li>
+					<li><a href="#"><span>컴퓨터</span></a>
+						<div>
+							<ul>
+								<li><a href=""></a></li>
+								<li>컴퓨터 이런 글</li>
+							</ul>
+					  </div>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div id = "line3">
