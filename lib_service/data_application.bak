@@ -2,8 +2,9 @@
 
 <head>
 <title>제목 없음</title>
-<meta name="generator" content="Namo WebEditor(Trial)">
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="Namo WebEditor(Trial)">
 </head>
 
 <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
@@ -14,16 +15,6 @@
     <TBODY>
     <TR>
         <TD bgColor="#d1d1d1" height="2" colSpan="2"></TD>
-    </TR>
-    <TR>
-        <TD bgColor="#f1f1f1" height="30" vAlign="middle" width="120" align="left">
-            <p align="left"><IMG class="req_img" src="request_title_sort.jpg" width="35" height="10"><!--도서구분--></p>
-        </TD>
-        <TD height="30">
-            <form name="form1">
-                <p align="left"><INPUT name="nat" value="K" CHECKED="checked" type="radio"> 국내도서					<INPUT name="nat" value="F" type="radio"> 해외도서</p>
-            </form>
-        </TD>
     </TR>
     <TR>
         <TD bgColor="#d1d1d1" height="1" colSpan="2"></TD>
@@ -89,11 +80,6 @@
             <form name="form7">
 <SELECT id="currency" class="inptxt" name="currency">
                     <OPTION selected="" value="1">￦</OPTION>
-                    <OPTION value="2">$</OPTION>
-                    <OPTION value="3">￥</OPTION>
-                    <OPTION value="4">€</OPTION>
-                    <OPTION value="5">￡</OPTION>
-                    <OPTION value="6">元</OPTION>
 </SELECT><INPUT id="bprice" class="inptxt" name="bprice" value="" type="text">
             </form>
         </TD>
@@ -128,7 +114,12 @@
     </TR>
     </TBODY>
 </TABLE>
-<p>&nbsp;</p>
+<div class="button">
+        <div class="light"></div>
+            </div><p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="JavaScript:vdate_bookrequest()"><IMG alt=등록 
+src="btn_hope_book_01.gif"></A> &nbsp;&nbsp;<A href="JavaScript:canc_click()"><IMG alt=취소 
+src="btn_hope_book_02.gif"></A></p>
+
 </body>
 
 </html>

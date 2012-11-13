@@ -1,42 +1,41 @@
 <html>
 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=euc-kr">
-<title>Á¦¸ñ ¾øÀ½</title>
+<title>ì œëª© ì—†ìŒ</title>
 <meta name="generator" content="Namo WebEditor(Trial)">
-</head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
 
 <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
 <p>&nbsp;</p>
-<p align="right"><A href="http://lib.mju.ac.kr/mylibrary/Request.ax"><IMG alt="ÀÚ·á±¸ÀÔ½ÅÃ»/Á¶È¸ ¹Ù·Î°¡±â" src="img/btn_service1.gif"></A></p>
-<p align="left"><IMG alt="ÀÌ¿ë¹æ¹ý" src="img/service_tit1.gif"></p>
+<p align="right"><A href="http://lib.mju.ac.kr/mylibrary/Request.ax"><IMG alt="ìžë£Œêµ¬ìž…ì‹ ì²­/ì¡°íšŒ ë°”ë¡œê°€ê¸°" src="img/btn_service1.gif"></A></p>
+<p align="left"><IMG alt="ì´ìš©ë°©ë²•" src="img/service_tit1.gif"></p>
 <OL class="guidetext">
-    <li>½ÅÃ»ÀÚ·áÀÇ ¼­Áö»çÇ×(¼­¸í, ÀúÀÚ, ÃâÆÇ»ç, ¹ßÇà³âµµ, °¡°Ý, ISBN(µµ¼­ÀÏ °æ¿ì)À» Á¤È®È÷ ÀÔ·ÂÇÑ ÈÄ,    ¡®½ÅÃ»¡¯À» Å¬¸¯ÇÏ½Ã¸é Èñ¸ÁÀÚ·á ½ÅÃ»ÀÌ ¿Ï·áµË´Ï´Ù.</li>
-    <LI>ÀÚ·á±¸ÀÔ½ÅÃ» ÈÄ ½ÅÃ»ÀÚ·á°¡ ¾î¶»°Ô Ã³¸®µÇ´ÂÁö È®ÀÎÇØ º¸·Á¸é µµ¼­°ü È¨ÆäÀÌÁö ¡®ÀÚ·á±¸ÀÔ½ÅÃ»/Á¶È¸¡¯¿¡¼­    Ã³¸®»óÈ²À» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù. </LI>
-    <LI>Èñ¸Áµµ¼­ ½ÅÃ» Á¦ÇÑ
+    <li>ì‹ ì²­ìžë£Œì˜ ì„œì§€ì‚¬í•­(ì„œëª…, ì €ìž, ì¶œíŒì‚¬, ë°œí–‰ë…„ë„, ê°€ê²©, ISBN(ë„ì„œì¼ ê²½ìš°)ì„ ì •í™•ížˆ ìž…ë ¥í•œ í›„,    â€˜ì‹ ì²­â€™ì„ í´ë¦­í•˜ì‹œë©´ í¬ë§ìžë£Œ ì‹ ì²­ì´ ì™„ë£Œë©ë‹ˆë‹¤.</li>
+    <LI>ìžë£Œêµ¬ìž…ì‹ ì²­ í›„ ì‹ ì²­ìžë£Œê°€ ì–´ë–»ê²Œ ì²˜ë¦¬ë˜ëŠ”ì§€ í™•ì¸í•´ ë³´ë ¤ë©´ ë„ì„œê´€ í™ˆíŽ˜ì´ì§€ â€˜ìžë£Œêµ¬ìž…ì‹ ì²­/ì¡°íšŒâ€™ì—ì„œ    ì²˜ë¦¬ìƒí™©ì„ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. </LI>
+    <LI>í¬ë§ë„ì„œ ì‹ ì²­ ì œí•œ
         <UL class="guidetext_2depth">
-            <LI>¨ç ½ÅÃ»´ë»ó : ¸ðµç ±³³» ÀÌ¿ëÀÚ</LI>
+            <LI>â‘  ì‹ ì²­ëŒ€ìƒ : ëª¨ë“  êµë‚´ ì´ìš©ìž</LI>
             <p></p>
-            <LI><STRONG>¨è ½ÅÃ»Á¾¼öÁ¦ÇÑ<BR>   - 1ÀÏ : 10Á¾ ÀÌ³»<BR>   - 1°³¿ù : 50Á¾ ÀÌ³»</STRONG></LI>
-            <LI>¨é ½ÅÃ» Á¦ÇÑ ÀÚ·á <BR>   - ´ëÇÐµµ¼­°ü¿¡ ÀûÇÕÇÏÁö ¾ÊÀº µµ¼­(±¸ÀÔÀÌ ºÒ°¡´ÉÇÑ ÀÚ·á ÂüÁ¶) <BR>                                      - ±³¼ö´Â ±¹³»¼­¿¡ ÇÑÇÔ <BR>   - 1È¸ 10Á¾ÀÌ ÃÊ°úÇÏ´Â °æ¿ì´Â ¿ì¼±¼øÀ§(½ÅÃ»¼ø¼­)¿¡ µû¶ó ±¸ÀÔ  <BR></LI>
-            <LI class="mgt5"><SPAN class="ft_bule">¡Ø ÀÚ·á°¡ ÀÔ¼öµÇ´Â °úÁ¤ÀÔ´Ï´Ù. Âü°íÇÏ½Ã±â ¹Ù¶ø´Ï´Ù. </SPAN><BR>¨ç ½Å Ã» : µµ¼­°ü È¨ÆäÀÌÁö 'ÀÚ·á±¸ÀÔ½ÅÃ»/Á¶È¸'À» ÅëÇØ ÀÌ¿ëÀÚ°¡ ½ÅÃ» ÁßÀÎ ÀÚ·á <BR>¨è ¼± Á¤ : ½ÅÃ»ÀÚ·á Áß¿¡¼­ º¹º»Á¶»çÈÄ ±¸ÀÔ´ë»óÀ¸·Î °áÁ¤µÈ ÀÚ·á <BR>¨é ¼±Á¤Ãë¼Ò : ½ÅÃ»ÀÚ·á Áß¿¡¼­ ¼ÒÀåº¹º», Ã³¸®Áßº¹º» µîÀÇ ÀÌÀ¯·Î ¼±Á¤ÀÌ Ãë¼ÒµÈ ÀÚ·á <BR>¨ê ÁÖ ¹® Áß : ¼±Á¤µÈ ÀÚ·á°¡ ÁÖ¹®ÁßÀÎ »óÅÂ <BR>¨ë ÁÖ¹®Ãë¼Ò : ÀÚ·á¸¦ ÁÖ¹®ÇÏ¿´À¸³ª ÀýÆÇ, Ç°Àý, ¼­Áö»çÇ×ºÒ¸í µîÀÇ ÀÌÀ¯·Î ±¸ÀÔÀÌ ºÒ°¡´ÉÇÑ ÀÚ·á <BR>¨ì °ßÀûÁ¢¼ö : ÁÖ¹®À» ÅëÇØ
-ÀÔ¼öµÈ ÀÚ·á<BR>¨í °Ë¼öÀÚ·á : ÀÔ¼öµÇ¾î¼­ ±¸ÀÔÀÌ È®Á¤µÈ ÀÚ·á <BR>¨î µî·ÏÀÚ·á : ±¸ÀÔµÇ¾î¼­ µî·Ï¹øÈ£°¡ »ý¼ºµÈ ÀÚ·á <BR>¨ï Á¤ ¸® Áß : µµ¼­°ü¿¡ ÀÔ¼öµÇ¾î¼­ ÀÌ¿ëÇÒ ¼ö ÀÖµµ·Ï Á¤¸®ÁßÀÎ ÀÚ·á <BR>¨ð Á¤¸®¿Ï·á : Á¤¸®°¡ ¿Ï·áµÇ¾î¼­ ÇÐ»ýµéÀÌ ÀÌ¿ëÇÒ ¼ö ÀÖ´Â ÀÚ·á</LI>
+            <LI><STRONG>â‘¡ ì‹ ì²­ì¢…ìˆ˜ì œí•œ<BR>   - 1ì¼ : 10ì¢… ì´ë‚´<BR>   - 1ê°œì›” : 50ì¢… ì´ë‚´</STRONG></LI>
+            <LI>â‘¢ ì‹ ì²­ ì œí•œ ìžë£Œ <BR>   - ëŒ€í•™ë„ì„œê´€ì— ì í•©í•˜ì§€ ì•Šì€ ë„ì„œ(êµ¬ìž…ì´ ë¶ˆê°€ëŠ¥í•œ ìžë£Œ ì°¸ì¡°) <BR>                                      - êµìˆ˜ëŠ” êµ­ë‚´ì„œì— í•œí•¨ <BR>   - 1íšŒ 10ì¢…ì´ ì´ˆê³¼í•˜ëŠ” ê²½ìš°ëŠ” ìš°ì„ ìˆœìœ„(ì‹ ì²­ìˆœì„œ)ì— ë”°ë¼ êµ¬ìž…  <BR></LI>
+            <LI class="mgt5"><SPAN class="ft_bule">â€» ìžë£Œê°€ ìž…ìˆ˜ë˜ëŠ” ê³¼ì •ìž…ë‹ˆë‹¤. ì°¸ê³ í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤. </SPAN><BR>â‘  ì‹  ì²­ : ë„ì„œê´€ í™ˆíŽ˜ì´ì§€ 'ìžë£Œêµ¬ìž…ì‹ ì²­/ì¡°íšŒ'ì„ í†µí•´ ì´ìš©ìžê°€ ì‹ ì²­ ì¤‘ì¸ ìžë£Œ <BR>â‘¡ ì„  ì • : ì‹ ì²­ìžë£Œ ì¤‘ì—ì„œ ë³µë³¸ì¡°ì‚¬í›„ êµ¬ìž…ëŒ€ìƒìœ¼ë¡œ ê²°ì •ëœ ìžë£Œ <BR>â‘¢ ì„ ì •ì·¨ì†Œ : ì‹ ì²­ìžë£Œ ì¤‘ì—ì„œ ì†Œìž¥ë³µë³¸, ì²˜ë¦¬ì¤‘ë³µë³¸ ë“±ì˜ ì´ìœ ë¡œ ì„ ì •ì´ ì·¨ì†Œëœ ìžë£Œ <BR>â‘£ ì£¼ ë¬¸ ì¤‘ : ì„ ì •ëœ ìžë£Œê°€ ì£¼ë¬¸ì¤‘ì¸ ìƒíƒœ <BR>â‘¤ ì£¼ë¬¸ì·¨ì†Œ : ìžë£Œë¥¼ ì£¼ë¬¸í•˜ì˜€ìœ¼ë‚˜ ì ˆíŒ, í’ˆì ˆ, ì„œì§€ì‚¬í•­ë¶ˆëª… ë“±ì˜ ì´ìœ ë¡œ êµ¬ìž…ì´ ë¶ˆê°€ëŠ¥í•œ ìžë£Œ <BR>â‘¥ ê²¬ì ì ‘ìˆ˜ : ì£¼ë¬¸ì„ í†µí•´
+ìž…ìˆ˜ëœ ìžë£Œ<BR>â‘¦ ê²€ìˆ˜ìžë£Œ : ìž…ìˆ˜ë˜ì–´ì„œ êµ¬ìž…ì´ í™•ì •ëœ ìžë£Œ <BR>â‘§ ë“±ë¡ìžë£Œ : êµ¬ìž…ë˜ì–´ì„œ ë“±ë¡ë²ˆí˜¸ê°€ ìƒì„±ëœ ìžë£Œ <BR>â‘¨ ì • ë¦¬ ì¤‘ : ë„ì„œê´€ì— ìž…ìˆ˜ë˜ì–´ì„œ ì´ìš©í•  ìˆ˜ ìžˆë„ë¡ ì •ë¦¬ì¤‘ì¸ ìžë£Œ <BR>â‘© ì •ë¦¬ì™„ë£Œ : ì •ë¦¬ê°€ ì™„ë£Œë˜ì–´ì„œ í•™ìƒë“¤ì´ ì´ìš©í•  ìˆ˜ ìžˆëŠ” ìžë£Œ</LI>
         </UL>
     </LI>
-    <LI>							ÇÐ°úÃßÃµµµ¼­ : °¢ ÇÐºÎ(°ú)¿¡ ¹èÁ¤µÈ ¿¹»ê ¹üÀ§ ¾È¿¡¼­ ÇÐºÎ(°ú)Àå °áÀçÇÏ¿© ½ÅÃ»
+    <LI>							í•™ê³¼ì¶”ì²œë„ì„œ : ê° í•™ë¶€(ê³¼)ì— ë°°ì •ëœ ì˜ˆì‚° ë²”ìœ„ ì•ˆì—ì„œ í•™ë¶€(ê³¼)ìž¥ ê²°ìž¬í•˜ì—¬ ì‹ ì²­
         <UL class="guidetext_2depth">
-            <LI>* ÃßÃµ´ë»ó ÀÚ·á</LI>
-            <LI>¨ç ±¹³»¿Ü¿¡¼­ ¹ßÇàµÇ´Â µµ¼­</LI>
-            <LI>¨è ±¹³»¿¡¼­ ¹ßÇàµÇ´Â ´ÜÇ° ºñµµ¼­(DVD, CDµî)</LI>
-            <LI>* ÇÐºÎ(°ú) ÃßÃµ¼­ ¾ç½Ä  </LI>
-            <LI><A href="http://lib.mju.ac.kr/site/mju/document/recommendation.xls" target="_blank"><IMG alt="ÇÐºÎ(°ú) ÃßÃµ¼­ ¾ç½Ä ´Ù¿î" src="img/download_btn1.gif"></A></LI>
+            <LI>* ì¶”ì²œëŒ€ìƒ ìžë£Œ</LI>
+            <LI>â‘  êµ­ë‚´ì™¸ì—ì„œ ë°œí–‰ë˜ëŠ” ë„ì„œ</LI>
+            <LI>â‘¡ êµ­ë‚´ì—ì„œ ë°œí–‰ë˜ëŠ” ë‹¨í’ˆ ë¹„ë„ì„œ(DVD, CDë“±)</LI>
+            <LI>* í•™ë¶€(ê³¼) ì¶”ì²œì„œ ì–‘ì‹  </LI>
+            <LI><A href="http://lib.mju.ac.kr/site/mju/document/recommendation.xls" target="_blank"><IMG alt="í•™ë¶€(ê³¼) ì¶”ì²œì„œ ì–‘ì‹ ë‹¤ìš´" src="img/download_btn1.gif"></A></LI>
         </UL>
     </LI>
 </OL>
-<H4 class="h4_type2"><IMG alt="À¯ÀÇ»çÇ×" src="img/service_tit2.gif"></H4>
+<H4 class="h4_type2"><IMG alt="ìœ ì˜ì‚¬í•­" src="img/service_tit2.gif"></H4>
 <OL class="guidetext">
-    <LI class="nonum">ÀÌ¹Ì ¼ÒÀåÁßÀÌ°Å³ª ÁÖ¹®ÁßÀÎ °æ¿ì ½ÅÃ»ÀÌ Ãë¼ÒµÉ ¼ö ÀÖ½À´Ï´Ù.<BR><SPAN class="ft_bule">¡Ø ±¸ÀÔÀÌ ºÒ°¡´ÉÇÑ ÀÚ·á  </SPAN><BR>¨ç ±â¼ÒÀåÀÚ·á(¼ÒÀåº¹º») : µµ¼­°ü¿¡ ÀÌ¹Ì ÀÖ´Â ÀÚ·á¸¦ ½ÅÃ»ÇÏ°Å³ª ¾øÀ» °Å¶ó ¿¹ÃøÇÏ°í ½ÅÃ»ÇÑ °æ¿ì <BR>¨è ÁÖ¹®Áß ÀÚ·á(Ã³¸®Áßº¹º») : ÀÌ¹Ì ½ÅÃ»µÈ ÀÚ·áÀÌ°Å³ª ÁÖ¹® ¶Ç´Â Ã³¸®ÁßÀÎ µµ¼­ <BR>¨é ¼­Áö»çÇ× ºÎÁ¤È® : ±¸ÀÔ¿¡ ÇÊ¿äÇÑ ±âº»ÀûÀÎ Á¤º¸¸¦ ±âÀÔÇÏÁö ¾Ê¾Ò°Å³ª Àß¸øµÈ Á¤º¸¸¦ ±âÀÔÇÏ¿´À» °æ¿ì<BR>¨ê ¸¸È­Ã¥ : ÇÐ¼úÀûÀÎ ¿ëµµ·Î ±¸ÀÔÇÏ´Â °æ¿ì ÀÌ¿ÜÀÇ ¸¸È­Ã¥ <BR>¨ë ¾Æµ¿µµ¼­ ¹× ÃÊÁß°í»ý ÀÚ·á : ÇÐ
-ÀûÀÎ ¸ñÀûÀÌ È®ÀÎµÇÁö ¾Ê´Â À¯¾Æ/ÃÊµî/Áßµî ¼öÁØÀÇ ÀÚ·á <BR>¨ì ¹«Çù¼Ò¼³ ¹× ÆÇÅ¸Áö ¼Ò¼³  </LI>
+    <LI class="nonum">ì´ë¯¸ ì†Œìž¥ì¤‘ì´ê±°ë‚˜ ì£¼ë¬¸ì¤‘ì¸ ê²½ìš° ì‹ ì²­ì´ ì·¨ì†Œë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.<BR><SPAN class="ft_bule">â€» êµ¬ìž…ì´ ë¶ˆê°€ëŠ¥í•œ ìžë£Œ  </SPAN><BR>â‘  ê¸°ì†Œìž¥ìžë£Œ(ì†Œìž¥ë³µë³¸) : ë„ì„œê´€ì— ì´ë¯¸ ìžˆëŠ” ìžë£Œë¥¼ ì‹ ì²­í•˜ê±°ë‚˜ ì—†ì„ ê±°ë¼ ì˜ˆì¸¡í•˜ê³  ì‹ ì²­í•œ ê²½ìš° <BR>â‘¡ ì£¼ë¬¸ì¤‘ ìžë£Œ(ì²˜ë¦¬ì¤‘ë³µë³¸) : ì´ë¯¸ ì‹ ì²­ëœ ìžë£Œì´ê±°ë‚˜ ì£¼ë¬¸ ë˜ëŠ” ì²˜ë¦¬ì¤‘ì¸ ë„ì„œ <BR>â‘¢ ì„œì§€ì‚¬í•­ ë¶€ì •í™• : êµ¬ìž…ì— í•„ìš”í•œ ê¸°ë³¸ì ì¸ ì •ë³´ë¥¼ ê¸°ìž…í•˜ì§€ ì•Šì•˜ê±°ë‚˜ ìž˜ëª»ëœ ì •ë³´ë¥¼ ê¸°ìž…í•˜ì˜€ì„ ê²½ìš°<BR>â‘£ ë§Œí™”ì±… : í•™ìˆ ì ì¸ ìš©ë„ë¡œ êµ¬ìž…í•˜ëŠ” ê²½ìš° ì´ì™¸ì˜ ë§Œí™”ì±… <BR>â‘¤ ì•„ë™ë„ì„œ ë° ì´ˆì¤‘ê³ ìƒ ìžë£Œ : í•™
+ì ì¸ ëª©ì ì´ í™•ì¸ë˜ì§€ ì•ŠëŠ” ìœ ì•„/ì´ˆë“±/ì¤‘ë“± ìˆ˜ì¤€ì˜ ìžë£Œ <BR>â‘¥ ë¬´í˜‘ì†Œì„¤ ë° íŒíƒ€ì§€ ì†Œì„¤  </LI>
 </OL>
 <p>&nbsp;</p>
 </body>
