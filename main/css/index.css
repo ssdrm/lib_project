@@ -81,7 +81,6 @@
 }
 #navibar ul li.selected ol{/*클래스가 selected가 되면 내용이 보이게한다.*/
 	display:block;
-	
 }
 #navibar ul li ol li{
 	border-left : 5px solid #B2CCFF;
@@ -111,8 +110,10 @@
 #mainserch{
 	float : left;
 	position:relative;
-	margin : 0px auto;
-	padding : 80px 0 0 360px;
+	width:360px;
+	height:80px;
+	margin : 80px 0 0 360px;
+	zIndex : 0;
 }
 
 /* others */
