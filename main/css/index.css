@@ -133,7 +133,8 @@
 	zIndex : 2;
 	background-color:#fff;
 	vertical-align: middle;
-	padding-top: 10px;
+	/*padding-top: 10px;*/
+	padding-bottom: 13px;
 	border:1px dotted;
 	padding-left: 15px;
 }
@@ -278,8 +279,12 @@
     font-size: 1em;
     font-weight: bold;
     height: 19px;
-    padding: 5px 2px 0 3px;
+    padding: 5px 2px 0px 3px;
     width: 400px;
     text-decoration: none;
 
+
 }
+
+br{line-height: 0px;}
+p { margin: 0; padding-top:5px; margin-top: 5px;}
