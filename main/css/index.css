@@ -35,10 +35,12 @@
 
 /* navigation */
 #navibar {
+	z-index:9999;
 	width:960px; height:30px;background-color:#fff;
 }
 #navibar ul {
 	margin:0;padding:0;
+	z-index:9999;
 	
 }
 #navibar>ul>li {
@@ -59,7 +61,7 @@
 	padding:0px; 
 	text-decoration:none;
 	margin-right:2px;
-	*/
+	z-index:9999;
 }
 
 #navibar > ul > li.selected > a:hover,
@@ -70,50 +72,66 @@
 #navibar > ul > li > a{
 	font-weight: bold;
 	color : black;
+	z-index:9999;
 }
 
 #navibar ul li ol{/*내용이 안보이게한다.*/
 	position:absolute;
 	width:190px;
 	height:30px;
-	
+	z-index:9999;
 	display:none;
 }
 #navibar ul li.selected ol{/*클래스가 selected가 되면 내용이 보이게한다.*/
 	display:block;
+	z-index:9999;
 }
 #navibar ul li ol li{
 	border-left : 5px solid #B2CCFF;
 	border-right : 5px solid #B2CCFF;
 	background-color:#fff;
+	z-index:9999;
 }
 #navibar ul li ol li.first{
 	border-top : 5px solid #B2CCFF;
+	z-index:9999;
 }
 
 #navibar ul li ol li.last{
 	border-bottom : 5px solid #B2CCFF;
+	z-index:9999;
 }
 
 /* main page */
 #libmain{
 	width:960px;
-	height:800px;
+	height:700px;
 }
 
 /* main image*/
 #mainimage{
+	margin:0 auto;
 	height:240px;
 	width:960px;
-	background-color :black;
+	border:1px solid;
+	zIndex:0;
+	position:absolute;
+	background-image:url('img/mju.jpg');
 }
+
+#mainiimage{
+	width:960px;
+	height:240px;
+}
+
 #mainserch{
 	float : left;
-	position:relative;
-	width:360px;
-	height:80px;
-	margin : 80px 0 0 360px;
-	zIndex : 0;
+	position:absolute;
+	width:600px;
+	height:50px;
+	margin : 80px 0 0 200px;
+	zIndex : 2;
+	background-color:#fff;
 }
 
 /* others */
