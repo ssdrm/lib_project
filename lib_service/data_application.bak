@@ -4,10 +4,19 @@
 <title>제목 없음</title>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="generator" content="Namo WebEditor(Trial)">
-</head>
 
-<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+<style type="text/css">
+
+
+A:link {text-decoration:none; color:black;}
+ 
+A:visited {text-decoration:none; color:black;}
+ 
+A:hover {text-decoration:none; color:black;}
+ 
+</style>
+</head>
+<body>
 <DIV id="pop_title">
     <p align="center"><IMG src="appleication_write_title.jpg" width="680" height="83"></p>
 </DIV>
@@ -114,11 +123,12 @@
     </TR>
     </TBODY>
 </TABLE>
-<div class="button">
-        <div class="light"></div>
-            </div><p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="JavaScript:vdate_bookrequest()"><IMG alt=등록 
-src="btn_hope_book_01.gif"></A> &nbsp;&nbsp;<A href="JavaScript:canc_click()"><IMG alt=취소 
+<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <A href=""> <IMG alt=등록 
+src="btn_hope_book_01.gif"></A> &nbsp;&nbsp;<A href=""> <IMG alt=취소 
 src="btn_hope_book_02.gif"></A></p>
+</div>
 
 </body>
 
