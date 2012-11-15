@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+﻿@CHARSET "UTF-8";
 
 /* 가운데정렬 */
 #wrap {
@@ -285,6 +285,14 @@
 
 
 }
+/*theme sub*/
+.text{width:130px;height:80px;}/*제목 이름 틀*/
+.img{width:140px;height:80px;}/*이미지크기조절*/
+
+.titletext{width:100px;height:35px; font-size:15px;margin-left:20px;}/*책이름*/
+.copy{width:100px;height:35px;margin-left:20px;font-size:15px;}/*저자*/
 
 
+
+/*end*/
 p { margin: 0; padding-top:5px; margin-top: 5px;}
