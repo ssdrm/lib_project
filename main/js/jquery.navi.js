@@ -69,14 +69,6 @@
 				easing : options.easing,//애니메이션 이징 곡선을 탄력 움직임으로 설정
 				queue : false//애니메이션 큐 설정 값을 false
 			});
-		})
-		.bind('mouseout focusout', function(){//마우스 아웃, 포커스 아웃 상태 감지 연결(bind)
-			setTimeout(function(){//setTimeout()을 설정. (지정한 시간후에 뭔가를 할수있다.)
-				$usermove.animate({//지정한 시간이 지나면 usermove에 애니메이션을 설정.
-					left : $usercur.position().left,//usermove의 왼쪽 위치를 usercur왼쪽 위치로 이동.
-					width : $usercur.outerWidth()//usermove의 가로 폭을 usercur의 가로폭으로 변경.
-				}, options.speed);//setTimeout()의 시간을 설정, 밀리초단위
-			}, options.reset);//애니메이션 duration(옵션객체(setTimeout의))시간을 설정.
 		});
 			//관리자
 		$adminnav.find('li')//usernav에서 li를 찾음.
@@ -89,14 +81,6 @@
 				easing : options.easing,//애니메이션 이징 곡선을 탄력 움직임으로 설정
 				queue : false//애니메이션 큐 설정 값을 false
 			});
-		})
-		.bind('mouseout focusout', function(){//마우스 아웃, 포커스 아웃 상태 감지 연결(bind)
-			setTimeout(function(){//setTimeout()을 설정. (지정한 시간후에 뭔가를 할수있다.)
-				$adminmove.animate({//지정한 시간이 지나면 adminmove에 애니메이션을 설정.
-					left : $admincur.position().left,//adminmove의 왼쪽 위치를 admincur왼쪽 위치로 이동.
-					width : $admincur.outerWidth()//adminmove의 가로 폭을 admincur의 가로폭으로 변경.
-				}, options.speed);//setTimeout()의 시간을 설정, 밀리초단위
-			}, options.reset);//애니메이션 duration(옵션객체(setTimeout의))시간을 설정.
 		});
 		
 	});
