@@ -76,7 +76,6 @@ p { margin: 0 0 1.5em; }
 /* 하이퍼링크 기본 스타일 재정의 */
 a:link, a:visited { 
 	padding-bottom: .25px; 
-	border-bottom: 1px dotted #7c7c7c; 
 	text-decoration: none;
 	color: #7c7c7c;
 }
