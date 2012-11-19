@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>검색결과 </title>
+<link href="borrows.css" rel="stylesheet" type="text/css"> 
+<script src='jquery-1.8.2.min.js'></script>
+<script type="text/javascript">
+$(function(){
+	
+	$("tr.comment_hide").hide()
+
+	$('#coms').click(function(){
+		$("tr.comment_hide").slideToggle()("slow");
+	
+});
+	
+	$("div.comment_view").hide()
+	$("#butt1").click(function(){
+		$("div.comment_view").slideToggle()("slow");
+
+
+});
+
+	
+});
+
+</script>
+</head>
+<body>
+	<div id="warp">
+		<div id="title">
+			<div id="title1">
+			검색결과 
+		</div>
+		<div id="title2">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME>통합검색
+		 </div>
+
+		</div>
+		
+	
+		<div id="tablebox">
+			<div id="titles">
+			
+		</div>
+	
+
+			<table>
+				<tr>
+				<th>번호</th>
+				<th>이미지 </th>
+
+				<th>도서명</th>
+				<th>저자 </th>
+				<th>출판사 </th>
+				
+				<th>소장위치 </th>
+				
+				<th>isbn </th>
+				
+				<th>도서상태 </th>
+		
+				<th>예약 </th>
+					
+		
+			
+
+
+						</tr>
+									<tr>
+										<td></td>
+
+											<td id="img"><img src="logo.gif"></a> </td>
+											<td>ㅅ </td>
+											<td>2</td>
+											<td>우리궁궐</td>
+											<td>2012-02-02</td>
+											<td>?</td>
+											<td>fff</td>
+												<td style="width:100px;"><input type="button" value="예약하기"id="reser"><br>
+													<input type="button" value="서평추가 " id="coms">
+												</td>
+											</tr>
+											
+												<tr class="comment_hide" >
+												<td colspan="8" id="co">
+													<div class="comment_in">
+													<div class="comment">서평 추가 </div>
+													
+												
+													
+													<input class="text" ><input type="button" value="+" class="butt">
+												<input type="button" id="butt1" value="서평보기">
+												</div>
+												
+												<div class="comment_view">
+													<div id="comment_box">
+														<div class="path"><a href="">ㄱㄷㄱㄷ</a></div>
+										
+
+													</div>
+
+												</div>
+																			
+
+											
+
+												</td>
+
+											
+												
+
+
+											
+
+											
+										</tr>
+
+											
+						
+
+										
+
+									
+									
+
+			</table>
+		
+		</div>
+
+
+
+
+</body>
+</html>

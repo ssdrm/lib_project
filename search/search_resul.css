@@ -1,0 +1,41 @@
+body{background-color: #26ffff;}
+#warp{width:960px;height:800px;background-color:red;margin:20px;}
+#title{width:950px;height:50px;background-color:white;font-size:30px;font-weight:bold;margin-top:10px;padding-top:10px;border:solid;border-radius:40px;}
+#title1{width:300px;height:30px;background-color:white;float:left;margin-top:5px;margin-left:20px;}
+#title2{width:300px;height:30px;background-color: white;float:right;font-size:15px;
+font-weight:bold;margin-top:15px;}
+
+
+#tablebox{width:950px;background-color:white;border:solid;margin-top:30px;}
+
+
+table{border:solid;background-color:white;width:950px;text-decoration:none;}
+
+td{text-align:center; height:150px; background-color:white; width:100px;border:solid;}
+th{background-color:#1E90FF; height:50px; width:100px;}
+
+
+#co{background-color:white;width:960px;}/*서평추가버튼눌렀을시 나오는 토글*/
+.comment{width:100px;height:32px;background-color:red;float:left;margin-right:5px;
+text-align:center;padding-top:7px;font-weight:bold;font-size:20px;margin-left:15px;}
+
+.comment_in{width:800px;background-color:blue;float:left;height:50px;margin-right:300px;padding-top:10px;border:solid;margin-top:30px;}/*서평틀*/
+.text{float:left;width:400px;height:32px;background-color:yellow;margin-bottom:50px;}
+.butt{width:70px;height:37px;float:left;background-color:green;margin-left:5px;}/*서평추가 버튼*/
+#butt1{width:100px;height:40px;float:left;background-color:green;margin-left:5px;margin-top:30px;}/*서평보기 버튼*/
+
+#img{width:150px;}
+
+
+.comment_hide{font-size:20px;}
+.sub{float:left;}
+.comment_view{width:800px;background-color:blue;background-color:red;height:100px;border:solid;}
+
+
+.path{width:600px;float:left;background-color:red;height:40px;margin-top:30px;border:solid;margin-left:20px;}/*서평내용나오는 공간*/
+a{text-decoration:none;}
+
+#coms{font-weight:bold;}
+#reser{font-weight:bold;}
+
+
