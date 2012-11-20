@@ -1,55 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="ko">
+<html lang="ko"> 
 <head>
 <meta charset="utf-8">
-<title>검색결과 </title>
+	<title>jQuery Test</title>
+
+	<script src='jquery-1.8.2.min.js'></script>
 <link href="search_resul.css" rel="stylesheet" type="text/css"> 
-<script src='jquery-1.8.2.min.js'></script>
-<script type="text/javascript">
-$(function(){
-	
-
-	
-	
-	$("tr.comment_hide").hide()
 
 
-	$("#coms").click(function(){
-		$("tr.comment_hide").slideToggle()("slow");
 
 
-});
-	$("div.comment_in").hide()
-	$("#butt1").click(function(){
-		$("div.comment_in").slideToggle()("slow");
-	
-});
-
-	
-});
-
-</script>
 </head>
+
 <body>
-	<div id="warp">
-		<div id="title">
-			<div id="title1">
-			검색결과 
-		</div>
-		<div id="title2">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME>통합검색
-		 </div>
-
-		</div>
-		
+<div class="warp">
 	
-		<div id="tablebox">
-			<div id="titles">
-			
-		</div>
-	
-
-			<table>
+	<table>
 				<tr>
 				<th>번호</th>
 				<th>이미지 </th>
@@ -66,15 +32,11 @@ $(function(){
 		
 				<th>예약 </th>
 					
-		
-			
-
-
-						</tr>
+		</tr>
 									<tr>
-										<td></td>
+										    <td>     7     </td>
 
-											<td id="img"><img src="logo.gif"></a> </td>
+											<td class="img"><img src="logo.gif"></a> </td>
 											<td>ㅅ </td>
 											<td>2</td>
 											<td>우리궁궐</td>
@@ -82,64 +44,98 @@ $(function(){
 											<td>?</td>
 											<td>fff</td>
 												<td style="width:100px;"><input type="button" value="예약하기"id="reser"><br>
-													<input type="button" value="서평보기 " id="coms">
+													<input type="button" value="서평보기 " class="coms">
 												</td>
 											</tr>
+										</table>
+
+
+										
+								
+											<table class="comment_hide" border="1" >
+											<tr >	
+											<th>남긴이 </th>
+											<th>내 용  </th>
+											<th>	<input type="button" class="butt1" value="서평추가"></th>
+											<th><input type="button" value="서평 목록" class="add"></th>
+			
+												</tr>
+					
+										<tbody>
+
+										</tbody>
+
+	
+								</table>
+							
+												
+							
+									
 											
-												<tr class="comment_hide" >
-												<td colspan="8" id="co">
-
-
-													<div class="comment_view">
-													<div id="comment_box">
-														<div class="path"><a href="">ㄱㄷㄱㄷ</a></div>
-															<input type="button" id="butt1" value="서평추가">
+									<table class="comment_in">
 										
 
-													</div>
+											<tr >	
+												<td class="comment">서평 추가 </td>
+													
+										
+												<td class="sub_size"><input type="text" class="text" ><input type="button" value="+" class="butt">
+												<input type="button" value="-" class="butt3">
+											</td>
+											</tr>
+									
+										</table>
+									</div>
 
-												</div>
-													
 
-													<div class="comment_in">
-													<div class="comment">서평 추가 </div>
-													
-												
-													
-												<input class="text" ><input type="button" value="+" class="butt">
+
+											
+
 												  
-												</div>
-												
-												
-																			
-
-											
-
-												</td>
-
-											
-												
+				</div>
 
 
-											
 
-											
-										</tr>
-
-											
-						
-
-										
-
-									
-									
-
-			</table>
+	<div class="sample" style="display:none">
+	<table>
+	<tr>
 		
-		</div>
+		<td style="width:100px;height:50px;"><input type='text' size='25'></td>
+		<td style="width:500px;height:50px;"><input type='text' size='80' ></td>
+		
 
 
-
-
+	
+	</tr>
+	</table>
+	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+$(function() {
+
+	$("table.comment_hide").hide()
+
+
+	$(".coms").click(function(){
+		$("table.comment_hide").slideToggle()("slow");
+	
+
+
+});
+	$("table.comment_in").hide()
+	$(".butt1").click(function(){
+		$("table.comment_hide").hide("slow")
+		$("table.comment_in").show()("slow");
+	
+});
+	$(".butt3").click(function(){
+		$("table.comment_in").hide("slow")
+	});
+
+	$('.add').click(function() {
+		$(".comment_hide").find("tbody").append("<tr>"+$('.sample').find('tr').html()+"</tr>");
+	});
+});
+</script>

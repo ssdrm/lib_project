@@ -1,41 +1,17 @@
-body{background-color: #26ffff;}
-#warp{width:960px;height:800px;background-color:red;margin:20px;}
-#title{width:950px;height:50px;background-color:white;font-size:30px;font-weight:bold;margin-top:10px;padding-top:10px;border:solid;border-radius:40px;}
-#title1{width:300px;height:30px;background-color:white;float:left;margin-top:5px;margin-left:20px;}
-#title2{width:300px;height:30px;background-color: white;float:right;font-size:15px;
-font-weight:bold;margin-top:15px;}
+	html{color:#000;padding:20px 0;font: 12px/18px "맑은 고딕", "Malgun Gothic";background-color:#26ffff;}
 
+	.comment{width:100px;height:35px;background-color:#1E90FF;float:left;margin-right:3px;text-align:center;font-weight:bold;font-size:20px;margin-left:35px;padding-top:7px;margin-top:5px;}/*서평보기타이틀*/
+	.comment_in{width:800px;background-color:white;float:left;height:50px;border:solid;}/*서평틀*/
+	.tab {border-collapse:collapse;border-spacing:0;}
 
-#tablebox{width:950px;background-color:white;border:solid;margin-top:30px;}
+	td {border:1px solid #444;font: "맑은 고딕";padding:5px;width:100px;height:100px;font-size:15px;}
+	th {border:1px solid #444;font: 12px/18px "맑은 고딕", "Malgun Gothic";padding:5px;width:100px;height:70px;background-color:#1E90FF;font-size:20px;}
 
+	.text{float:left;width:400px;height:35px;background-color:white;;margin-left:20px;}
+	.img{width:150px;}/*이미지크기*/
 
-table{border:solid;background-color:white;width:950px;text-decoration:none;}
+	.butt{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*버튼*/
+	.butt3{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*버튼*/
+	.sub_size{width:600px;height:40px;float:left;}
 
-td{text-align:center; height:150px; background-color:white; width:100px;border:solid;}
-th{background-color:#1E90FF; height:50px; width:100px;}
-
-
-#co{background-color:white;width:960px;}/*서평추가버튼눌렀을시 나오는 토글*/
-.comment{width:100px;height:32px;background-color:red;float:left;margin-right:5px;
-text-align:center;padding-top:7px;font-weight:bold;font-size:20px;margin-left:15px;}
-
-.comment_in{width:800px;background-color:blue;float:left;height:50px;margin-right:300px;padding-top:10px;border:solid;margin-top:30px;}/*서평틀*/
-.text{float:left;width:400px;height:32px;background-color:yellow;margin-bottom:50px;}
-.butt{width:70px;height:37px;float:left;background-color:green;margin-left:5px;}/*서평추가 버튼*/
-#butt1{width:100px;height:40px;float:left;background-color:green;margin-left:5px;margin-top:30px;}/*서평보기 버튼*/
-
-#img{width:150px;}
-
-
-.comment_hide{font-size:20px;}
-.sub{float:left;}
-.comment_view{width:800px;background-color:blue;background-color:red;height:100px;border:solid;}
-
-
-.path{width:600px;float:left;background-color:red;height:40px;margin-top:30px;border:solid;margin-left:20px;}/*서평내용나오는 공간*/
-a{text-decoration:none;}
-
-#coms{font-weight:bold;}
-#reser{font-weight:bold;}
-
-
+	.warp{width:960px;height:800px;background-color:white;margin:0 0 auto;border:solid;}/*전체 테이블 틀 */
