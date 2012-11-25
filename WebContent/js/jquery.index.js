@@ -4,7 +4,7 @@ $(function($){
 	$mid = $('#other_mid'),/*공지사항*/
 	$bar = $('#navibar'),/*메뉴*/
 	$thema = $('#other_right'),/*테마*/
-	$banner = $('#other_left');/*배너*/
+	$banner = $('#other_left'),/*배너*/
 
 	/*공지사항*/
 	/* 초기 화면 */
@@ -45,16 +45,16 @@ $(function($){
 	/* 배너 시작*/
 
 	$("#other_left>ul>li>div").hide();
-	$banner.find('li:first>span>img').addClass('selected');
+	$banner.find('li:first>img').addClass('selected');
 	$banner.find('li:first').addClass('selected');
 	$banner.find('li:first>div').show();
 
-	$banner.find('li>span>img').bind('mouseover focusin',function(){
+	$banner.find('span>img').bind('mouseover focusin',function(){
 		$("#other_left>ul>li").removeClass('selected');
 		$("#other_left>ul>li>span>img").removeClass('selected');
 		$("#other_left>ul>li>div").hide();
 		$(this).addClass('selected');
-		$(this).parent().parent().addClass('seleted');
+		$(this).parent().parent().addClass('selected');
 		$(this).parent().parent().find('div').show();
 	});
 
