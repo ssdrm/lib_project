@@ -4,7 +4,7 @@ $(function($){
 	$mid = $('#other_mid'),/*공지사항*/
 	$bar = $('#navibar'),/*메뉴*/
 	$thema = $('#other_right'),/*테마*/
-	$banner = $('#other_left'),/*배너*/
+	$banner = $('#other_left');/*배너*/
 
 	/*공지사항*/
 	/* 초기 화면 */
