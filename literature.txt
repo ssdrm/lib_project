@@ -1,0 +1,63 @@
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100년의 문학용어 사전','고인환','문화예술위원회','2008-01-01','문학','80001','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('11마리 고양이 마라톤 대회','바바 노보루','꿈소담이','2007-01-01','문학','80002','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('16인의 반란자들','정창','스테이지팩토리','2011-01-01','문학','82003','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('19호실로 가다','Doris','민음사','1994-01-01','문학','80004','3층사회과학단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('19호실로 가다 ','Doris','민음사','1994-01-01','문학','80004','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1% 다른 스피치','박정길','비전코리아','2008-01-01','문학','80005','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기 인물 100과사전','정윤수','숨비소리','2008-01-01','문학','82006','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한국인물사전','연합뉴스','연합뉴스','2007-01-01','문학','82007','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('그들이 중국을 움직인다','류동희','한울','2002-01-01','문학','82008','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('현대사 인물들의 재구성','고지훈','앨피북','2005-01-01','문학','82009','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한국교회사에 나타난 인물과 사상','서영석','열린','2006-01-01','문학','82010','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('0.1그램의 희망','이상묵','랜덤하우스','2008-01-01','문학','80011','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('0심이','배금택','대흥','1991-01-01','문학','80012','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100번울기','중촌항','웅진','2006-01-01','문학','80013','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('101번째 프로포즈','이경혜','길벗','1993-01-01','문학','80014','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1026','김진명','새움','2010-01-01','문학','80015','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10cm 예술','김점선','마음산책','2002-01-01','문학','80016','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10번의 연애리허설','이경하','하얀새','2008-01-01','문학','80017','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('110 행복 레시피','국민권익위원회','국민권익위원회','2010-01-01','문학','80018','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('11신예작가 작품전','신경미','동아','1993-01-01','문학','80019','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('124편의 사랑 나눔','숭실대','숭실대출판국','2011-01-01','문학','80020','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('12.12 쿠데타와 나','장태완','명성','1993-01-01','문학','80021','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('12억짜리 냅킨 한 장','김영세','중앙MB','2001-01-01','문학','80022','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('137개의 미로카드','김운하','문학과지성사','2001-01-01','문학','80023','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('13번째 인격','귀지우개','창해','2009-01-01','문학','80024','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('15살 네꿈을 응원한다','김현태','왕의서재','2009-01-01','문학','80025','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('17세','이근미','동화일보사','2006-01-01','문학','80026','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('전통 한복만들기','안애영','미진사','2011-01-01','문학','84027','2층기술과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('전통 매듭만들기','김은영','미진사','2009-01-01','문학','84028','2층기술과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('우리궁궐이야기','홍순민','청년사','1999-01-01','문학',84029'','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('궁궐의 눈물','우동선','효형','2009-01-01','문학','84030','3층인문예술단행본');
+
+
+
