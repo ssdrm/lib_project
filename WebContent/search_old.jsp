@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -24,6 +26,7 @@
 					</li> 
 					<li><a href="">완전일치 </a>
 					</li>
+				</ul>
 				</div>
 		<div id="box">
 		<form action="#" method= "post">
