@@ -1,0 +1,156 @@
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100인의책마을','김보일','리더스가이드','2012-01-01','총류',02001,'3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100인의책마을','김보일','리더스가이드','2012-01-01','총류',02001,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('101교양사전','캐리맥닐','21세기북스','2012-01-01','총류',02002,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1.1.1리딩테크','이채완','푸른미디어','2005-01-01','총류',00003,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1.21의증인','김신조','대한승공','1971-01-01','총류',02004,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1만 페이지 독서력','윤성화','한스미디어','2011-01-01','총류',00005,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('프로그래머 1%핵심원리','조민호','성안당','2009-01-01','총류',03006,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2000년대 신문','일본신문협회연구소','한국언론자료간행회','1993-01-01','총류',00007,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2000년 시한폭탄 y2k','브라이언리','토기장이','1999-01-01','총류',03008,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2010 IT 로드맵','노무라','매일경제신문사','2010-01-01','총류',03009,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 박물관경영','게리에드슨','시공사','2001-01-01','총류',00010,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('독서의 힘','안한상','북코리아','2009-01-01','총류',00011,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 희망의 경기포럼','경기도자치행정과','경기도','2003-01-01','총류',01012,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2D애니메이션','이국형','mj미디어','2004-01-01','총류',03013,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('32비트윈도우프로그램','조병현','인포북','1996-01-01','총류',03014,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3D data export','조상현','한국게임산업개발원','2006-01-01','총류',03015,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3D MAX','현대건축디자인학원','구민사','2009-01-01','총류',03016,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100년 후를 내다 본 아인슈타인','박애주','하서','2005-01-01','총류',02017,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2000년대 문제 진단과 해결','한국정보감리','전자신문사','1999-01-01','총류',03018,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한글 액세스와 매크로','김소윤','연학사','2003-01-01','총류',03019,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2010웹 여행','Frank','현대미디어','2007-01-01','총류',03020,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('독서가 국가 경쟁력이다','안한상','독서능력개발원','2009-01-01','총류',00021,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 오디세이 ','이재규'한국경제신문사,'','1997-01-01','총류',00022,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('글2007','김미영','명성','2011-01-01','총류',00023,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('후기 산업시대의 세계공동체','크리스찬','우석','1989-01-01','총류',01024,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('회의가 경쟁력이다','김영안','새빛에듀넷','2008-01-01','총류',02025,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('회의의 기술','윤치영','에이원북스','2008-01-01','총류',00026,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('현장 신문론','김지용','쟁기','1996-01-01','총류',01027,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('혼자 책 읽는시간','나나상코비치','웅진','2012-01-01','총류',00028);
+009,'3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('깐깐한 독서본능','윤미화','','2009-01-01','총류',00029,'3층인문예술단행본');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('핵심만 골라 읽는 독서기술','공병호','21세기북스','2010-01-01','총류',00030,'3층인문예술단행본');
+
+---------------------------------------------------------------------------------------------------------------------여기부터 연속간행물 
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한작업치료학회지','e-article','대한작업치료학회','1993-01-01','연속간행물',00031,'국내 E-Journal');
+ http://www.earticle.net/Search/Pub/SearchList.aspx?orgSn=83&jouSn=48
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('전기학회 보고서','DBPIA','대한전기학회','1992-01-01','연속간행물',00032,'국내 E-Journal');
+url-->> http://www.earticle.net/Search/Pub/SearchList.aspx?org: http://dbpia.co.kr/view/p_view.asp?pid=1673 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한전기학회 워크샵','DBPIA','대한전기학회','2010-01-01','연속간행물',00033,'국내 E-Journal');
+ http://dbpia.co.kr/view/p_view.asp?pid=1759
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한전자공학회 기술강좌','DBPIA','대한전기학회','1989-01-01','연속간행물',00034,'국내 E-Journal');
+http://dbpia.co.kr/view/p_view.asp?pid=536 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한전자공학회 심포지엄','DBPIA','대한전자공학회','1978-01-01','연속간행물',00035'국내 E-Journal');
+ http://dbpia.co.kr/view/p_view.asp?pid=465 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한전자공학 세미나','DBPIA','대한전자공학회','1987-01-01','연속간행물',00036,'국내 E-Journal');
+: http://dbpia.co.kr/view/p_view.asp?pid=463 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회 기타간행물','KISS','대한금속재료학회','1988-01-01','연속간행물',00037,'국내 E-Journal');
+ http://dbpia.co.kr/view/p_view.asp?pid=534 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회 논문집','DBPIA','대한기계학회','1997-01-01','연속간행물',00038,'국내 E-Journal');
+ http://dbpia.co.kr/view/p_view.asp?pid=533
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회지','DBPIA','대한기계학회','1960-01-01','연속간행물',00039,'국내 E-Journal');
+http://dbpia.co.kr/view/p_view.asp?pid=451
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회 춘추학술대회','DBPIA','대한기계학회','1983-01-01','연속간행물',00040,'국내 E-Journal');
+: http://dbpia.co.kr/view/p_view.asp?pid=446
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회 논문집A권','DBPIA','대한기계학회','1996-01-01','연속간행물',00041,'국내 E-Journal');
+URL : http://dbpia.co.kr/view/p_view.asp?pid=450 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한기계학회 눈문집B권','DBPIA','대한기계학회','1996-01-01','연속간행물',00042,'국내 E-Journal');
+http://dbpia.co.kr/view/p_view.asp?pid=449 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한내과학회지','KISS','대한내과학회','1949-01-01','연속간행물',00043,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7079&p_key=277
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한내분비학회지','KISS','대한내분비학회','1996-01-01','연속간행물',00044,'국내 E-Journal');
+: http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7080&p_key=277
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한미용학회지','KISS','대한미용학회','2005-01-01','연속간행물',00045,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=9171&p_key=292
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한미생물학회지','DBPIA','대한미생물학회','1978-01-01','연속간행물',00046,'국내 E-Journal');
+http://dbpia.co.kr/view/p_view.asp?pid=1716 
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한무용학회논문집','KISS','대한무용학회','1978-01-01','연속간행물',00047,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=9017&p_key=334
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한무도학회지','KISS','대한무도학회','1999-01-01','연속간행물',00048,'국내 E-Journal');
+http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=9061&p_key=255
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한마취과학회지','KISS','대한마취과학회','1993-01-01','연속간행물',00049,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7092&p_key=269
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한류마티스학회지','KISS','대한류마티스학회','1994-01-01','연속간행물',00050,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7109&p_key=296
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한산부인과학회지','KISS','대한산부인과학회','1958-01-01','연속간행물',00051,'국내 E-Journal');
+http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7074&p_key=254
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한산업공학회지','KISS','대한산업공학회','1975-01-01','연속간행물',00052,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=6003&p_key=988
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한설비공학회 강연','DBPIA','대한설비공학회','1-01-01','연속간행물',00053,'국내 E-Journal');
+ http://dbpia.co.kr/view/p_view.asp?pid=839
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한소아관운동학회지',',KISS',',대한소화관운동학회','1994-01-01','연속간행물',00054,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7005&p_key=254
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한소화기내시경학회지','KISS','대한소화기학회','2010-01-01','연속간행물',00055,'국내 E-Journal');
+: http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7074&p_key=254
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한소화기학회지','KISS','대한소화기학회','1968-01-01','연속간행물',00056,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7003&p_key=262
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한수의학회지','KISS','대한수의학회','1961-01-01','연속간행물',00057,'국내 E-Journal');
+ http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=8014&p_key=254
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한스포츠의학회지','KISS','대한스포츠의학회','2005-01-01','연속간행물',00058,'국내 E-Journal');
+: http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=7060&p_key=251
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한시과학회지','KISS','대한시과학회','2010-01-01','연속간행물',00059,'국내 E-Journal');
+URL : http://kiss.kstudy.com/goto_toc.asp?srcCate=국내학회지&i_key=6070&p_key=247
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('대한안전경영과학회지','e-article','대한안전경영과학회','1999-01-01','연속간행물',00060,'국내 E-Journal');
+
+ http://www.earticle.net/Search/Pub/SearchList.aspx?orgSn=462&jouSn=667

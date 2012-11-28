@@ -1,0 +1,63 @@
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1000 예화사전','김한귀','은혜','1993-01-01','종교','20001','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100주년 100인설교','미주한인연합교회','미주한인연합교회 전국연합','20033-01-01','종교','20002','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('101가지 이야기신학','추태화','토기장이','1999-01-01','종교','20003','보존서고')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10년후 한국교회','김승호','에큐메니칼연구소','2005-01-01','종교','20004','3층인문예술단행본')
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10년후 한국교회','김승호','에큐메니칼연구소','2005-01-01','종교','20004','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('신앙과 성에대한 10대와의대화','김흥영','성공문화사','1996-01-01','종교','20005','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('12큰교회의 성장비결','이근미','노바','2009-01-01','종교','20006','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('16세기 무신앙 문제','페르브','문학과지성','1996-01-01','종교','20007','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('180도 내삶을 바꾸는 선택','박하영','생명의말씀사','2006-01-01','종교','20008','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('18세기 위대한 영적부흥','김남준','솔로몬','1996-01-01','종교','20009','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1세기 교회사','릭조이너','순전한나드','2010-01-01','종교','20010','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1초의 사랑,111의행복','Ellen','리빙북스','2001-01-01','종교','20011','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2000년 기독교 역사','김만홍','예지서원','2008-01-01','종교','20012','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2000년대 한국교회','심상태','성바오로','1993-01-01','종교','20013','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대 당신을 향한 소명','홍병룡','한국기독학생회','2009-01-01','종교','20014','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기 그리스도인 들에게','Ford','생명의말씀사','1981-01-01','종교','20015','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기를 준비하자','이정섭','문학과현실사','1995-01-01','종교','20016','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기의 오순절','박선규','보이스사','1976-01-01','종교','20017','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기 요한계시록','권명달','보이스사','1977-01-01','종교','20018','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 개혁신학의 방향','이승구','SFC','2005-01-01','종교','20019','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 교회의 선교교육','임창복','한국기독교교육','2007-01-01','종교','20020','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('5분간의 명상','조용기','서울서적','1985-01-01','종교','20021','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('5일의 결단','조용기','서울서적','1985-01-01','종교','20022','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('666','백대영','좋은땅','2012-01-01','종교','20023','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('7년 대환난은 올 것인가?','정일오','기독교문서선교회','1998-01-01','종교','20024','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('7일간의 개혁','서정웅','생활지혜사','1995-01-01','종교','20025','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('8년의 동행','이수경','살림','1993-01-01','종교','20026','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3분성경','김의남','삼진기획','2004-01-01','종교','20027','3층인문예술단행본')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3일 기도의 영적 파워','이에스더','','1993-01-01','종교','20028',보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3.1운동 기념 예배사례집','박춘화','창천감리교회','1984-01-01','종교','20029','보존자료실')
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('365일 가정예배','이상철','엘멘','2008-01-01','종교','20030','3층인문예술단행본')
+
