@@ -23,20 +23,20 @@
 	<div id="but">
 	<div class="button">
 		<div class="light"></div>
-		<a href="search_theme_main.html">환경과 에너지</a>
+		<a href="search_theme_main.jsp">환경과 에너지</a>
 	</div>
 	<div class="button">
 		<div class="light"></div>
-		<a href="search_theme_human.html">인   물</a> 
+		<a href="search_theme_human.jsp">인   물</a> 
 	</div> 
 
 	<div class="button">
 		<div class="light"></div>
-	<a href="search_theme_culture.html">우리 문화 알기 </a> 
+	<a href="search_theme_culture.jsp">우리 문화 알기 </a> 
 	</div>
 	<div class="button">
 		<div class="light"></div>
-		<a href="search_theme_computer.html">컴퓨터</a> 
+		<a href="search_theme_computer.jsp">컴퓨터</a> 
 	</div>
 
 </div>

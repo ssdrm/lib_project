@@ -10,7 +10,7 @@
     <div id="wrap">
         <p>&nbsp;</p>
         <p align="right">
-            <a href="data_application.html"><IMG alt="자료구입신청/조회 바로가기"
+            <a href="data_application.jsp"><IMG alt="자료구입신청/조회 바로가기"
                 src="img/btn_service1.gif"></a>
         </p>
         <p align="left">

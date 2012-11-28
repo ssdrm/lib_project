@@ -14,7 +14,7 @@
 				<IMG alt="이용안내" src="img/service_tit5.gif">
 			</H4>
 			<H4 class="h4_type2" align="right">
-				<A href="borrows.html"><IMG alt="대출현황 조회/연장 바로가기"
+				<A href="borrows.jsp"><IMG alt="대출현황 조회/연장 바로가기"
 					src="img/btn_service2.gif"></A>
 			</H4>
 		</H4>

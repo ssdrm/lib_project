@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
 
 <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
-<p align="center"><A href="intro1.html"><IMG alt="도서관장 인사말" src="img/tab1_1_over.gif"></A><A href="intro2.html"><IMG alt="도서관 통계" src="img/tab1_7.gif"></A><A href="intro3.html"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.html"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
+<p align="center"><A href="intro1.jsp"><IMG alt="도서관장 인사말" src="img/tab1_1_over.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
 <h4 class="h4_type" align="left"><b><font size="4" color="#0070C0">▶ 도서관장 인사말</font></b></h4>
 <p><img src="img/img_welcome.gif" alt="명지대학교 도서관을 방문해주신 여러분을 진심으로 환영합니다."></p>
 <p>21세기는 정보와 지식이 국가 경쟁력을 좌우하는 지식기반 사회로 나아가고 있습니다.

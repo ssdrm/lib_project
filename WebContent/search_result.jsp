@@ -20,7 +20,7 @@
 		검색결과 
 		</div>
 		<div id="rebox">
-			 <input type="text" class="typetext" id="searchbar"><a href="../search/search_result.html"><img src="img/btn_msearch.gif"></a>
+			 <input type="text" class="typetext" id="searchbar"><a href="../search/search_result.jsp"><img src="img/btn_msearch.gif"></a>
 
 
 		</div>
