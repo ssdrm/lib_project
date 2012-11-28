@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -23,10 +24,18 @@ A:hover {
     text-decoration: none;
     color: black;
 }
-</style>
 
+</style>
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery.share.js"></script>
 </head>
 <body>
+
+<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
+		
+		
     <DIV id="pop_title">
         <p align="center">
             <IMG src="img/appleication_write_title.jpg" width="680" height="83" alt="title">

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,13 +8,17 @@
 <title>고서 </title>
 
 <link href="css/old.css" rel="stylesheet" type="text/css"> 
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery.share.js"></script>
 
 </head>
 
 <body>
 <div id="warp">
 	
-	
+	<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
 		
 
 	<div id="form">

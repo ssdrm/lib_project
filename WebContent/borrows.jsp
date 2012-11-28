@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,10 +8,16 @@
 <title>대출현황 조회/연장</title>
 <link href="css/borrows.css" rel="stylesheet" type="text/css"> 
 <link href="css/set.css" rel="stylesheet" type="text/css"> 
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery.share.js"></script>
 </head>
 <body>
 	<div id="wrap">
-	<div id="warp">
+	
+	<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
+		
 		<div id="title">
 			<div id="title1">
 			대출 조회현황 / 연장 
@@ -107,7 +114,6 @@
 
 
 	</table>
-</div>
 </div>
 
 

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ko"> 
 <head>
@@ -8,7 +9,8 @@
 
 <script src='js/jquery-1.8.2.min.js'></script>
 <link href="css/search_resul.css" rel="stylesheet" type="text/css"> 
-
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery.share.js"></script>
 
 
 
@@ -17,6 +19,10 @@
 <body>
 
 <div class="warp">
+
+<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
 
 		<div class="title">
 		검색결과 
