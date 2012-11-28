@@ -19,7 +19,7 @@
 			</P>
 		</DIV>
 		<H4 class="h4_type2" align="right">
-			<a href="borrows.html"><IMG alt="대출현황 조회/연장 바로가기"
+			<a href="borrows.jsp"><IMG alt="대출현황 조회/연장 바로가기"
 				src="img/btn_service3.gif"></a>
 		</H4>
 		<H4 class="h4_type2">
