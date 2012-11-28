@@ -1,0 +1,36 @@
+VALUES('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(밴드 테라피, 기적의 10분) 0.0069 ','최익성','RJ company','2011-01-01','예술','70001','796.44 최68영');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('철인3종경기','한기식','삼호미디어','2000-01-01','예술','70002','796.4257 -1t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(건강)스트레칭 체조 : 건강 생활 스트레칭 체조','안정훈','유풍출판사','1998-01-01','예술','70003','796.4 -22');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('체조 : 맨손체조·기구체조·매스게임','신영길','형설출판사','2004-01-01',','예술','70004','796.4 -24');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(초보자를 위한)등산 가이드; 아름다운 자연의 사계와 만난다','삼호미디어편집부','삼호미디어','2000-01-01','예술','70005','796.4 -22');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('산행문화와 웰빙라이프','김홍주','정상','2005-01-01','예술','70006','796.522 -21');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('숲에서 만난 발자국','김훈','황금가지','2003-01-01','예술','70007','796.5 -7t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('데이비드 베컴 : 마이 사이드','임정재','물푸레','2003-01-01','예술','72008','796.344092 -1t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('축구 기본기술 및 전술 트레이닝 ','강유원,김의수','두남','2001-01-01','예술','70009','796.334 -36');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('볼수록 만만한 축구 : 만화와 함께 보는 축구 게임 룰','김윤정','EMJ디자인','2010-01-01','예술','70010','796.334 김66볼');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(축구 전문가 서형욱이 들려주는) 유럽 축구 유럽 문화','서형욱','삼성출판사','2006-01-01','예술','70011','796.334 -51 v.1');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('풋살 이야기','최성호','대경북스','2010-01-01','예술','70012','796.334 최54풋');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(축구 저널리스트 서형욱의) 유럽 축구 기행 : 세계 축구 중심에 가다 ','서형욱','살림','2005-01-01','예술','70013','796.334 -42');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(한국대중음악) 100대 명반 : 음반리뷰','박준흠','선','2008-01-01','예술','70014','781.63 백231');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('세시봉 이야기','김종철','북이십일','2011-01-01','예술','70015','781.630951 김75세');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('천재A반을 위한 Jazz','유영대','비앤비','1999-01-01','예술','70016','781.65 -3');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Introduction to jazz history','Megill, Donald D. ','Pearson','2004-01-01-','예술','70017','781.6509 -3e6');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('재즈, 매혹과 열정의 연대기','이정득','이매진','2006-01-01','예술','70018','781.65092 T318ㅈ');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Jazz Styles History & Analysis ','Gridley, Mark C ','Prentice Hall','2003-01-01','70019','781.65 -1e8');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('재즈총론','심상범','삼호뮤직','2002-01-01','예술','70020','781.65 -9t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('이상한 과일 : 김진묵의 재즈이야기','김진묵','현암사','2000-01-01','예술','70021','781.65 -4');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('파퓰러음악용어사전','삼호뮤직편저','삼호뮤직','2002-01-01','예술','70022','781.6303 파896');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('파퓰러 음악 사전','김기호','아름출판사','1995-01-01','예술','70023','781.6303 -1');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 애니메이션의 혁명가들 : 2D 애니메이션의 시대를 넘어서 ','김세훈','한울','2003-01-01','예술','70024','778.5347 -2t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('에드워드 슈타이겐 성공신화의 셔터를 누르다','최봉림','디자인하우스','2000-01-01','예술','70025','778.5 -4');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('비디오 촬영 매뉴얼 ','미국촬영감독협회','헐리우드필름','1996-01-01','예술','70026','778.59 -2');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('디지털 넌리니어 영상편집의 이론과 기술','현승훈','책과길','2003-01-01','예술','70027','778.53 -2t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('비디오 예술론 = Video Art','이용우','문예마당','2000-01-01','예술','70028','778.5 -5');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('비디오 예술론 = Video Art','이용우','문예마당','2000-01-01','예술','70028','778.5 -5');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('비디오 예술론 = Video Art','이용우','문예마당','2000-01-01','예술','70028','778.5 -5');
+
+

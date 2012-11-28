@@ -1,0 +1,36 @@
+('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(당신이 모르는 줄도 모르는) 100가지 수학 이야기','전대호','마젤란','2010-01-01','자연과학','50001','510.2 B278백');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(세상이 가둔 천재)페렐만'.'전대호','세종서적','2011-01-01','자연과학','50002','510.92 G392페');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('너무 많이 알았던 사람 : 앨런 튜링과 컴퓨터의 발명','승산','2008-01-01','자연과학','53003','510.92 L439너');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('튜링 : 인공지능 창시자','장 라세구','동양서','2003-01-01','자연과학','53004','510.92 L347튜');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('독일 대학과 과학의 역사 : 독일 수학자들의 계보 ','장수영','학문사','2001-01-01','자연과학','50005','510.92 -6');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('수학자들의 전쟁 : 수학사상 가장 흥미로웠던 뉴턴과 라이프니츠의 미적분 전쟁','이광연','웅진씽크빅','2007-01-01','자연과학','50006','510.92 이15수');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('천재 수학자들의 영광과 좌절','이면우','사람과책','2003-01-01','자연과학','50007','510.92 등66천');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('양자역학','엄정인','에드텍','1995-01-01','자연과학','50008','530.12 -21t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('일반화학','Goldberg, David E. ','사이플러스','2009-01-01','자연과학','50009','540 G618일');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('생명유기화학','장세현','월드사이언스','2009-01-01','자연과학','50010','540 R269생');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('내 컴퓨터는 내가 관리한다!','임형선','혜지원','2008-01-01','자연과학','53011','004 임94내');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('컴퓨터 구조와 원리 2.0 : 비주얼 컴퓨터 아키텍처','신종홍','한빛미디어','2010-01-01','자연과학','53012','004.22 신75컴2');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('소프트웨어 아키텍처 문서화 ','송재하','에이콘','2009-01-01','자연과학','53013','004.22 소897');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(엔지니어와 프로그래머를 위한) 임베디드 시스템 아키텍처','임희연','ITC','2007-01-01','자연과학','53014','004.22 N769임');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Embedded systems design using the TI MSP430 series','Nagy, Chris. ','Boston','2003-01-01','자연과학','53015','004.256 -3');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(엔지니어와 프로그래머를 위한) 임베디드 시스템 아키텍처','임희연','ITC','2007-01-01','자연과학','53016','004.22 N769임');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Embedded systems design and applications with the 68HC12 and HCS12','Steven F. Barrett','Prentice Hall ','2004-01-01','자연과학','53017','004.256 -2');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10간 12지를 과학적으로 풀어낸 생활기상과 기상경영을 위한 입문서','장동순','중명출판사','2004-01-01','자연과학','50018','551.6 -18');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('생활 기상 이야기','윤성탁','단국대학교','2001-01-01','자연과학','50019','551.5 -10');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('기후와 진화','김준민','민음사',1987-01-01','자연과학','51020','551.6 -7t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('해양오염과 생태계','심재형','민음사','1991-01-01','자연과학','51021','551.46 심72ㅎ ');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('해양환경정보총람','김학균','국립수산진흥원','2000-01-01','자연과학','50022','551.46 -2');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3일만에 읽는 몸의 구조','타노이마사오','서울문화사','2001-01-01','자연과학','50023','591.5 -11t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한국 밤 곤충 도감 ','백문기','자연과생태','2012-01-01','자연과학','50024','595.7022 백36한');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한국 곤충기','김정환','진선북스','2008-01-01','자연과학','50025','595.7 김74한);
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(인류 최대의 적) 모기 ','이동규','해바라기','2002-01-01','자연과학','50026','595.772 -1t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(인류 최대의 적) 모기 ','이동규','해바라기','2002-01-01','자연과학','50026','595.772 -1t');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('곤충의 진화와 생활사 전략','현재선','아카데미적','2009-01-01','자연과학','50027','595.7 현73곤');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('곤충의 진화와 생활사 전략','현재선','아카데미적','2009-01-01','자연과학','50027','595.7 현73곤');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('곤충의 진화와 생활사 전략','현재선','아카데미적','2009-01-01','자연과학','50027','595.7 현73곤');
+
