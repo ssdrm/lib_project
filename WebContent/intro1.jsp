@@ -9,6 +9,7 @@
 <meta name="generator" content="Namo WebEditor(Trial)">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 </head>
 

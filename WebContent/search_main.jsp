@@ -8,6 +8,7 @@
 <title>통합검색</title>
 <link href="css/main.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 
 </head>

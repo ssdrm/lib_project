@@ -17,6 +17,7 @@
 <link href="css/reset2.css" rel="stylesheet" type="text/css">  
 <link href="css/individual.css"rel="stylesheet"type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 </head>
 <div id="wrap">

@@ -2,7 +2,7 @@ $(function($){
 	$(function(){
 	var
 	$mid = $('#other_mid'),/*공지사항*/
-	$bar = $('#navibar'),/*메뉴*/
+	//$bar = $('#navibar'),/*메뉴*/
 	$thema = $('#other_right'),/*테마*/
 	$banner = $('#other_left');/*배너*/
 
@@ -61,11 +61,11 @@ $(function($){
 
 	
 	/* 메뉴  */
-
+/*
 	$bar.find('li').bind('mouseover focusin',function(){
 		$("#navibar>ul>li").removeClass('selected');
 		$("#navibar>ul>li>a>span").removeClass('selected');
-		/*$("#navibar>ul>li>div").hide();*/
+		//$("#navibar>ul>li>div").hide();
 		$(this).addClass('selected');
 		$(this).parent().parent().addClass('selected');
 		$(this).parent().parent().find('div').show();
@@ -74,7 +74,8 @@ $(function($){
 	$bar.find('li').bind('mouseout focusout',function(){
 		$(this).removeClass('selected');
 	});
-	/* 메뉴 끝 */
+	// 메뉴 끝 
 	$("#other_mid li>a:first").click();
+	*/
 	});
 })(jQuery);

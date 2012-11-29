@@ -9,6 +9,7 @@
 <head>
 <link href="css/theme_com.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 
 </head>

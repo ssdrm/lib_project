@@ -8,6 +8,7 @@
 <title>테마가있는 서재 </title>
 <link href="css/theme_human.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 
 </head>
