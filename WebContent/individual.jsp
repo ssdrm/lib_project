@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+
+
+<!DOCTYPE html>
 <html lang="ko">
 <meta charset="utf-8">
 <title>개인연락사항</title>

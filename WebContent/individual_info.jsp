@@ -1,3 +1,8 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="ko">
 <meta charset="utf-8">
@@ -12,6 +17,7 @@
 <link href="css/info.css"rel="stylesheet"type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery.share.js"></script>
+
 
 
 </head>
