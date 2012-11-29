@@ -20,7 +20,9 @@
 <script src="js/jquery.share.js"></script>
 </head>
 <div id="wrap">
-	<td>
+<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
 	<table class="box">
 		<tr>
 		<th>

@@ -23,7 +23,9 @@
 </head>
 <body>
 	<div id="wrap">
-		
+		<jsp:include page="share/navi.jsp">
+			<jsp:param name="" value=""/>
+		</jsp:include>
 	<form action="#" method="post">
 		<table>
 			<tr>
@@ -44,7 +46,7 @@
 			</tr>
 			<tr>
 				<td>이메일</td>
-				<td><input type="text" class"box">
+				<td><input type="text" class="box">
 				<input type="button" value="작성완료">
 				</td>
 			</tr>
