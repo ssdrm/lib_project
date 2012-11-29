@@ -1,0 +1,11 @@
+
+
+.path{width:800px;margin-top:30px;}
+table{width:800px;border:solid;}
+th{width:200px;height:20px;border:solid;background-color:gray;text-align:center;font-weight:bold;}
+td{width:200px;height:20px;text-align:center;border:solid;background-color:white;}
+#wrap {
+	width:960px;height:800px; margin:0 auto; background-color;}
+
+.title{width:800px;height:30px;font-size:30;font-weight:bold;text-align:center;}
+

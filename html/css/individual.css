@@ -1,0 +1,6 @@
+#wrap {
+	width:960px; margin:0 auto; background-color:#fff;
+}
+th{width:500px;height:10px;background-color:gray;font-size:15px;font-weight:bold;text-align:center;}
+td{width:500px;height:10px;}
+table{width:500px;height:100px;margin:0 auto;margin-top:150px;border:solid;font-size:15px;}
