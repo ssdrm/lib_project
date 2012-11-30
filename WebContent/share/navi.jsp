@@ -7,11 +7,12 @@
 				<a href=""><img src="img/logo.gif" alt="logo"></a>
 			</div>
 			<div id = "header_right">
-				
-				<input type="text" value="ID" id="id" size="10px">
-				<input type="password" value="1234" id="password" size="10px">
-				<a href=""><img src="img/btn_login.gif" alt="login"></a>
+			  <form name="form" action="LibPServlet" method="post">
+				<input type="text" name="user" value="ID" id="id" size="10px">
+				<input type="password" name="passwd"value="1234" id="password" size="10px">
+				 <input type="submit" value="Login" >
 				<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+				</form>
 			</div>
 		</div>
 		<div id = "line1">
