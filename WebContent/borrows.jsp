@@ -10,7 +10,7 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/reset2.css" rel="stylesheet" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
-<link href="css/set.css" rel="stylesheet" type="text/css"> 
+<link href="css/borrows.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
@@ -31,11 +31,7 @@
 		 </div>
 
 		</div>
-		<div id="sub">
-			<div id="sub1">&nbsp;&nbsp;대출/예약현황 
-			</div>  
 		
-		</div>
 	
 		<div id="tablebox">
 			<div id="titles">

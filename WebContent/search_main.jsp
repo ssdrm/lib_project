@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div id="warp">
+<div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>

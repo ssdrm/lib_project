@@ -34,7 +34,7 @@ A:hover {
 </head>
 <body>
     <div id="wrap">
-        jsp:include page="share/navi.jsp">
+        <jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
         <div id="box">
