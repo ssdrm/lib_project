@@ -5,31 +5,30 @@
 <html lang="ko"> 
 <head>
 <meta charset="utf-8">
-	<title>검색</title>
+<title>검색결과</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
 
-<script src='js/jquery-1.8.2.min.js'></script>
-<link href="css/search_resul.css" rel="stylesheet" type="text/css"> 
+<link href="css/search_resul.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
-<script src="js/jquery.share.js"></script>
-
+<script src="js/jquery.share.js"></script> 
 
 
 </head>
 
 <body>
 
-<div class="warp">
+<div id="wrap">
 
 <jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
+<jsp:param name="" value=""/>
 		</jsp:include>
 
 		<div class="title">
 		검색결과 
 		</div>
 		<div id="rebox">
-			 <input type="text" class="typetext" id="searchbar"><a href="../search/search_result.jsp"><img src="img/btn_msearch.gif"></a>
+			 <input type="text" class="typetext" id="searchbar"><a href="../search/search_result.jsp"><img id="s" src="img/btn_msearch.gif"></a>
 
 
 		</div>
@@ -59,7 +58,7 @@
 
 											<td class="img"><img src="img/logo.gif"></a> </td>
 											<td>ㅅ </td>
-											<td>2</td>
+											<td>2ㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇ/td>
 											<td>우리궁궐</td>
 											<td>2012-02-02</td>
 											<td>?</td>
@@ -164,3 +163,4 @@ $(function() {
 	});
 });
 </script>
+

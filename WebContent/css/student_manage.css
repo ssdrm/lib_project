@@ -7,8 +7,8 @@ table{width:800px;border:solid;}
 th{width:200px;height:20px;border:solid;background-color:gray;text-align:center;font-weight:bold;font-size:15px;}
 td{width:200px;height:20px;text-align:center;border:solid;background-color:white;}
 #wrap {
-	width:960px;height:800px; margin:0 auto; background-color:#26ffff;}
+	width:960px;margin:0 auto;}
 
 .title{width:800px;height:50px;font-size:30px;font-weight:bold;text-align:center;margin-top:10px;}
-html{background-color:#26ffff;}
+
 

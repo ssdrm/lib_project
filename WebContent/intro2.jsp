@@ -1,25 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+<meta charset="utf-8">
+
+
 <title>▶ 도서관 통계</title>
+
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
 <meta name="generator" content="Namo WebEditor(Trial)">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="css/set.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 </head>
 
-<body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
+
+<body>
+<div id="wrap">
 
 <jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
 		
-		
+<div id="box">		
 <p align="center"><A href="intro1.htm"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7_over.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
 <h4 class="h4_type" align="left"><b><font size="3" color="#0070C0">▶ </font></b><font size="4" color="#0070C0">도서관 통계</font></h4>
 <h5 class="h5_type" align="center"><font size="6">장서현황</font>
@@ -268,6 +275,8 @@
     </tbody>
 </table>
 <p>&nbsp;</p>
+</div>
+</div>
 </body>
 
 </html>

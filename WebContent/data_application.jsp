@@ -1,14 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+<meta charset="utf-8">
 <title>직접신청쓰기</title>
-
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/set.css" rel="stylesheet" type="text/css"> 
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
 <style type="text/css">
 A:link {
     text-decoration: none;
@@ -24,18 +29,15 @@ A:hover {
     text-decoration: none;
     color: black;
 }
-
 </style>
-<link href = "css/share.css" rel = "stylesheet" type = "text/css">
-<script src="js/jquery.share.js"></script>
+
 </head>
 <body>
-
-<jsp:include page="share/navi.jsp">
+    <div id="wrap">
+        jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		
-		
+        <div id="box">
     <DIV id="pop_title">
         <p align="center">
             <IMG src="img/appleication_write_title.jpg" width="680" height="83" alt="title">
@@ -125,6 +127,8 @@ A:hover {
         &nbsp;&nbsp;<A href=""> <IMG alt=취소 src="img/btn_hope_book_02.gif"></A>
     </p>
     </div>
+</div>
+</div>
 
 </body>
 

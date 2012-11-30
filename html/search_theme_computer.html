@@ -4,13 +4,88 @@
 <meta charset="utf-8">
 <title>테마가있는 서재 </title>
 <head>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+
 <link href="css/theme_com.css" rel="stylesheet" type="text/css">
+	
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
 
 
 </head>
 
 <body>
-	<div id="warp">
+	<div id="wrap">
+		<div id = "header">
+			<div id = "header_left">
+				<a href=""><img src="img/logo.gif" alt="logo"></a>
+			</div>
+			<div id = "header_right">
+				
+				<input type="text" value="ID" id="id" size="10px">
+				<input type="password" value="1234" id="password" size="10px">
+				<a href=""><img src="img/btn_login.gif" alt="login"></a>
+				<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+			</div>
+		</div>
+		<div id = "line1">
+		</div>
+		
+		<div id = "navibar">
+				
+			<ul>
+				<li><a href=""><span>자료검색</span></a>
+					<div>
+						<ol>
+							<li class="first"><a href="search_main.jsp">통합검색</a></li>
+							<li><a href="search_serial.jsp">연속간행물</a></li>
+							<li><a href="search_old.jsp">고서</a></li>
+							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>
+						</ol>
+					</div>
+				</li>
+					
+				<li><a href=""><span>도서관 서비스</span></a> 
+					<div>
+						<ol>
+							<li class="first"><a href="data_intro.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrow_intro.jsp">대출현황조회/연장</a></li>
+							<li class="last"><a href="reserve_intro.jsp">도서예약</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>알림마당</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="">공지사항</a></li>
+							<li class="last"><a href="">질의응답</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>도서관 이용안내</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="intro1.htm">도서관 소개</a></li>
+							<li class="last"><a href="come1.jsp">도서관 오는길</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>마이페이지</span></a>
+					<div>
+						<ol>
+					 		<li class="first"><a href="individual_info.jsp">개인정보관리</a></li>
+							<li><a href="data_application.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrows.jsp">대출현황조회/연장</a></li>
+							<li><a href="individual.jsp">개인연락사항</a></li>
+							<li class="last"><a href="">검색 히스토리</a></li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>
+
 		<div id="title1">
 			<div id="layer1">
 				테마가 있는 서재 
@@ -51,17 +126,17 @@
 								자료명/저자/출판년도 
 							</th>
 						</tr>
-						<tr>
-							<td id="td1">fjf</td>
-							<td id="td2">fdf</td>
+						<tr >
+							<td class="td1">fjf</td>
+							<td class="td2">fdf</td>
 						</tr>
 						<tr>
-							<td id="td3">fdf</td>
-							<td id="td4">fdf</td>
+							<td class="td1">fdf</td>
+							<td class="td2">fdf</td>
 						</tr>
 						<tr>
-							<td id="td5">fd</td>
-							<td id="td6">fd</td>
+							<td class="td1">fd</td>
+							<td class="td2">fd</td>
 						</tr>
 		
 

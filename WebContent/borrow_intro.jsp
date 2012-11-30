@@ -1,13 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+<meta charset="utf-8">
+
 <title>대출현황 조회/연장 안내페이지</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="set.css" rel="stylesheet" type="text/css">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
+<link href="css/set.css" rel="stylesheet" type="text/css"> 
+<meta http-equiv="content-type" content="text/html charset=utf-8">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
@@ -19,7 +23,7 @@
 	<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 	</jsp:include>
-		
+		<div id="box">
 		<H4 class="h4_type2">&nbsp;</H4>
 		<H4 class="h4_type2">
 			<H4 class="h4_type2" align="left">
@@ -37,6 +41,7 @@
 					하며, 연체 시 대출연장은 불가능합니다.</font></LI>
 		</OL>
 	</div>
+</div>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -56,24 +56,26 @@
 </div>
 				<div id="tablebox">
 					<table border="1">
-						<tr>
+				<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
-						<tr>
-							<td id="td1">fjf</td>
-							<td id="td2">fdf</td>
+						<tr >
+							<td class="td1">fjf</td>
+							<td class="td2">fdf</td>
 						</tr>
 						<tr>
-							<td id="td3">fdf</td>
-							<td id="td4">fdf</td>
+							<td class="td1">fdf</td>
+							<td class="td2">fdf</td>
 						</tr>
 						<tr>
-							<td id="td5">fd</td>
-							<td id="td6">fd</td>
+							<td class="td1">fd</td>
+							<td class="td2">fd</td>
 						</tr>
 		
+
+
 
 			</table>
 		</div>

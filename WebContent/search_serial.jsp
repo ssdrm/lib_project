@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -7,6 +7,8 @@
 <meta charset="utf-8">
 <title>연속간행물 </title>
 
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
 <link href="css/serial.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
@@ -16,7 +18,7 @@
 
 <body>
 
-<div id="warp">
+<div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
@@ -25,6 +27,9 @@
 
 	<div id="form">
 	<div id="title">연속간행물 </div>
+			
+		<div id="box">
+		
 			<div id="search">
 				<ul>
 					<li><a href="">&nbsp;&nbsp;&nbsp;키워드&nbsp;&nbsp;</a>
@@ -34,7 +39,6 @@
 					<li><a href="">완전일치 </a>
 					</li>
 				</div>
-		<div id="box">
 		<form action="#" method= "post">
 		<table >
 			
@@ -74,7 +78,7 @@
 						발행년
 						<input type=text  size="7">ㅡ 
 						<input type=text size="7">
-						쪽당 출력 건수 
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;쪽당 출력 건수 
 						<select id="select1">
 							<option>10
 							<option>9
@@ -88,7 +92,7 @@
 															<option>1
 															</select>
 
-							최대검색권수 
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최대검색권수 
 							<select id="select2">
 							<option>500
 							<option>400

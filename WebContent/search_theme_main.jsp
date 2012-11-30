@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -6,6 +6,8 @@
 <head>
 <meta charset="utf-8">
 <title>테마가있는 서재 </title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
 <link href="css/theme_main.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
@@ -14,12 +16,11 @@
 </head>
 
 <body>
-	<div id="warp">
+	<div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		
 		
 		<div id="title1">
 			<div id="layer1">
@@ -56,9 +57,37 @@
 </div>
 				<div id="tablebox">
 					<table border="1">
-						<tr>
+				<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
+							</th>
+						</tr>
+						<tr >
+							<td class="td1">fjf</td>
+							<td class="td2">fdf</td>
+						</tr>
+						<tr>
+							<td class="td1">fdf</td>
+							<td class="td2">fdf</td>
+						</tr>
+						<tr>
+							<td class="td1">fd</td>
+							<td class="td2">fd</td>
+						</tr>
+		
+
+
+
+			</table>
+		</div>
+	</div>
+
+
+
+		
+	
+</body>
+</html> 
 							</th>
 						</tr>
 						<tr>

@@ -1,25 +1,28 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>제목 없음</title>
+<title>도서관장 인사말</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
+<link href="css/intro.css" rel="stylesheet" type="text/css">
 <meta name="generator" content="Namo WebEditor(Trial)">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"></head>
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
 </head>
 
 <body bgcolor="white" text="black" link="blue" vlink="purple" alink="red">
-
+<div id="wrap">
 <jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
 		
-		
+<div id="box">		
 <p align="center"><A href="intro1.jsp"><IMG alt="도서관장 인사말" src="img/tab1_1_over.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
 <h4 class="h4_type" align="left"><b><font size="4" color="#0070C0">▶ 도서관장 인사말</font></b></h4>
 <p><img src="img/img_welcome.gif" alt="명지대학교 도서관을 방문해주신 여러분을 진심으로 환영합니다."></p>
@@ -41,6 +44,8 @@
 본 시스템은 맞춤형 정보서비스를 제공하는 기본적인 시스템으로 앞으로 SDI서비스의 확장, 지식관리기능등
 을 첨가하여 더욱 발전된 시스템으로 나아가길 기대해 봅니다.</p>
 <p>감사합니다.</p>
+</div>
+</div>
 </body>
 
 </html>

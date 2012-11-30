@@ -1,11 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
 <head>
+<meta charset="utf-8">
 <title>도서예약 안내</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="css/set.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
@@ -20,7 +22,7 @@
 			<jsp:param name="" value=""/>
 		</jsp:include>
 		
-		
+	<div id="box">	
 		<DIV class="guidemsg">
 			<P class="guidetit">
 				<IMG
@@ -57,6 +59,8 @@
 			<LI>대출가능한 동일 도서(복본)가 있는 경우는 도서 예약을 하실 수 없습니다.</LI>
 		</OL>
 	</div>
+</div>
+</div>
 </body>
 
 </html>

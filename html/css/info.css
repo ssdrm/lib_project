@@ -1,7 +1,7 @@
-html{background-color:white;}
+
 
 #wrap {
-	width:960px; margin:0 auto; background-color:white;
+	width:960px; margin:0 auto; 
 }
 .title{width:500px;height:20px;background-color:gray;font-size:20px;font-weight:bold;text-align:center;}
 td{width:400px;height:10px;font-size:15px;}

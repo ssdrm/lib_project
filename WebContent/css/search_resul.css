@@ -1,6 +1,109 @@
-	.title{width:960px;height:35px;background-color:gray;margin-bottom:20px;font-size:20px;font-weight:bold;}
-	html{color:#000;padding:20px 0;font: 12px/18px "맑은 고딕", "Malgun Gothic";background-color:#26ffff;}
+/* reset.css - 브라우저 스타일 초기화, 2012 ⓒ yamoo9.com	
+---------------------------------------------------------------- */
 
+/* 모든 요소 공간 0, 서체 크기 100%, 세로정렬 baseline, 배경색 투명 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	outline: 0;
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* HTML5 새 요소 초기화 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+
+/* 본문 기본 설정, 리스트 블릿 제거, 인용 구문 제거 */
+body { 
+	font: 13px/1.5 "나눔 고딕", "Nanum Gothic", 돋움, Dotum, Sans-Serief; 
+	color: #323232; 
+	}
+	/* 영문 설정 */
+	.lang-en, :lang(en) { font: 12px/1.5 "Helvetica Neue", Helvetica, Verdana, Arial, Sans-Serief; }
+	
+/* 목록 및 인용 */
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+
+/* hr 제거 */
+hr { display: none; }
+
+/* 제목 글꼴 크기 설정 */
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: normal; 
+	color: #111; 
+	}
+	h1 { 
+		font-size: 36px; 
+		line-height: 1; 
+		margin-bottom: 0.5em; 
+	}
+	h2 { 
+		font-size: 24px; 
+		margin-bottom: 0.75em;
+	}
+	h3 { 
+		font-size: 18px; 
+		line-height: 1; 
+		margin-bottom: 1em;
+	}
+	h4 { font-size: 14px; }
+	h5 { margin-bottom: 1.5em; }
+	h5, h6 { font-weight: bold; }
+	
+	h1 img, h2 img, h3 img,
+	h4 img, h5 img, h6 img { margin: 0; }
+
+/* 제목, 단락 상.하 공간 설정 */
+p { margin: 0 0 1.5em; }
+
+/* :active, :focus 가상클래스 아웃라인 설정 제거 */
+:active, :focus { outline: 0; }
+
+/* 하이퍼링크 기본 스타일 재정의 */
+a:link, a:visited { 
+	padding-bottom: .25px; 
+	text-decoration: none;
+	color: #7c7c7c;
+}
+a:hover, a:active {
+	border-bottom-style: solid; 
+	color: #424242;
+}
+
+/* img를 포함한 a요소의 보더, 패딩 초기화 설정 */
+a img {
+	
+	border: 0; 
+	padding: 0;
+}
+
+/* insert, delete */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+
+
+
+
+	
+
+
+
+.title{width:100px;height:35px;background-color:white;;margin-bottom:30px;font-size:20px;font-weight:bold;
+	margin-top:50px;float:left;}
+	html{color:#000;padding:20px 0;font: 12px/18px "맑은 고딕", "Malgun Gothic";}
 
 	
 
@@ -8,11 +111,12 @@
 	.comment_in{width:800px;background-color:white;float:left;height:50px;border:solid;}/*서평틀*/
 	.tab {border-collapse:collapse;border-spacing:0;}
 
-	td {border:1px solid #444;font: "맑은 고딕";padding:5px;width:100px;height:100px;font-size:15px;}
-	th {border:1px solid #444;font: 12px/18px "맑은 고딕", "Malgun Gothic";padding:5px;width:100px;height:70px;background-color:#1E90FF;font-size:20px;}
-
+	td {border:1px solid #444;font: "맑은 고딕";padding:5px;width:85px;height:100px;font-size:15px;}
+	th {border:1px solid #444;font: 12px/18px "맑은 고딕", "Malgun Gothic";padding:5px;width:90px;height:50px;background-color:#1E90FF;font-size:20px;text-align:center;padding-top:20px;font-weight:bold;}
+	
 	.text{float:left;width:400px;height:35px;background-color:white;;margin-left:20px;}
-	.img{width:150px;}/*이미지크기*/
+	
+	td.img>img{width:83px;}/*이미지크기*/
 
 
 
@@ -20,11 +124,9 @@
 	.butt3{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*버튼*/
 	.sub_size{width:600px;height:40px;float:left;}
 
-	.warp{width:960px;height:800px;background-color:white;margin:0 0 auto;border:solid;}/*전체 테이블 틀 */
+	#wrap{width:960px;margin:0 auto;}/*전체 테이블 틀 */
 
-
-
-
+	table{width:960px;}
 
 
 
@@ -35,6 +137,7 @@
 	padding-left: 250px;
 	padding-top: 5px;
 	margin-bottom:30px;
+
 }
 
 .typetext{
@@ -43,10 +146,10 @@
     	width: 400px;
     	height:20px;
     float: left;
+margin-top:50px;
 
 
 }
-img{
-	float:left; height: 25px;
+#s{
+	float:left; height: 30px;margin-top:50px;
 }
-

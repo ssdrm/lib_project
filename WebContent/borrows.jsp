@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -6,7 +6,10 @@
 <head>
 <meta charset="utf-8">
 <title>대출현황 조회/연장</title>
-<link href="css/borrows.css" rel="stylesheet" type="text/css"> 
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
 <link href="css/set.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
@@ -15,10 +18,10 @@
 <body>
 	<div id="wrap">
 	
-	<jsp:include page="share/navi.jsp">
+			<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		
+	
 		<div id="title">
 			<div id="title1">
 			대출 조회현황 / 연장 
@@ -76,7 +79,7 @@
 			</table>
 		</div>
 	
-<div id="tablebox2">
+		<div id="tablebox2">
 		<div id="titles2">
 			예약 현황 
 		</div>
