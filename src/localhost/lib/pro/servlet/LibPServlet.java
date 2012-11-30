@@ -6,6 +6,7 @@ import javax.naming.NamingException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -96,7 +97,11 @@ public class LibPServlet extends HttpServlet {
 		//test.setName(name);
 		
 		//
-		
+		HttpSession session = request.getSession(false);
+		if(session == null)
+		{
+			session = request.getSession();
+		}
 		
 		 String pw = request.getParameter("passwd");
 		 
@@ -106,15 +111,12 @@ public class LibPServlet extends HttpServlet {
 		  out.println("<B><BR>");
 		  if(testid.equals(id) && testpw.equals(pw))
 		   {
-		   out.println("반갑습니다.<BR>");
 		   out.println("당신의 아이디는 "+ id + " 입니다.<BR>");
 		   out.println("그리고 당신의 암호는 "+ pw +" 입니다.<BR>");
-		   
-		   HttpSession session = request.getSession();
-		   session.setAttribute("userid", testid);
-		   response.sendRedirect("login");
-		   
-		  }
+		   session.setAttribute("id", id);
+		   session.setAttribute("name", name);
+		   // Cookie[] cookie = request.getCookies();
+		    }
 		  else if(testid.equals(id) && !testpw.equals(pw))
 		   {
 		   out.println("암호가 맞지 않습니다.<BR>");
