@@ -1,8 +1,8 @@
-@CHARSET "UTF-8";
+﻿@CHARSET "UTF-8";
 
 /* 구분선 */
 #line1 {
-	width:960px; height:5px;background-color:#1049A9;
+	width:958px; height:5px;background-color:#1049A9;
 }
 
 /* header 정렬 */
@@ -47,12 +47,21 @@
 	float:left;
 	display:block;
 	width:190px;
+	
+	
 	text-align:center;
 	padding:0px; 
 	text-decoration:none;
 	margin-right:2px;
 	z-index:9999;
+	font-size:18px;
+	font-weight:bold;
+	padding-top:5px;height:35px;
+	
+
+	
 }
+#navibar>ul>li>a>span{color:yellow;font-size:20px;font-weight:bold;}/* 네비게이션  폰트 설정*/
 
 #navibar > ul > li.selected > a:hover,
 #navibar > ul > li.selected > a:focus,
