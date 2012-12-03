@@ -59,7 +59,6 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('13살내꿈을 잡아라','한선정','조선book','2009-01-01','사회과학','30030','3층인문예술단행본');
 
 
-----------고서----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1952년','이건호','수도문화사','1952-01-01','사회과학','30031','보존자료실');
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1955년','김윤기','원호순보사','1954-01-01','사회과학','30032','보존자료실');

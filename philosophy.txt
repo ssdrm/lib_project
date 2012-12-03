@@ -66,7 +66,6 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 
 
 
----------------고서
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('손자병법','남일성','현암사','1951-01-01','철학','10031','보존자료실');
 
@@ -94,5 +93,5 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('platonics opera','platonis','oxford','1950-01-01','철학','10039','보존자료실');
 
-NSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Also sprach zarathustra','nietzsche','garamond','1958-01-01','철학','10040','보존자료실');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Also sprach zarathustra','nietzsche','garamond','1958-01-01','철학','10040','보존자료실');
 
