@@ -8,10 +8,10 @@
 
 
 <title>▶ 도서관 통계</title>
-
+<link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/reset2.css" rel="stylesheet" type="text/css">
 <meta name="generator" content="Namo WebEditor(Trial)">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
 <link href="css/set.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
