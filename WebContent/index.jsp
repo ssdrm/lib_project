@@ -59,10 +59,9 @@
 			<c:choose>
 			<c:when test="${admintype=='F' }">
 				<div id = "user">
-				사용자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대촐현황 / 연장 </a></li>
+							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
 							<li><a href="data_application.html">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
@@ -72,7 +71,6 @@
 				</div>
 				
 				<div id = "admin" style="display:none">
-				관리자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
@@ -90,10 +88,9 @@
 				
 				
 				<div id = "user" style="display:none">
-				사용자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대촐현황 / 연장 </a></li>
+							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
 							<li><a href="data_application.html">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
@@ -104,7 +101,6 @@
 				
 				
 				<div id = "admin">
-				관리자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
@@ -118,10 +114,9 @@
 				</c:when>
 				<c:otherwise>
 				<div id = "user" style="display:none">
-				사용자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대촐현황 / 연장 </a></li>
+							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
 							<li><a href="data_application.html">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
@@ -132,7 +127,6 @@
 				
 				
 				<div id = "admin" style="display:none">
-				관리자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
