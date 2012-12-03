@@ -7,12 +7,19 @@
 				<a href="LibPServlet"><img src="img/logo.gif" alt="logo"></a>
 			</div>
 			<div id = "header_right">
-			  <form name="form" action="LibPServlet" method="post">
-				<input type="text" name="user" value="ID" id="id" size="10px">
-				<input type="password" name="passwd"value="1234" id="password" size="10px">
-				 <input type="image" alt="login" src="img/btn_login.gif" value="Login" >
-				<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
-				</form>
+				<c:choose>
+					<c:when test = "${id != NULL}">
+			  		${name }님 환영합니다. <a href="LibPServlet?op=logout">로그아웃</a>
+					</c:when>
+					<c:otherwise>
+						<form name="form" action="LibPServlet" method="post">
+							ID : <input type="text" name="user" value="" id="id" size="10px">
+							PASSWORD : <input type="password" name="passwd"value="" id="password" size="10px">
+							<input type="image" alt="login" src="img/btn_login.gif" value="Login" >
+							<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+						</form>
+					</c:otherwise>
+				</c:choose>
 			</div>
 		</div>
 		<div id = "line1">

@@ -9,9 +9,9 @@
 <title>명지대학교 자연캠퍼스 도서관</title>
 <link href = "css/reset.css" rel = "stylesheet" type = "text/css">
 <link href = "css/reset2.css" rel="stylesheet" type = "text/css">
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <link href = "css/index.css" rel = "stylesheet" type = "text/css">
 <link href = "css/usernavi.css" rel = "stylesheet" type = "text/css">
-<link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <link href = "css/set2.css" rel = "stylesheet" type = "text/css">
 <script src="js/modernizr.min.js"></script>
 <script src="js/jquery.min.js"></script>
@@ -31,7 +31,7 @@
 		<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		<div id="box">
+		<div id = "box">
 		<div id = "libmain">
 		
 			<div id = "mainiimage">
@@ -56,6 +56,8 @@
 			
 			<!-- 사용자에 따른 네비게이션 바 -->
 			<div id = "bar">
+			<c:choose>
+			<c:when test="${admintype=='F' }">
 				<div id = "user">
 				사용자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "usernav">
@@ -68,6 +70,39 @@
 						</ul>
 					</nav>
 				</div>
+				
+				<div id = "admin" style="display:none">
+				관리자모드 나중에 지우거나 다른글로 교체<br><br>
+					<nav id = "adminnav">
+						<ul class = "clear">
+							<li class = "focus"><a href="">대출현황조회</a></li>
+							<li><a href="">신청된자료조회</a></li>
+							<li><a href="">도서관리</a></li>
+							<li><a href="">회원관리</a></li>
+							<li><a href="">학생추가 </a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				
+				</c:when>
+				<c:when test="${admintype=='T' }">
+				
+				
+				<div id = "user" style="display:none">
+				사용자모드 나중에 지우거나 다른글로 교체<br><br>
+					<nav id = "usernav">
+						<ul class = "clear">
+							<li class = "focus"><a href="borrows.html">대촐현황 / 연장 </a></li>
+							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li><a href="">현재날짜 / 현재시간</a></li>
+							<li><a href="">개인정보관리</a></li>
+							<li><a href="come1.html">도서관 오는길</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				
 				<div id = "admin">
 				관리자모드 나중에 지우거나 다른글로 교체<br><br>
 					<nav id = "adminnav">
@@ -80,6 +115,8 @@
 						</ul>
 					</nav>
 				</div>
+				</c:when>
+				</c:choose>
 			</div>
 		</div>
 		
@@ -221,8 +258,11 @@
 		</div>
 		<div id = "footer">
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
-		</div><a href = "LibPServlet?op=serch&searchbar=1">test</a>
-	</div>
+		</div>
+		</div>
+		<a href = "LibPServlet?op=serch&searchbar=1">test</a>
+		<a href = "LibPServlet?op=test&id=99999999">logintest</a>
+		<c:out value = "${log.id }"/>
 	</div>
 </body>
 </html>
