@@ -6,15 +6,11 @@ import javax.naming.NamingException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import java.io.*;
-import javax.servlet.*;
 import javax.servlet.http.*;
-
 import localhost.lib.pro.*;
 
 /**
@@ -32,37 +28,66 @@ public class LibPServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+	private int getIntFromParameter(String str, int defaultValue) {
+		int number;
+		
+		try {
+			number = Integer.parseInt(str);
+		} catch (Exception e) {
+			number = defaultValue;
+		}
+		return number;
+	}
+	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		//변수선언
 		String op = request.getParameter("op");
 		String id = request.getParameter("id");
+		String sbook = request.getParameter("searchbar");
+		String btype = request.getParameter("btype");
 		String actionUrl = "";
 		boolean ret;
-		
+		int bdnumber = getIntFromParameter(request.getParameter("bdnumber"),-1);
+		//op가 무엇인지에따라 작업.
 		if(op == null){
-			op = "show";
+			op = "index";
 		}
-		
-		//try{
-			if(op == null || op.equals("show")){
+		try{
+			if(op == null || op.equals("index")){//index화면.
+				Showlist<Board> Qboard = LibPDAO.INboard("Q");
+				Showlist<Board> Nboard = LibPDAO.INboard("N");
+				request.setAttribute("Qboard", Qboard);
+				request.setAttribute("Nboard", Nboard);
 				actionUrl = "index.jsp";
-			}else if(op.equals("create")){
-				actionUrl = "index.jsp";
-			}else if(op.equals("remove")){
-				actionUrl = "index.jsp";
+			}else if(op.equals("serch")){//검색
+				/*
+				int page = getIntFromParameter(request.getParameter("page"), 1);
+				Pagelist<Books> Serbook = LibPDAO.Serchbooks(page, 20, sbook);
+				request.setAttribute("Serbook", Serbook);
+				request.setAttribute("page", page);
+				*/
+				Showlist<Books> Serbook = LibPDAO.Serchbook(sbook);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+			}else if(op.equals("boardshow")){//게시판내용
+				
+				Board boardshow = LibPDAO.findByBoard(bdnumber);
+				request.setAttribute("boards", boardshow);
+				actionUrl = "board_show.jsp";
+			}else if(op.equals("board")){//게시판
+				int page = getIntFromParameter(request.getParameter("page"),1);
+				Pagelist<Board> boards = LibPDAO.getBoard(page, 20, btype);
+				request.setAttribute("boards", boards);
+				request.setAttribute("page", page);
+				actionUrl = "board_main.jsp";
+				
 			}
-		
-	/*
-	}catch(SQLException | NamingException e){
-			request.setAttribute("error", e.getMessage());
-			e.printStackTrace();
-			actionUrl = "index.jsp";
+		}catch(SQLException | NamingException e){
 		}
-		*/
-		
 			
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(actionUrl);
@@ -77,81 +102,44 @@ public class LibPServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	 
-	
-	
-	
-	
-	public String testid = "aa";
-	 public String testpw = "1234";
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		//변수선언
 		boolean ret = false;
 		String actionUrl = "";
 		request.setCharacterEncoding("utf-8");
-		String id = request.getParameter("user");
+		String op = request.getParameter("op");
+		String id = request.getParameter("id");
 		String name = request.getParameter("name");
+		String sbook = request.getParameter("searchbar");
+		String pw = request.getParameter("passwd");
 		
+		HttpSession session = request.getSession(false);
+		if(session == null){
+			session = request.getSession();
+		}
 		//test.setId(id);
 		//test.setName(name);
 		
-		//
-		HttpSession session = request.getSession(false);
-		if(session == null)
-		{
-			session = request.getSession();
+		//op가 무엇인지에따라 작업.
+		if(op == null){
+			op = "index";
 		}
-		
-		 String pw = request.getParameter("passwd");
-		 
-		  response.setContentType("text/html;charset=UTF-8");  
-		  PrintWriter out = response.getWriter();
-		  out.println("<HTML><BODY>");
-		  out.println("<B><BR>");
-		  if(testid.equals(id) && testpw.equals(pw))
-		   {
-		   out.println("당신의 아이디는 "+ id + " 입니다.<BR>");
-		   out.println("그리고 당신의 암호는 "+ pw +" 입니다.<BR>");
-		   session.setAttribute("id", id);
-		   session.setAttribute("name", name);
-		   // Cookie[] cookie = request.getCookies();
-		    }
-		  else if(testid.equals(id) && !testpw.equals(pw))
-		   {
-		   out.println("암호가 맞지 않습니다.<BR>");
-		   out.println("<A href=/Login.html>LOGIN</A>");
-		  }
-		  else
-		   {
-		   out.println("당신은 등록되지 않은 사용자 입니다. 다시 로그인 하세요.<BR>");
-		   out.println("<A href=/Login.html>LOGIN</A>");
-		  }
-		  out.println("</B>");
-		  out.println("</BODY></HTML>");
-		  out.close();  
-		 
-
-		//
-		  
-		  
-		  
-		  
-		  
-		  /*
 		try{
-			if(isRegisterMode(request)){
+			if(op == null || op.equals("index")){//index를보여줄때
+				Showlist<Board> Qboard = LibPDAO.INboard("Q");
+				Showlist<Board> Nboard = LibPDAO.INboard("N");
+				request.setAttribute("Qboard", Qboard);
+				request.setAttribute("Nboard", Nboard);
 				actionUrl = "index.jsp";
+			}else if(op.equals("serch")){//검색을하였을때
+				Showlist<Books> Serbook = LibPDAO.Serchbook(sbook);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
 			}
 		}catch(SQLException | NamingException e){
 			actionUrl = "index.jsp";
 		}
-		*/
-		  actionUrl="index.jsp";
-		  if(pw.equals("1234"))
-			{
-				actionUrl="come1.jsp";
-			}
 		//request.setAttribute("errorMsgs",test);
 		RequestDispatcher dispatcher = request.getRequestDispatcher(actionUrl);
 		dispatcher.forward(request, response);

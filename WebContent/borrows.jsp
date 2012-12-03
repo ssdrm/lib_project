@@ -31,7 +31,11 @@
 		 </div>
 
 		</div>
+		<div id="sub">
+			<div id="sub1">&nbsp;&nbsp;대출/예약현황 
+			</div>  
 		
+		</div>
 	
 		<div id="tablebox">
 			<div id="titles">

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="java.util.*"  import="java.sql.*" 
+    import="org.apache.commons.lang3.StringUtils"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -25,7 +26,6 @@
 
 
 	<div id = "wrap">
-	<form action = "" method="post">
 	
 		<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
@@ -42,10 +42,12 @@
 					<div id = "mainserch">
 							
 							<p style="line-height:50%; margin-top:0; margin-bottom:0;"><img src="./img/searchTab1_c.gif"></p>
-
-							<input type="text" class="typetext" id="searchbar">
-							<a href="search_result.html"><img src="img/btn_msearch.gif"></a>
+							<form id="searchForm" action="LibPServlet" method="POST">
+							<input type="text" class="typetext" id="searchbar" name="searchbar">
+							<input type="hidden" name="op" value="serch">
+							<input type="image" alt="검색" src="img/btn_msearch.gif" value="">
 							<a href="search_main.html"><img src="img/btn_searchdetail.gif" height="31px"></a>
+							</form>
 					</div>
 				</div>
 		
@@ -104,7 +106,7 @@
 					<li><span><img src="img/num1.gif"></span>
 						<div>
 							<ul>
-								<li><img src="img/1.gif" width="215px"height="106"></li>
+								<li><img src="img/b1.gif" width="215px"height="106"></li>
 							</ul>
 
 						</div>
@@ -112,7 +114,7 @@
 					<li><span><img src="img/num_2.gif"></span>
 						<div>
 							<ul>
-								<li><img src="img/2.gif" width="215px"height="106"></li>
+								<li><img src="img/b2.gif" width="215px"height="106"></li>
 							</ul>
 
 						</div>
@@ -120,7 +122,7 @@
 					<li><span><img src="img/num_3.gif"></span>
 						<div>
 							<ul>
-								<li><img src="img/3.gif" width="215px"height="106"></li>
+								<li><img src="img/b3.gif" width="215px"height="106"></li>
 							</ul>
 
 						</div>
@@ -128,7 +130,7 @@
 					<li><span><img src="img/num_4.gif"></span>
 						<div>
 							<ul>
-								<li><img src="img/4.gif" width="215px"height="106"></li>
+								<li><img src="img/b4.gif" width="215px"height="106"></li>
 							</ul>
 
 						</div>
@@ -136,7 +138,7 @@
 					<li><span><img src="img/num_5.gif"></span>
 						<div>
 							<ul>
-								<li><img src="img/5.gif" width="215px"height="106"></li>
+								<li><img src="img/b5.gif" width="215px"height="106"></li>
 							</ul>
 
 						</div>
@@ -150,18 +152,18 @@
 					<li><a href="#"><span>공지사항</span></a>
 						<div>
 							<ul>
-								<li><a href="">이런 이런 공지사항</a></li>
-								<li><a href="">이런 이런 공지사항</a></li>
-								<li><a href="">이런 이런 공지사항</a></li>
+								<c:forEach var = "inNboard" items="${Nboard.list }" >
+								<li><a href="LibPServlet?op=boardshow&bdnumber=${inNboard.bdnumber }"><c:out value = "${inNboard.title }"/></a></li>
+								</c:forEach>
 							</ul>
 					  </div>
 					</li>
 					<li><a href="#"><span>QandA</span></a>
 						<div>
 							<ul>
-								<li><a href="">이런 저런 큐엔에이</a></li>
-								<li><a href="">이런 저런 큐엔에이</a></li>
-								<li><a href="">이런 저런 큐엔에이</a></li>
+								<c:forEach var = "inQboard" items="${Qboard.list }" >
+								<li><a href="LibPServlet?op=boardshow&bdnumber=${inQboard.bdnumber }"><c:out value = "${inQboard.title }"/></a></li>
+								</c:forEach>
 							</ul>
 						</div>
 					</li>
@@ -218,8 +220,7 @@
 		</div>
 		<div id = "footer">
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
-		</div>
-		</form>
+		</div><a href = "LibPServlet?op=serch&searchbar=1">test</a>
 	</div>
 </body>
 </html>

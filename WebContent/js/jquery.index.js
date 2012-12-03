@@ -74,8 +74,8 @@ $(function($){
 	$bar.find('li').bind('mouseout focusout',function(){
 		$(this).removeClass('selected');
 	});
-	// 메뉴 끝 
+	// 메뉴 끝 */
 	$("#other_mid li>a:first").click();
-	*/
+	
 	});
 })(jQuery);

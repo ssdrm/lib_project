@@ -18,7 +18,7 @@
 	
 	<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
-	</jsp:include>
+		</jsp:include>
 		
 		
 		<div id="title1">
