@@ -116,6 +116,34 @@
 					</nav>
 				</div>
 				</c:when>
+				<c:otherwise>
+				<div id = "user" style="display:none">
+				사용자모드 나중에 지우거나 다른글로 교체<br><br>
+					<nav id = "usernav">
+						<ul class = "clear">
+							<li class = "focus"><a href="borrows.html">대촐현황 / 연장 </a></li>
+							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li><a href="">현재날짜 / 현재시간</a></li>
+							<li><a href="">개인정보관리</a></li>
+							<li><a href="come1.html">도서관 오는길</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div id = "admin" style="display:none">
+				관리자모드 나중에 지우거나 다른글로 교체<br><br>
+					<nav id = "adminnav">
+						<ul class = "clear">
+							<li class = "focus"><a href="">대출현황조회</a></li>
+							<li><a href="">신청된자료조회</a></li>
+							<li><a href="">도서관리</a></li>
+							<li><a href="">회원관리</a></li>
+							<li><a href="">학생추가 </a></li>
+						</ul>
+					</nav>
+				</div>
+				</c:otherwise>
 				</c:choose>
 			</div>
 		</div>
