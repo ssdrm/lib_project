@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.*"  import="java.sql.*" 
     import="org.apache.commons.lang3.StringUtils"%>
-=======
-﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
->>>>>>> 7782b5242fe871f2f6957c0efd9060782fc100b9
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -14,11 +9,9 @@
 <title>명지대학교 자연캠퍼스 도서관</title>
 <link href = "css/reset.css" rel = "stylesheet" type = "text/css">
 <link href = "css/reset2.css" rel="stylesheet" type = "text/css">
-<link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <link href = "css/index.css" rel = "stylesheet" type = "text/css">
-<link href = "css/set2.css" rel = "stylesheet" type = "text/css">
 <link href = "css/usernavi.css" rel = "stylesheet" type = "text/css">
-
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/modernizr.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.UI.min.js"></script>
@@ -37,7 +30,7 @@
 		<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		<div id="box">
+		
 		<div id = "libmain">
 		
 			<div id = "mainiimage">
@@ -227,13 +220,7 @@
 		</div>
 		<div id = "footer">
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
-<<<<<<< HEAD
 		</div><a href = "LibPServlet?op=serch&searchbar=1">test</a>
-=======
-		</div>
-		</form>
-		</div>
->>>>>>> 7782b5242fe871f2f6957c0efd9060782fc100b9
 	</div>
 </body>
 </html>
