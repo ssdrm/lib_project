@@ -1,31 +1,19 @@
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('0원에서 시작하는 재태크','이선욱','더난출판','2004-01-01','사회과학','31001','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100년의 기회 미래를 잡아라','김태성','리얼북','2008-01-01','사회과학','30002','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100권의 금서','손희승','위즈덤하우스','2000-01-01','사회과학','32003','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100마일의 산책','정준희','북스넛','2007-01-01','사회과학','30004','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100만명 먹여살리기','심상근','도솔','1996-01-01','사회과학','30005','보존자료실');
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100세쇼크','전도근','북포스','2011-01-01','사회과학','30006','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100억짜리 주식 레슨','김원기','한경','2009-01-01','사회과학','30007','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경30년사','환경부','환경부','2010-01-01','사회과학','31008','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경 이슈의 이해','국립환경연구원','국립환경연구원','2004-01-01','사회과학','31009','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('서울의환경','서울시','맑은환경본부','2008-01-01','사회과학','31010','3층사회과학단행본');
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경포럼','환경정책연구원','환경정책연구원','2001-01-01','사회과학','31011','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경을 보다 ','정희석','환경과문명','2012-01-01','사회과학','31012','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('꼭 원자력이어야 하는가','미쯔오','광주','1991-01-01','사회과학','31013','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('지열','에너지공단','북스힐','2008-01-01','사회과학','31014','3층사회과학단행본');
-
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('착한에너지기행','김현우','이매진','2000-01-01','사회과학','31015','3층사회과학단행본');
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('풍력','에너지공단','북스힐','2008-01-01','사회과학','31016','3층사회과학단행본');
