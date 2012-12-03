@@ -12,6 +12,7 @@
 <link href = "css/index.css" rel = "stylesheet" type = "text/css">
 <link href = "css/usernavi.css" rel = "stylesheet" type = "text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<link href = "css/set2.css" rel = "stylesheet" type = "text/css">
 <script src="js/modernizr.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.UI.min.js"></script>
@@ -30,7 +31,7 @@
 		<jsp:include page="share/navi.jsp">
 			<jsp:param name="" value=""/>
 		</jsp:include>
-		
+		<div id="box">
 		<div id = "libmain">
 		
 			<div id = "mainiimage">
@@ -221,6 +222,7 @@
 		<div id = "footer">
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
 		</div><a href = "LibPServlet?op=serch&searchbar=1">test</a>
+	</div>
 	</div>
 </body>
 </html>
