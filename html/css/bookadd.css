@@ -6,7 +6,9 @@
 	width:960px; margin:0 auto;  
 
 }
-#title{width:300px;height:40px;font-size:20px;}
-.size{width:900px;}
-th{width:20px;font-size:20px;font-weight:bold;text-align:center;}
-td{width:100px;}
+#title{width:300px;height:40px;font-size:20px;font-weight:bold;}
+.size{width:960px;}
+th{width:30px;font-size:20px;font-weight:bold;text-align:center;}
+td{width:100px;font-weight:bold;}
+.but{width:100px;height:30px;float:right;}
+
