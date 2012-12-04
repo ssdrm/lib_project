@@ -1,0 +1,17 @@
+
+#wrap
+{
+	width:960px; margin:0 auto;
+
+}
+#text{text-align:center;width:130px;}
+#box{margin-top:130px;}
+
+th{background-color:gainsboro;font-size:16px;font-weight:bold;text-align:center;width:100px;}
+td{text-align:center;font-size:15px;width:200px;}
+
+table{margin-left:1px;border-width:2px;}
+.sub{height:30px;font-size:17px;font-weight:bold;float:right;margin-top:10px;margin-left:5px;}
+.sub1{height:30px;font-size:17px;font-weight:bold;float:right;margin-top:10px;}
+#title{width:210px;height:30px;background-color:gainsboro;font-size:20px;font-weight:bold;text-align:center;
+border:solid;border-width:2px;border-color:gray;margin-bottom:2px;}
