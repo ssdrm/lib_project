@@ -138,7 +138,6 @@ public class LibPServlet extends HttpServlet {
 		String sbook = request.getParameter("searchbar");
 		String pw = request.getParameter("passwd");
 		String login = request.getParameter("login");
-		String Aurl = request.getParameter("Aurl");
 		
 		List<String> errorMsgs = new ArrayList<String>();
 		
@@ -178,7 +177,7 @@ public class LibPServlet extends HttpServlet {
 						session.setAttribute("id",id);
 						session.setAttribute("name", log.getName());
 						session.setAttribute("admintype", log.getAdmintype());
-						actionUrl = Aurl;
+						actionUrl = "index.jsp";
 					}else if(log.getId().equals(id) && !log.getPassword().equals(pw)){
 						errorMsgs.add("비밀번호가 일치하지 않습니다.");
 						actionUrl = "error.jsp";
