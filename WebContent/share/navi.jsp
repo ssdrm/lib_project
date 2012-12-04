@@ -13,8 +13,8 @@
 					</c:when>
 					<c:otherwise>
 						<form name="form" action="LibPServlet" method="post">
-							ID : <input type="text" name="user" value="" id="id" size="10px">
-							PASSWORD : <input type="password" name="passwd"value="" id="password" size="10px">
+							ID : <input type="text" name="user" id="id" size="10px">
+							PASSWORD : <input type="password" name="passwd" id="password" size="10px">
 							<input type="image" alt="login" src="img/btn_login.gif" value="Login" >
 							<input type="hidden" name="Aurl" value="${Aurl }">
 							<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>

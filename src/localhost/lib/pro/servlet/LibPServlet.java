@@ -196,44 +196,52 @@ public class LibPServlet extends HttpServlet {
 		//test.setName(name);
 		
 		//책검색 옵션설정
-		if(dsop1.equals("저자")){
-			dsop1 = "writer";
-		}else if(dsop1.equals("출판사")){
-			dsop1 = "maker";
-		}else if(dsop1.equals("ISBN")){
-			dsop1 = "isbn";
-		}else{
-			dsop1 = "b_name";
+		if(dsop1!=null){
+			if(dsop1.equals("저자")){
+				dsop1 = "writer";
+			}else if(dsop1.equals("출판사")){
+				dsop1 = "maker";
+			}else if(dsop1.equals("ISBN")){
+				dsop1 = "isbn";
+			}else{
+				dsop1 = "b_name";
+			}
 		}
 		
-		if(dsop2.equals("저자")){
-			dsop2 = "writer";
-		}else if(dsop2.equals("출판사")){
-			dsop2 = "maker";
-		}else if(dsop2.equals("ISBN")){
-			dsop2 = "isbn";
-		}else{
-			dsop2 = "b_name";
+		if(dsop2!=null){
+			if(dsop2.equals("저자")){
+				dsop2 = "writer";
+			}else if(dsop2.equals("출판사")){
+				dsop2 = "maker";
+			}else if(dsop2.equals("ISBN")){
+				dsop2 = "isbn";
+			}else{
+				dsop2 = "b_name";
+			}
 		}
 		
-		if(dsop3.equals("저자")){
-			dsop3 = "writer";
-		}else if(dsop3.equals("출판사")){
-			dsop3 = "maker";
-		}else if(dsop3.equals("ISBN")){
-			dsop3 = "isbn";
-		}else{
-			dsop3 = "b_name";
+		if(dsop3!=null){
+			if(dsop3.equals("저자")){
+				dsop3 = "writer";
+			}else if(dsop3.equals("출판사")){
+				dsop3 = "maker";
+			}else if(dsop3.equals("ISBN")){
+				dsop3 = "isbn";
+			}else{
+				dsop3 = "b_name";
+			}
 		}
 		
-		if(dsop4.equals("저자")){
-			dsop4 = "writer";
-		}else if(dsop4.equals("출판사")){
-			dsop4 = "maker";
-		}else if(dsop4.equals("ISBN")){
-			dsop4 = "isbn";
-		}else{
-			dsop4 = "b_name";
+		if(dsop4!=null){
+			if(dsop4.equals("저자")){
+				dsop4 = "writer";
+			}else if(dsop4.equals("출판사")){
+				dsop4 = "maker";
+			}else if(dsop4.equals("ISBN")){
+				dsop4 = "isbn";
+			}else{
+				dsop4 = "b_name";
+			}
 		}
 		//책검색을 받지않으면 옵션도없앰.
 		if(dsops2==""){
