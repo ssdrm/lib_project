@@ -1,0 +1,35 @@
+('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1000가지 설득비법', '신강균','컴온북스','2008-01-01','응용과학','60001','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경 사회학 : 환경·에너지·사회','양종회','사회비평사','1995-01-01','응용과학','61002','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(21세기 녹색세상을 위한)인간과 환경','이수장,박영숙','경인문화사','2001-01-01','응용과학','61003','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('인간과 환경의 문명사','서미석','한길사','2006-01-01','응용과학','61004','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Environmentalism : environmental strategies and environmental sustainability 'Kahraman, Elias. ','New York : Nova Science Publishers,','2010-01-01','응용과학','61005','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('생태혁명 : 지구와 평화롭게 지내기','박종일','인간사랑','2010-01-01','응용과학','61006','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('다윈의 대답','최재천','이음','2011-01-01','응용과학','62007','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('프로메테우스의 불 : 마음은 어떻게 발생하고 진화하는가?','김성한','아카넷','2010-01-01','응용과학','60008','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('생명의 해방 : 세포에서 공동체까지','양재섭','나남','2010-01-01','응용과학','61009','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기 환경의 역사','홍옥희','에코리브리','2008-01-01','응용과학','61010','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('다른 세계를 요구한다 : 21세기의 두 번째 10년, 우리는 어디로 가고 있는가?','예란 테르보른','홍시','2011-01-01','응용과학','61011','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('머레이 북친의 사회적 생태론과 코뮌주의','서유석','메이데이','2012-01-01','응용과학','60012','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('자연의 종말','진우기','양문','2005-01-01','응용과학','61013','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The death of nature : women, ecology, and the scientific revolution ','Carolyn Merchant.','San Francisco','1976-01-01','응용과학','61014','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('미국의 자연관 변천과 생태의식','신문수','서울대학교출판문화원','2010-01-01','응용과학','61015','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('작고 위대한 소리들','데릭젠슨','실천문학','2010-01-01','응용과학','62016','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('인간 없는 세상 ','앨런와이즈먼','랜덤하우스','2007-01-01','응용과학','60017','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('인간 본성과 사회생물학','김성한','궁리','2007-01-01-','응용과학','60018','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100살 자신있다','김상문','상문각','2004-01-01','응용과학','60019','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100세 인생도 건강해야 축복이다','라시드 부타르','라이프맵','2012-01-01','응용과학','60020','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Adobe InDesign CS2','남주헌','미학사','2006-01-01','응용과학','63021','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('그래픽 디자인의 역사','필립B','월간디자인','1997-01-01','63022','응용과학','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(컴퓨터)캐릭터 애니메이션 만들기','오상식','일진사','2000-01-01','63023','응용과학','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(실무에서 바로 써먹는) QuarkXPress로 책 만들기','최설란','대림','2009-01-01','63024','응용과학','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Character Creator : For Artists and Designers','강세건','헬로우케릭터연구소','2000-01-01','응용과학','63025','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('책 잘 만드는 편집 레이아웃 디자인 : QuarkXPress 4.X ','박연조','영진.COM','2003-01-01','응용과학','63026'.'3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('책 잘 만드는 편집 레이아웃 디자인 : QuarkXPress 4.X ','박연조','영진.COM','2003-01-01','응용과학','63026'.'3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('북바인딩 = Bookbinding : 책 잘 만드는 제책','김진섭','두성','2008-01-01','응용과학','63027','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('북바인딩 = Bookbinding : 책 잘 만드는 제책','김진섭','두성','2008-01-01','응용과학','63027','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('북바인딩 = Bookbinding : 책 잘 만드는 제책','김진섭','두성','2008-01-01','응용과학','63027','3층인문예술단행본');

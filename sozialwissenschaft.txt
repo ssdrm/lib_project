@@ -1,0 +1,103 @@
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('0원에서 시작하는 재태크','이선욱','더난출판','2004-01-01','사회과학','31001','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100년의 기회 미래를 잡아라','김태성','리얼북','2008-01-01','사회과학','30002','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100권의 금서','손희승','위즈덤하우스','2000-01-01','사회과학','32003','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100마일의 산책','정준희','북스넛','2007-01-01','사회과학','30004','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100만명 먹여살리기','심상근','도솔','1996-01-01','사회과학','30005','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100세쇼크','전도근','북포스','2011-01-01','사회과학','30006','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100억짜리 주식 레슨','김원기','한경','2009-01-01','사회과학','30007','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경30년사','환경부','환경부','2010-01-01','사회과학','31008','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경 이슈의 이해','국립환경연구원','국립환경연구원','2004-01-01','사회과학','31009','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('서울의환경','서울시','맑은환경본부','2008-01-01','사회과학','31010','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경포럼','환경정책연구원','환경정책연구원','2001-01-01','사회과학','31011','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('환경을 보다 ','정희석','환경과문명','2012-01-01','사회과학','31012','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('꼭 원자력이어야 하는가','미쯔오','광주','1991-01-01','사회과학','31013','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('지열','에너지공단','북스힐','2008-01-01','사회과학','31014','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('착한에너지기행','김현우','이매진','2000-01-01','사회과학','31015','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('풍력','에너지공단','북스힐','2008-01-01','사회과학','31016','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('에너지진단 원론','손학식','한국에너지정보센터','2008-01-01','사회과학','31017','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('에너지소사이어티','이동헌','동아시아','2009-01-01','사회과학','31018','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('에너지의 미래','페터그루스','에코리브르','2010-01-01','사회과학','31019','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('에너지 개론','김학준','경남대출판부','2004-01-01','사회과학','31020','보존서고');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('17세기무관옷이야기','이은주','민속원','2005-01-01','사회과학','34021','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기 국제매너','지철규','해난터','1995-01-01','사회과학','34022','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('145년만귀환 외규장각 의궤','국립중앙박물관','국립중앙박물관','2011-01-01','사회과학','34023','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10대자녀와 대화법','오시카와','혜문서관','2005-01-01','사회과학','30024','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10분공부법','정은기','파라북스','2005-01-01','사회과학','30025','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10억모은 부자의 가르침','이동은','지상사','2000-01-01','사회과학','30026','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10일만의 배우는 경제학','김경훈','새로운사람들','1995-01-01','사회과학','30027','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10초내에 승부하라','전경일','매일경제','2003-01-01','사회과학','30028','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('119가지 길','한영수','한솜미디어','2008-01-01','사회과학','31029','3층사회과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('13살내꿈을 잡아라','한선정','조선book','2009-01-01','사회과학','30030','3층인문예술단행본');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1952년','이건호','수도문화사','1952-01-01','사회과학','30031','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1955년','김윤기','원호순보사','1954-01-01','사회과학','30032','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20th century britain','allen','rockliff','1958-01-01','사회과학','30033','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The america economic system','welier','Emanuel','1909-01-01','사회과학','30034','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1966년도 사업보고','상공회의소','상공회의소','1966-01-01','사회과학','30035','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기의 정부와정치','카터','사상문화사','1962-01-01','사회과학','30036','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1999년에 만납시다','윤은기','무한','1950-01-01','사회과학','30037','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Adam smith','Hutchins','Encyclopaedia','1954-01-01','사회과학','30038','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('administerning community','Melby','prentice-hall','1954-01-01','사회과학','30039','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('adult deucation','kempter','mcgraw book','1955-01-01','사회과학','30040','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('the ameran goverment','osborne','crewell','1955-01-01','사회과학','30041','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Ameran national government','john claudius','crowell','1955-01-01','사회과학','30042','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('American diplomacy','Ferrell','Norton','1959-01-01','사회과학','30043','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The america family','cavan','New york','1953-01-01','사회과학','30044','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('American National goverment','claudius','crowell','1984-01-01','사회과학','30045','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('American public education','chris','mcgraw_book','1950-01-01','사회과학','30046','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The american school','william','prentice-hall','1955-01-01','사회과학','30047','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('American society','luke','mcgraw-hill','1955-01-01','사회과학','30048','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Ameican strategy in the atomic','george','oklahoma press','1955-01-01','사회과학','30049','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The american system of governments','henry','mcgraw-hill','1956-01-01','사회과학','30050','보존자료실');
+
+
+

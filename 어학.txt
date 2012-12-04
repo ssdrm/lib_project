@@ -1,0 +1,34 @@
+('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('0.1초만에 팍팍 터지는 영어','편집부','청설모','2000-01-01','어학','40001','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('10년 배운 영문법 10시간에 끝내기', '도전일','YBM','2012-01-01','어학','40002','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('119 독해 비법', '이성환', '유피출판사', '1998-01-01', '어학', '40003','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('영어학의 최근 논점', '이봉형,이동국', '한국문화사', '2005-01-01','어학', '40004','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('100퍼센트 활용 영어회화 : 100시간에 영어 회화를 정복한다','Kim Michael','랭컴','2000-01-01','어학','40005','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('네이티브는 쉬운 영어로 말한다', '오석태','길벗이지톡', '2008-01-01','어학','40006','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('엘리트 영어 따라잡기백악관 영어 백서', '강홍식','이지북' ,'2010-01-01','어학','40007','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('CNN 영어리듬 [미국식 발음] 따라잡기','강홍식','종합출판','2005-01-01','어학','40008','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('미드영어 단숨에 따라잡기', '이앤시','멘토스','2008-01-01','어학','40009','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('자기표현 영어 : my English ','홍준희','소학사','1999-01-01','어학',40010','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('(뉴요커 린다의) 뉴욕 스타일 영어 ','Behk, Lynda' , '넥서스','2010-01-01','어학','40011','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('(영어 낭독 훈련)Tale tell : 동화 요약해서 말하기' ,'박광희','사람인','2011-01-01','어학','40012','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('영어회화 모질게 끝내기 : 스피킹 핵심 문형 120','홍정윤','북이십일','2010-01-01','어학','40013','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('처음 가는 런던 : 영국 영어 회화 입문 ','Belton', '비타민북','2010-01-01','어학','40014','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('영어 말하기 무한도전','이창열' ,'앱투스미디어','2008-01-01','어학','40015','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('영단어 돌파구','이창열','앱투스미디어','2010-01-01','어학','40016','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('미국을 모르면 영어도 없다','앱투스미디어','2008-01-01','어학','40017','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('(단어의 원리를 깨치는)영어단어 까부수기' ,'정승주' ,'매일출판','2001-01-01','어학','40018','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('TOEIC 터미네이터 : reading','최종민','시사영어사','1999-01-01-','어학','40019','428.076 -24');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('김대균 TOEIC 최신 기출 +α모의고사5 ','김대균','ybmsisa','2005-01-01','어학' ,'40020','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('김대균 TOEIC 최신 기출 +α모의고사4 ','김대균','ybmsisa','2005-01-01','어학' ,'40021','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('김대균 TOEIC 최신 기출 +α모의고사3 ','김대균','ybmsisa','2005-01-01','어학' ,'40022','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('김대균 TOEIC 최신 기출 +α모의고사2 ','김대균','ybmsisa','2005-01-01','어학' ,'40023','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('김대균 TOEIC 최신 기출 +α모의고사1 ','김대균','ybmsisa','2005-01-01','어학' ,'40024','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('TOEIC, 답이 보이는 모의고사 2: 해설집','김대균','ybmsisa','2000-01-01','어학','40025','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('TOEIC, 답이 보이는 모의고사 5 : 해설집','김대균','ybmsisa','2003-01-01-','어학','40026','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 1','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40027','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 1','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40027','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 2','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40028','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 2','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40028','3층인문예술단행본');

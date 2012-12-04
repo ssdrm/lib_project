@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>통합검색</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/reset2.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css"> 
+<link href = "css/share.css" rel = "stylesheet" type = "text/css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
+
+</head>
+
+<body>
+<div id="wrap">
+	
+	
+		<div id = "header">
+			<div id = "header_left">
+				<a href=""><img src="img/logo.gif" alt="logo"></a>
+			</div>
+			<div id = "header_right">
+				
+				<input type="text" value="ID" id="id" size="10px">
+				<input type="password" value="1234" id="password" size="10px">
+				<a href=""><img src="img/btn_login.gif" alt="login"></a>
+				<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+			</div>
+		</div>
+		<div id = "line1">
+		</div>
+		
+		<div id = "navibar">
+				
+			<ul>
+				<li><a href=""><span>자료검색</span></a>
+					<div>
+						<ol>
+							<li class="first"><a href="search_main.jsp">통합검색</a></li>
+							<li><a href="search_serial.jsp">연속간행물</a></li>
+							<li><a href="search_old.jsp">고서</a></li>
+							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>
+						</ol>
+					</div>
+				</li>
+					
+				<li><a href=""><span>도서관 서비스</span></a> 
+					<div>
+						<ol>
+							<li class="first"><a href="data_intro.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrow_intro.jsp">대출현황조회/연장</a></li>
+							<li class="last"><a href="reserve_intro.jsp">도서예약</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>알림마당</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="">공지사항</a></li>
+							<li class="last"><a href="">질의응답</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>도서관 이용안내</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="intro1.htm">도서관 소개</a></li>
+							<li class="last"><a href="come1.jsp">도서관 오는길</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>마이페이지</span></a>
+					<div>
+						<ol>
+					 		<li class="first"><a href="individual_info.jsp">개인정보관리</a></li>
+							<li><a href="data_application.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrows.jsp">대출현황조회/연장</a></li>
+							<li><a href="individual.jsp">개인연락사항</a></li>
+							<li class="last"><a href="">검색 히스토리</a></li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	<div id="form">
+	<div id="title">통합검색</div>
+			
+		<div id="box">
+			<div id="search">
+				<ul>
+					<li><a href="">&nbsp;&nbsp;&nbsp;키워드&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">&nbsp;&nbsp;전방일치&nbsp;&nbsp;</a>
+					</li> 
+					<li><a href="">&nbsp;완전일치&nbsp; </a>
+					</li>
+				</div>
+		<form action="#" method= "post">
+		<table >
+			
+				<tr>
+					<td>
+						<select >				
+								<option>서명
+								<option>저자 
+									<option>출판사 
+										<option>ISBN
+										</select>
+											&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+											&nbsp;&nbsp;&nbsp;
+										<select>
+											<option>and 
+												<option>or
+												</select>
+									</td>
+								</tr>
+								<tr>
+					<td>
+						<select>
+							<option>저자
+								<option>서명  
+									<option>출판사 
+										<option>ISBN
+										</select>
+											&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+											&nbsp;&nbsp;&nbsp;
+										<select>
+											<option>and 
+												<option>or
+												</select>
+									</td>
+								</tr>
+								<tr>
+					<td>
+						<select >
+							<option>출판사 
+								<option>서명 
+									<option>저자  
+										<option>ISBN
+										</select>
+											&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+											&nbsp;&nbsp;&nbsp;
+										<select>
+											<option>and 
+												<option>or
+												</select>
+									</td>
+								</tr>
+								<tr>
+					<td>
+						<select >
+							<option>ISBN 
+								<option>서명  
+									<option>저자  
+										<option>출판사 
+										</select>
+										&nbsp;&nbsp;&nbsp;
+										<input type=text size="70">
+									
+										
+									</td>
+								</tr>
+							
+						</table>
+						</form>
+						<div id="chekm">
+						분류 
+							<input type="checkbox" class="chek">총류 
+							<input type="checkbox" class="chek">철학  
+							<input type="checkbox" class="chek">종교 
+							<input type="checkbox" class="chek">사회과학  
+							<input type="checkbox" class="chek">어학 
+							<input type="checkbox" class="chek">자연과학 
+							<input type="checkbox" class="chek">응용과학 
+							<input type="checkbox" class="chek">예술	 
+							<input type="checkbox" class="chek">문학 
+							<input type="checkbox" class="chek">역사 
+
+					</div> 
+					<div id="number">
+						발행년
+						<input type=text size="7">ㅡ
+						<input type=text size="7">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;쪽당 출력 건수 
+						<select id="select1">
+							<option>10
+							<option>9
+								<option>8
+									<option>7
+										<option>6
+											<option>5
+												<option>4
+													<option>3
+														<option>2
+															<option>1
+															</select>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;최대검색권수 
+							<select id="select2">
+							<option>500
+							<option>400
+							<option>300
+							<option>200
+							<option>100
+							</select>
+							</div>
+							<div id="butt">
+								<div id="but">
+	<div class="button">
+		<div class="light"></div>
+		검색 
+		
+	</div>
+	<div class="button">
+		<div class="light"></div>
+		나의History
+	</div>
+</div>
+							</div>
+
+	</div>
+	
+</div>
+</div>
+
+
+
+
+</body>
+</html>

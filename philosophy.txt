@@ -1,0 +1,97 @@
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100년의 교제술','유진상','스타북스','2008-01-01','철학','12001','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100억짜리 생각','박종안','위즈덤하우스','2011-01-01','철학','12002','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100퍼센트를 살아라','변경욱','나무심는사람들','2004-01-01','철학','12003','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('100퍼센트를 살아라','변경욱','나무심는사람들','2004-01-01','철학','12003','3층인문예
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('로버트쿠퍼의인생경영','윤영호','세종서적','2002-01-01','철학','12004','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('명품 인생을 만드는 10년법칙','공병호','21세기북스','2006-01-01','철학','10005','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10대를 위한 성공습관','김옥림','메가트랜드','2008-01-01','철학','10006','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10일안에 변신하기','맹화림','예문','2006-01-01','철학','10007','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10초만에 사로잡는 대화','카나이히데유키','마음향기','2008-01-01','철학','10008','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('14살 그때 꿈이 나를 움직였다','최정화','다산북스','2008-01-01','철학','10009','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('14살 그때 꿈이 나를 움직였다','최정화','다산북스','2008-01-01','철학','10009','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('15분마다 팬을 들어라','상명일앙','불광','2008-01-01','철학','10010','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('14살철학소년','김보일','북멘토','2008-01-01','철학','12011','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('17살인생의 승부가 시작된다','류용','추수밭','2006-01-01','철학','12012','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('18시간 몰입의 법칙','이지성','맑은소리','2005-01-01','철학','10013','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1년만 확실히 미쳐라','이철한','포스트인하우스','2009-01-01','철학','10014','2층기술과학단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1% 다르게','김영안','영진닷컴','2008-01-01','철학','12015','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1분 문제해결','버로우즈.H','청림출판사','1988-01-01','철학','10016','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1분으로 인생을 바꿔라','서은경','무한','2001-01-01','철학','10017','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1분의 지혜','고진하','꿈꾸는돌','2004-01-01','철학','10018','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1분 자기혁명','김상태','청림출판','1994-01-01','철학','10019','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1지망인생','고철종','다산북스','2009-01-01','철학','12020','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대심리학','곽금주','랜덤하우스','2008-01-01','철학','10021','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대에 꼭 해야할일 46가지','박기현','새론북스','2005-01-01','철학','12022','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대에 시작해야 성공한다','송영목','오리진','1999-01-01','철학','10023','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대여성 당신이 할수 있는일','전환미','영림카디널','2003-01-01','철학','10024','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20대 플러스 사고습관 88','사다오','하서','1999-01-01','철학','10025','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('20세기의 철학자들','신일철','서광사','1971-01-01','철학','10026','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('21세기의 직업윤리','김정기','학운사','2000-01-01','철학','10027','3층인문예술단행본');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('2막','조영희','명진','2003-01-01','철학','10028,'보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3040 성공 마인드 전략','김범례','브라운힐','2007-01-01','철학','12029','3층인문예술단행본');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('30초 성공학','용혜원','민예원','2001-01-01','철학','10030','3층인문예술단행본');
+
+
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('손자병법','남일성','현암사','1951-01-01','철학','10031','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('소크라테스의 변명','Plato','홍익문화사','1958-01-01','철학','10032','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('한국 사상사','김득황','남산당','1958-01-01','철학','10033','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('퇴계전서','이황','현암사','1958-01-01','철학','10034','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Great philosophers','Warner,Rex','mentor Book','1958-01-01','철학','10035','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The analects of Confucius','Waley','Allen','1956-01-01','철학','10036','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('The greek philosophers','rex','mentor Book','1958-01-01','철학','10037','2층기술과학단행본');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('논어신역','이가원','통문용','1956-01-01','철학','10038','보존자료실');
+
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('platonics opera','platonis','oxford','1950-01-01','철학','10039','보존자료실');
+
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Also sprach zarathustra','nietzsche','garamond','1958-01-01','철학','10040','보존자료실');
+
