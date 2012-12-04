@@ -34,9 +34,9 @@ A:hover {
 </head>
 <body>
     <div id="wrap">
-    <jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+    	<jsp:include page="share/navi.jsp">
+				<jsp:param name="Aurl" value = "data_application.jsp"/>
+			</jsp:include>
         <div id="box">
     <DIV id="pop_title">
         <p align="center">

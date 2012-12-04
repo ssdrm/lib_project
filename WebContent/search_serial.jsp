@@ -21,8 +21,8 @@
 <div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+		<jsp:param name="Aurl" value = "search_serial.jsp"/>
+	</jsp:include>
 		
 
 	<div id="form">

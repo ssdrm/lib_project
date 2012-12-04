@@ -1,8 +1,8 @@
 @CHARSET "UTF-8";
 #user, #admin{
 	width:900px;
-	margin:30px auto;
-	padding:3em;
+	margin:5px auto;
+	padding:2.5em;
 	background:#fff;
 	box-shadow : 0px 0px 2px #62615f inset; /*박스에 그림자를 안쪽 방향으로 설정*/
 		-webkit-box-shadow:0px 0px 2px #62615f insert;
@@ -14,7 +14,7 @@
 }
 
 #usernav, #adminnav{
-	padding:3px;
+	padding:1px;
 }
 
 #usernav li, #adminnav li{

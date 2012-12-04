@@ -26,7 +26,7 @@
 <body>
 	<div id="wrap">
 		<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
+			<jsp:param name="Aurl" value = "individual_info.jsp"/>
 		</jsp:include>
 	<form action="#" method="post">
 		<table>

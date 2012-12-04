@@ -18,8 +18,8 @@
 <body>
 	<div id="wrap">
 	
-			<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
+		<jsp:include page="share/navi.jsp">
+			<jsp:param name="Aurl" value = "borrows.jsp"/>
 		</jsp:include>
 	
 		<div id="title">

@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/reset2.css" rel="stylesheet" type="text/css">
-<link href="css/board.css" rel="stylesheet" type="text/css">
+<link href="css/board1.css" rel="stylesheet" type="text/css">
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
@@ -17,7 +17,7 @@
 <body>
 <div id="wrap">
 	<jsp:include page="share/navi.jsp">
-		<jsp:param name="" value=""/>
+		<jsp:param name="Aurl" value = "board_main.jsp"/>
 	</jsp:include>
 <table>
 <tr>

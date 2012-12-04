@@ -20,9 +20,9 @@
 
 	<div id="wrap">
 
-		<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value="" />
-		</jsp:include>
+	<jsp:include page="share/navi.jsp">
+		<jsp:param name="Aurl" value = "search_result.jsp"/>
+	</jsp:include>
 
 		<div class="title">검색결과</div>
 		<div id="rebox">

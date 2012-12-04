@@ -20,8 +20,8 @@
 <div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+		<jsp:param name="Aurl" value = "search_old.jsp"/>
+	</jsp:include>
 		
 
 	<div id="form">

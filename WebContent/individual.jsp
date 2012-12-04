@@ -21,9 +21,9 @@
 <script src="js/jquery.share.js"></script>
 </head>
 <div id="wrap">
-<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+	<jsp:include page="share/navi.jsp">
+		<jsp:param name="Aurl" value = "individual.jsp"/>
+	</jsp:include>
 	<table class="box">
 		<tr>
 		<th>

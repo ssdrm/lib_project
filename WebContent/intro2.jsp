@@ -22,9 +22,9 @@
 <body>
 <div id="wrap">
 
-<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+	<jsp:include page="share/navi.jsp">
+		<jsp:param name="Aurl" value = "intro2.jsp"/>
+	</jsp:include>
 		
 <div id="box">		
 <p align="center"><A href="intro1.htm"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7_over.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
