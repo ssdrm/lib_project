@@ -217,7 +217,7 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Also sprach zarathustra','nietzsche','garamond','1958-01-01','철학','10040','보존자료실');
 
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('0.1초만에 팍팍 터지는 영어','편집부','청설모','2000-01-01','어학','40001','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('10년 배운 영문법 10시간에 끝내기', '도전일','YBM','2012-01-01','어학','40002','3층인문예술단행본');
@@ -250,7 +250,7 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 2','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40028','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES ('해커스 토익 실전 1000제 reading, 2','해커스 어학연구소','해커스 어학연구소','2010-01-01-','어학','40028','3층인문예술단행본');
 
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(밴드 테라피, 기적의 10분) 0.0069 ','최익성','RJ company','2011-01-01','예술','70001','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('철인3종경기','한기식','삼호미디어','2000-01-01','예술','70002','796.4257 -1t');
@@ -284,7 +284,7 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('비디오 예술론 = Video Art','이용우','문예마당','2000-01-01','예술','70028','3층인문예술단행본');
 
 
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
+
 
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(당신이 모르는 줄도 모르는) 100가지 수학 이야기','전대호','마젤란','2010-01-01','자연과학','50001','3층인문예술단행본');
@@ -624,10 +624,6 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('최후의 베두인','모명숙','풀빛','2004-01-01','역사','90026','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('배우 최종원 세상 끝 말리를 가다','최종원','지식채널','2008-01-01','역사','90027','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('배우 최종원 세상 끝 말리를 가다','최종원','지식채널','2008-01-01','역사','90027','3층인문예술단행본');
-
-('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
-
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
 
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('1000가지 설득비법', '신강균','컴온북스','2008-01-01','응용과학','60001','3층인문예술단행본');
