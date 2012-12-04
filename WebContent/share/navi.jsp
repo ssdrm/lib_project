@@ -29,10 +29,10 @@
 		<div id = "navibar">
 				
 			<ul>
-				<li><a href=""><span>자료검색</span></a>
+				<li><a href="LibPServlet?op=key"><span>자료검색</span></a>
 					<div>
 						<ol>
-							<li class="first"><a href="search_main.jsp">통합검색</a></li>
+							<li class="first"><a href="LibPServlet?op=key">통합검색</a></li>
 							<li><a href="search_serial.jsp">연속간행물</a></li>
 							<li><a href="search_old.jsp">고서</a></li>
 							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>

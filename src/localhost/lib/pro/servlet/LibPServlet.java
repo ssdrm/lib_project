@@ -52,6 +52,11 @@ public class LibPServlet extends HttpServlet {
 		String btype = request.getParameter("btype");
 		String actionUrl = "";
 		String Aurl = request.getParameter("Aurl");
+		
+		String cla = request.getParameter("cla");
+		String clb = request.getParameter("clb");
+		String clc = request.getParameter("clc");
+		
 		boolean ret;
 		int bdnumber = getIntFromParameter(request.getParameter("bdnumber"),-1);
 		
@@ -91,7 +96,6 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("boards", boards);
 				request.setAttribute("page", page);
 				actionUrl = "board_main.jsp";
-				
 			}else if(op.equals("logout")){//로그아웃.
 				session.invalidate();
 				Showlist<Board> Qboard = LibPDAO.INboard("Q");
@@ -99,6 +103,18 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("Qboard", Qboard);
 				request.setAttribute("Nboard", Nboard);
 				actionUrl = Aurl;
+			}else if(op.equals("key")){
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_main.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_main.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_main.jsp";
+				}
 			}
 			/*
 			else if(op.equals("test")){
@@ -130,6 +146,7 @@ public class LibPServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//변수선언
 		boolean ret = false;
+		int i;
 		String actionUrl = "";
 		request.setCharacterEncoding("utf-8");
 		String op = request.getParameter("op");
@@ -139,6 +156,36 @@ public class LibPServlet extends HttpServlet {
 		String pw = request.getParameter("passwd");
 		String login = request.getParameter("login");
 		
+		/////////검색
+		//option
+		String dsop1 = request.getParameter("dsop1");
+		String dsop2 = request.getParameter("dsop2");
+		String dsop20 = request.getParameter("dsop20");
+		String dsop3 = request.getParameter("dsop3");
+		String dsop30 = request.getParameter("dsop30");
+		String dsop4 = request.getParameter("dsop4");
+		String dsop40 = request.getParameter("dsop40");
+		String skey1 = request.getParameter("skey1");
+		String skey2 = request.getParameter("skey2");
+		String skey3 = request.getParameter("skey3");
+		//input
+		String dsops1 = request.getParameter("dsops1");
+		String dsops2 = request.getParameter("dsops2");
+		String dsops3 = request.getParameter("dsops3");
+		String dsops4 = request.getParameter("dsops4");
+		//category
+		String category = request.getParameter("category");
+		String cate0 = request.getParameter("cate0");
+		String cate1 = request.getParameter("cate1");
+		String cate2 = request.getParameter("cate2");
+		String cate3 = request.getParameter("cate3");
+		String cate4 = request.getParameter("cate4");
+		String cate5 = request.getParameter("cate5");
+		String cate6 = request.getParameter("cate6");
+		String cate7 = request.getParameter("cate7");
+		String cate8 = request.getParameter("cate8");
+		String cate9 = request.getParameter("cate9");
+		
 		List<String> errorMsgs = new ArrayList<String>();
 		
 		HttpSession session = request.getSession(false);
@@ -147,6 +194,57 @@ public class LibPServlet extends HttpServlet {
 		}
 		//test.setId(id);
 		//test.setName(name);
+		
+		//책검색 옵션설정
+		if(dsop1.equals("저자")){
+			dsop1 = "writer";
+		}else if(dsop1.equals("출판사")){
+			dsop1 = "maker";
+		}else if(dsop1.equals("ISBN")){
+			dsop1 = "isbn";
+		}else{
+			dsop1 = "b_name";
+		}
+		
+		if(dsop2.equals("저자")){
+			dsop2 = "writer";
+		}else if(dsop2.equals("출판사")){
+			dsop2 = "maker";
+		}else if(dsop2.equals("ISBN")){
+			dsop2 = "isbn";
+		}else{
+			dsop2 = "b_name";
+		}
+		
+		if(dsop3.equals("저자")){
+			dsop3 = "writer";
+		}else if(dsop3.equals("출판사")){
+			dsop3 = "maker";
+		}else if(dsop3.equals("ISBN")){
+			dsop3 = "isbn";
+		}else{
+			dsop3 = "b_name";
+		}
+		
+		if(dsop4.equals("저자")){
+			dsop4 = "writer";
+		}else if(dsop4.equals("출판사")){
+			dsop4 = "maker";
+		}else if(dsop4.equals("ISBN")){
+			dsop4 = "isbn";
+		}else{
+			dsop4 = "b_name";
+		}
+		//책검색을 받지않으면 옵션도없앰.
+		if(dsops2==""){
+			dsop20 = "or";
+		}
+		if(dsops3==""){
+			dsop30 = "or";
+		}
+		if(dsops4==""){
+			dsop40 = "or";
+		}
 		
 		//op가 무엇인지에따라 작업.
 		if(op == null){
@@ -164,6 +262,37 @@ public class LibPServlet extends HttpServlet {
 				Showlist<Books> Serbook = LibPDAO.Serchbook(sbook);
 				request.setAttribute("Serbook", Serbook);
 				actionUrl = "search_result.jsp";
+			}else if(op.equals("deserch")){
+				/*
+				request.setAttribute("dsop1",dsop1 );
+				request.setAttribute("dsop2",dsop2 );
+				request.setAttribute("dsop3",dsop3 );
+				request.setAttribute("dsop4",dsop4 );
+				request.setAttribute("dsop20",dsop20 );
+				request.setAttribute("dsop30",dsop30 );
+				request.setAttribute("dsop40",dsop40 );
+				request.setAttribute("category",category );
+				request.setAttribute("cate0",cate0 );
+				request.setAttribute("cate1",cate1 );
+				request.setAttribute("cate2",cate2 );
+				request.setAttribute("cate3",cate3 );
+				request.setAttribute("cate4",cate4 );
+				request.setAttribute("cate5",cate5 );
+				request.setAttribute("cate6",cate6 );
+				request.setAttribute("cate7",cate7 );
+				request.setAttribute("cate8",cate8 );
+				request.setAttribute("cate9",cate9 );
+				request.setAttribute("dsops1",dsops1 );
+				request.setAttribute("dsops2",dsops2 );
+				request.setAttribute("dsops3",dsops3 );
+				request.setAttribute("dsops4",dsops4 );
+				*/
+				
+				Showlist<Books> Serbook = LibPDAO.DeSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2, dsop30, dsop3, dsops3, dsop40, dsop4, dsops4, cate0, cate1, cate2, cate3, cate4, cate5, cate6, cate7, cate8, cate9);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+				
+				//actionUrl = "test.jsp";
 			}
 			
 			if(id!=null){

@@ -292,7 +292,87 @@ public static Showlist<Books> Serchbook(String sbook) throws NamingException, SQ
 }
 
 
+//////////////////////////////////////////////////////////////////////한페이지 상세책찾기
+public static Showlist<Books> DeSerchbook(String skey1, String skey2, String skey3,
+		String dsop1, String dsops1, String dsop20,
+		String dsop2, String dsops2, String dsop30, String dsop3,
+		String dsops3, String dsop40, String dsop4, String dsops4,
+		String cate0, String cate1, String cate2, String cate3, String cate4, String cate5,
+		String cate6, String cate7, String cate8, String cate9) throws NamingException, SQLException {
+	Connection conn = null;
+	PreparedStatement stmt = null;
+	ResultSet rs = null;
+	String cateop;
+	if(cate0==null && cate1==null && cate2==null && cate3==null && cate4==null && cate5==null && cate6==null && cate7==null && cate8==null && cate9==null){
+		cateop = "or";
+	}else{
+		cateop = "and";
+	}
+	if(skey1.equals("m")){
+		if(dsops2==""){
+			dsop20 = "and";
+		}
+		if(dsops3==""){
+			dsop30 = "and";
+		}
+		if(dsops4==""){
+			dsop40 = "and";
+		}
+		dsops1 = "%" + dsops1 + "%";
+		dsops2 = "%" + dsops2 + "%";
+		dsops3 = "%" + dsops3 + "%";
+		dsops4 = "%" + dsops4 + "%";
+	}else if(skey2.equals("m")){
+		if(dsops2==""){
+			dsop20 = "and";
+		}
+		if(dsops3==""){
+			dsop30 = "and";
+		}
+		if(dsops4==""){
+			dsop40 = "and";
+		}
+		dsops1 = dsops1 + "%";
+		dsops2 = dsops2 + "%";
+		dsops3 = dsops3 + "%";
+		dsops4 = dsops4 + "%";
+	}
+	DataSource ds = getDataSource();
+	Showlist<Books> result = new Showlist<Books>();
+	try {
+		conn = ds.getConnection();
+		stmt = conn.prepareStatement("select * from books where " + dsop1 + " like ? "+ dsop20 + " " + dsop2 + " like ? " + dsop30  + " " + dsop3 + " like ? " + dsop40 + " " + dsop4 + " like ? " + cateop + " (category = ? or category = ? or category = ? or category = ? or category = ? or category = ? or category = ? or category = ? or category = ? or category = ?)");
+		stmt.setString(1, dsops1);
+		stmt.setString(2, dsops2);
+		stmt.setString(3, dsops3);
+		stmt.setString(4, dsops4);
+		stmt.setString(5, cate0);
+		stmt.setString(6, cate1);
+		stmt.setString(7, cate2);
+		stmt.setString(8, cate3);
+		stmt.setString(9, cate4);
+		stmt.setString(10, cate5);
+		stmt.setString(11, cate6);
+		stmt.setString(12, cate7);
+		stmt.setString(13, cate8);
+		stmt.setString(14, cate9);
 
+		rs = stmt.executeQuery();
+
+		while (rs.next()) {
+			result.getList().add(
+					new Books(rs.getInt("b_number"), rs.getString("b_name"),
+							rs.getString("writer"),rs.getString("maker"), rs.getDate("b_date"),
+							rs.getString("category"), rs.getInt("isbn"), rs.getString("location")));
+		}
+	} finally {
+		if (rs != null)	try {rs.close();} catch (SQLException e) {}
+		if (stmt != null) try {stmt.close();} catch (SQLException e) {}
+		if (conn != null) try {conn.close();} catch (SQLException e) {}
+	}
+
+	return result;
+	}
 
 	/*
 	public static borad findByNumber(int number) throws NamingException, SQLException{
