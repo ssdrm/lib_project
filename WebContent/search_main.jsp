@@ -94,17 +94,7 @@
 				<input type="checkbox" class="chek" name="cate6" value="응용과학">응용과학 
 				<input type="checkbox" class="chek" name="cate7" value="예술">예술
 				<input type="checkbox" class="chek" name="cate8" value="문학">문학 
-				<input type="checkbox" class="chek" name="cate9" value="역사">역사 <br> 
-				<input type="radio" class="chek" name="category" value="총류">총류 
-				<input type="radio" class="chek" name="category" value="철학">철학 
-				<input type="radio" class="chek" name="category" value="종교">종교 
-				<input type="radio" class="chek" name="category" value="사회과학">사회과학 
-				<input type="radio" class="chek" name="category" value="어학">어학 
-				<input type="radio" class="chek" name="category" value="자연과학">자연과학 
-				<input type="radio" class="chek" name="category" value="응용과학">응용과학 
-				<input type="radio" class="chek" name="category" value="예술">예술 
-				<input type="radio" class="chek" name="category" value="문학">문학 
-				<input type="radio" class="chek" name="category" value="역사">역사 
+				<input type="checkbox" class="chek" name="cate9" value="역사">역사 
 				<input type="hidden" name="op" value="deserch">
 				<input type="hidden" name="skey1" value="${cla }">
 				<input type="hidden" name="skey2" value="${clb }">

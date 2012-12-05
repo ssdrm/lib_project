@@ -19,13 +19,16 @@
 	<jsp:include page="share/navi.jsp">
 		<jsp:param name="Aurl" value = "board_main.jsp"/>
 	</jsp:include>
+	<div id="box">
+<div id="title">공지사항
+	</div>
 <table>
-<tr>
+<tbody><tr>
 <th>글번호</th>
 <th>작성자</th>
-<th>제목</th>
+<th style="width:120px;">제목</th>
 <th>날짜</th>
-<th>조회수</th>
+<th style="width:60px;">조회수</th>
 </tr>
 <c:forEach var ="board" items="${boards.list }">
 <tr>
@@ -34,12 +37,13 @@
 <td><a href = "LibPServlet?op=boardshow&bdnumber=${board.bdnumber }"><c:out value = "${board.title }"/></a></td>
 <td><c:out value = "${board.bd_date }"/></td>
 <td><c:out value = "${board.hits }"/></td>
-<td><a href = "BoardServlet?op=update&number=${queryed.number }">수정</a></td>
-<td><a href = "BoardServlet?op=delete&number=${queryed.number }">삭제</a></td>
 </tr>
 </c:forEach>
-
+</tbody>
 </table>
+
+
+
 <c:forEach var ="board" items="${boards.list }" begin="0" end="0">
 <jsp:include page="share/page.jsp">
 	<jsp:param name="currentPage" value = "${boards.page }"/>

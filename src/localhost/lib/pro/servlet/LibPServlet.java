@@ -115,6 +115,30 @@ public class LibPServlet extends HttpServlet {
 					request.setAttribute("cla", cla);
 					actionUrl = "search_main.jsp";
 				}
+			}else if(op.equals("skey")){
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_serial.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_serial.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_serial.jsp";
+				}
+			}else if(op.equals("okey")){
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_old.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_old.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_old.jsp";
+				}
 			}
 			/*
 			else if(op.equals("test")){
@@ -174,7 +198,6 @@ public class LibPServlet extends HttpServlet {
 		String dsops3 = request.getParameter("dsops3");
 		String dsops4 = request.getParameter("dsops4");
 		//category
-		String category = request.getParameter("category");
 		String cate0 = request.getParameter("cate0");
 		String cate1 = request.getParameter("cate1");
 		String cate2 = request.getParameter("cate2");
@@ -279,7 +302,6 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("dsop20",dsop20 );
 				request.setAttribute("dsop30",dsop30 );
 				request.setAttribute("dsop40",dsop40 );
-				request.setAttribute("category",category );
 				request.setAttribute("cate0",cate0 );
 				request.setAttribute("cate1",cate1 );
 				request.setAttribute("cate2",cate2 );
@@ -301,6 +323,14 @@ public class LibPServlet extends HttpServlet {
 				actionUrl = "search_result.jsp";
 				
 				//actionUrl = "test.jsp";
+			}else if(op.equals("seserch")){
+				Showlist<Books> Serbook = LibPDAO.SeSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+			}else if(op.equals("olserch")){
+				Showlist<Books> Serbook = LibPDAO.OlSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
 			}
 			
 			if(id!=null){
