@@ -50,7 +50,7 @@
 		<td><input type="button" value="삭제 "></td>
 	</tr>
 	<tr>
-		<td colspan="3"><a href="index.jsp">메인으로 가기</a></td>
+		<td colspan="3"><a href="LibPServlet">메인으로 가기</a></td>
 	</tr>
 
 </table>

@@ -107,7 +107,7 @@
 							<li><a href="">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
-							<li><a href="">학생추가 </a></li>
+							<li><a href="student1.jsp">학생추가 </a></li>
 						</ul>
 					</nav>
 				</div>
