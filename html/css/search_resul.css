@@ -108,12 +108,12 @@ del { text-decoration: line-through; }
 	
 
 	.comment{width:100px;height:35px;background-color:#1E90FF;float:left;margin-right:3px;text-align:center;font-weight:bold;font-size:20px;margin-left:35px;padding-top:7px;margin-top:5px;}/*서평보기타이틀*/
-	.comment_in{width:800px;background-color:white;float:left;height:50px;border:solid;}/*서평틀*/
+	.comment_in{width:800px;background-color:white;float:left;height:80px;border:solid;position:absolute;}/*서평틀*/
 	.tab {border-collapse:collapse;border-spacing:0;}
 
 	td {border:1px solid #444;font: "맑은 고딕";padding:5px;width:85px;height:100px;font-size:15px;}
 	th {border:1px solid #444;font: 12px/18px "맑은 고딕", "Malgun Gothic";padding:5px;width:90px;height:50px;background-color:#1E90FF;font-size:20px;text-align:center;padding-top:20px;font-weight:bold;}
-	
+
 	.text{float:left;width:400px;height:35px;background-color:white;;margin-left:20px;}
 	
 	td.img>img{width:83px;}/*이미지크기*/
