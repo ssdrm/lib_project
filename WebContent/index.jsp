@@ -47,7 +47,7 @@
 							<input type="text" class="typetext" id="searchbar" name="searchbar">
 							<input type="hidden" name="op" value="serch">
 							<input type="image" alt="검색" src="img/btn_msearch.gif" value="">
-							<a href="search_main.html"><img src="img/btn_searchdetail.gif" height="31px"></a>
+							<a href="search_main.jsp"><img src="img/btn_searchdetail.gif" height="31px"></a>
 							</form>
 					</div>
 				</div>
