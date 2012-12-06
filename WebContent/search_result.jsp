@@ -29,7 +29,7 @@
 			<form id="searchForm" action="LibPServlet" method="POST">
 			<input type="text" class="typetext" id="searchbar" name="searchbar">
 			<input type="hidden" name="op" value="serch">
-			<input type="image" alt="검색" src="img/btn_msearch.gif" value="">
+			<input id="s" type="image" alt="검색" src="img/btn_msearch.gif" value="">
 			</form>
 
 

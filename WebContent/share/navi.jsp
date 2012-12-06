@@ -8,7 +8,7 @@
 			</div>
 			<div id = "header_right">
 				<c:choose>
-					<c:when test = "${id != NULL}">
+					<c:when test = "${user != NULL}">
 			  		${name }님 환영합니다. <a href="LibPServlet?op=logout&Aurl=${Aurl }">로그아웃</a>
 					</c:when>
 					<c:otherwise>
@@ -17,7 +17,7 @@
 							PASSWORD : <input type="password" name="passwd" id="password" size="10px">
 							<input type="image" alt="login" src="img/btn_login.gif" value="Login" >
 							<input type="hidden" name="Aurl" value="${Aurl }">
-							<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+							<a href="sign_up.jsp">회원가입</a>
 						</form>
 					</c:otherwise>
 				</c:choose>
@@ -33,8 +33,8 @@
 					<div>
 						<ol>
 							<li class="first"><a href="LibPServlet?op=key">통합검색</a></li>
-							<li><a href="search_serial.jsp">연속간행물</a></li>
-							<li><a href="search_old.jsp">고서</a></li>
+							<li><a href="LibPServlet?op=skey">연속간행물</a></li>
+							<li><a href="LibPServlet?op=okey">고서</a></li>
 							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>
 						</ol>
 					</div>

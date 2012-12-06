@@ -167,7 +167,89 @@ public class LibPDAO {
 
 		return result;
 	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////
+	public static Student stufindid(String id) throws NamingException,
+	SQLException {
 
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
+
+		DataSource ds = getDataSource();
+		Student result = new Student();
+		try {
+			conn = ds.getConnection();
+
+			// 질의 준비
+			stmt = conn.prepareStatement("SELECT * FROM student WHERE id = ?");
+			stmt.setString(1, id);
+			rs = stmt.executeQuery();
+
+			if (rs.next()) {
+				result.setId(rs.getString("id"));
+				result.setName(rs.getString("name"));
+			}
+		} finally {
+			if (rs != null)
+		try {
+			rs.close();
+		} catch (SQLException e) {
+		}
+	if (stmt != null)
+		try {
+			stmt.close();
+		} catch (SQLException e) {
+		}
+	if (conn != null)
+		try {
+			conn.close();
+		} catch (SQLException e) {
+		}
+		}
+
+		return result;
+	}
+
+	////////////////////////////////////////////////////////////////////유저정보
+	public static Showlist<User> usefind() throws NamingException,
+	SQLException {
+
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+
+		DataSource ds = getDataSource();
+		Showlist<User> result = new Showlist<User>();
+		try {
+			conn = ds.getConnection();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery("SELECT * FROM user");
+
+			while (rs.next()) {
+				result.getList().add(
+						new User(rs.getString("id"), rs.getString("name"), rs.getString("password"), rs.getString("email"),rs.getString("phone"),rs.getString("admintype")));
+	}
+	} finally {
+	if (rs != null)
+		try {
+			rs.close();
+		} catch (SQLException e) {
+		}
+	if (stmt != null)
+		try {
+			stmt.close();
+		} catch (SQLException e) {
+		}
+	if (conn != null)
+		try {
+			conn.close();
+		} catch (SQLException e) {
+		}
+	}
+
+	return result;
+	}
 	// ////////////////////////////////////////////////////////////////////////////////////login
 	public static User login(String idd) throws NamingException, SQLException {
 		User user = null;
@@ -644,54 +726,110 @@ public class LibPDAO {
 	 * 
 	 * return Borad; }
 	 */
-	/*
-	 * public static boolean create(borad cre) throws NamingException,
-	 * SQLException { int result; Connection conn = null; PreparedStatement stmt
-	 * = null; ResultSet rs = null;
-	 * 
-	 * DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
-	 * conn
-	 * .prepareStatement("INSERT INTO borad(writer, title, comment) VALUES(?,?,?)"
-	 * ); stmt.setString(1, cre.getWriter()); stmt.setString(2, cre.getTitle());
-	 * stmt.setString(3, cre.getComment()); result = stmt.executeUpdate(); }
-	 * finally { if (rs != null) try {rs.close();} catch (SQLException e) {} if
-	 * (stmt != null) try {stmt.close();} catch (SQLException e) {} if (conn !=
-	 * null) try {conn.close();} catch (SQLException e) {} }
-	 * 
-	 * return (result == 1); }
-	 */
-	/*
-	 * 
-	 * public static boolean update(borad upd) throws NamingException,
-	 * SQLException { int result; Connection conn = null; PreparedStatement stmt
-	 * = null; ResultSet rs = null;
-	 * 
-	 * DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
-	 * conn .prepareStatement(
-	 * "UPDATE borad SET writer = ?, title = ?, comment = ? WHERE number = ?");
-	 * stmt.setString(1, upd.getWriter()); stmt.setString(2, upd.getTitle());
-	 * stmt.setString(3, upd.getComment()); stmt.setInt(4, upd.getNumber());
-	 * result = stmt.executeUpdate(); } finally { if (rs != null) try
-	 * {rs.close();} catch (SQLException e) {} if (stmt != null) try
-	 * {stmt.close();} catch (SQLException e) {} if (conn != null) try
-	 * {conn.close();} catch (SQLException e) {} }
-	 * 
-	 * return (result == 1); }
-	 */
-	/*
-	 * 
-	 * public static boolean remove(int number) throws NamingException,
-	 * SQLException { int result; Connection conn = null; PreparedStatement stmt
-	 * = null; ResultSet rs = null;
-	 * 
-	 * DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
-	 * conn .prepareStatement("DELETE FROM borad WHERE number = ?");
-	 * stmt.setInt(1, number); result = stmt.executeUpdate(); } finally { if (rs
-	 * != null) try {rs.close();} catch (SQLException e) {} if (stmt != null)
-	 * try {stmt.close();} catch (SQLException e) {} if (conn != null) try
-	 * {conn.close();} catch (SQLException e) {} }
-	 * 
-	 * return (result == 1); }
-	 */
-
+		
+		////////////////////////////////////////////////create문
+		//학생추가
+		public static boolean crestu(Student student) throws NamingException,SQLException { 
+			int result; Connection conn = null; PreparedStatement stmt= null; ResultSet rs = null;
+			DataSource ds = getDataSource(); 
+			try { conn = ds.getConnection();
+			stmt =conn.prepareStatement("INSERT INTO student(id, name) VALUE(?,?)");
+			stmt.setString(1, student.getId()); 
+			stmt.setString(2, student.getName());
+			result = stmt.executeUpdate(); 
+			}
+	  finally { if (rs != null) try {rs.close();} catch (SQLException e) {} if
+	  (stmt != null) try {stmt.close();} catch (SQLException e) {} if (conn !=
+	  null) try {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); 
+	  }
+		
+		//유저추가
+		public static boolean creuse(User user) throws NamingException,SQLException { 
+			int result; Connection conn = null; PreparedStatement stmt= null; ResultSet rs = null;
+			DataSource ds = getDataSource(); 
+			try { conn = ds.getConnection();
+			stmt =conn.prepareStatement("INSERT INTO user(id, name, password, email, phone, admintype) VALUE(?,?,?,?,?,'F')");
+			stmt.setString(1, user.getId()); 
+			stmt.setString(2, user.getName());
+			stmt.setString(3, user.getPassword());
+			stmt.setString(4, user.getEmail());
+			stmt.setString(5, user.getPhone());
+			result = stmt.executeUpdate(); 
+			}
+	  finally { if (rs != null) try {rs.close();} catch (SQLException e) {} if
+	  (stmt != null) try {stmt.close();} catch (SQLException e) {} if (conn !=
+	  null) try {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); 
+	  }
+	 
+	
+	  /////////////////////////////////////////////////////////update
+		//유저삭제(admintype을 O로)
+	  public static boolean userrm(String id) throws NamingException,
+	  SQLException { int result; Connection conn = null; PreparedStatement stmt
+	  = null; ResultSet rs = null;
+	  
+	  DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
+	  conn .prepareStatement(
+	  "UPDATE user SET admintype = 'O' WHERE id = ?");
+	  stmt.setString(1, id);
+	  result = stmt.executeUpdate(); } finally { if (rs != null) try
+	  {rs.close();} catch (SQLException e) {} if (stmt != null) try
+	  {stmt.close();} catch (SQLException e) {} if (conn != null) try
+	  {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); }
+	  
+	  //관리자로승격
+	  public static boolean userup(String id) throws NamingException,
+	  SQLException { int result; Connection conn = null; PreparedStatement stmt
+	  = null; ResultSet rs = null;
+	  
+	  DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
+	  conn .prepareStatement(
+	  "UPDATE user SET admintype = 'T' WHERE id = ?");
+	  stmt.setString(1, id);
+	  result = stmt.executeUpdate(); } finally { if (rs != null) try
+	  {rs.close();} catch (SQLException e) {} if (stmt != null) try
+	  {stmt.close();} catch (SQLException e) {} if (conn != null) try
+	  {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); }
+	  
+	  //관리자박탈
+	  public static boolean userdown(String id) throws NamingException,
+	  SQLException { int result; Connection conn = null; PreparedStatement stmt
+	  = null; ResultSet rs = null;
+	  
+	  DataSource ds = getDataSource(); try { conn = ds.getConnection(); stmt =
+	  conn .prepareStatement(
+	  "UPDATE user SET admintype = 'F' WHERE id = ?");
+	  stmt.setString(1, id);
+	  result = stmt.executeUpdate(); } finally { if (rs != null) try
+	  {rs.close();} catch (SQLException e) {} if (stmt != null) try
+	  {stmt.close();} catch (SQLException e) {} if (conn != null) try
+	  {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); }
+	 
+//////////////////////////////////////////삭제
+		//학생삭제
+	  public static boolean remstu(String id) throws NamingException, SQLException { 
+		  int result; Connection conn = null; PreparedStatement stmt = null; ResultSet rs = null;
+	  	  DataSource ds = getDataSource(); 
+	  	  try {
+	  		  conn = ds.getConnection(); 
+	  		  stmt = conn .prepareStatement("DELETE FROM student WHERE id = ?");
+	  		  stmt.setString(1, id); 
+	  		  result = stmt.executeUpdate(); 
+	  } finally { if (rs
+	  != null) try {rs.close();} catch (SQLException e) {} if (stmt != null)
+	  try {stmt.close();} catch (SQLException e) {} if (conn != null) try
+	  {conn.close();} catch (SQLException e) {} }
+	  
+	  return (result == 1); 
+	  }
 }

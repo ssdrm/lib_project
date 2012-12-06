@@ -46,6 +46,7 @@ public class LibPServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//변수선언
+		List<String> errorMsgs = new ArrayList<String>();
 		String op = request.getParameter("op");
 		String id = request.getParameter("id");
 		String sbook = request.getParameter("searchbar");
@@ -57,7 +58,7 @@ public class LibPServlet extends HttpServlet {
 		String clb = request.getParameter("clb");
 		String clc = request.getParameter("clc");
 		
-		boolean ret;
+		boolean ret = false;
 		int bdnumber = getIntFromParameter(request.getParameter("bdnumber"),-1);
 		
 		HttpSession session = request.getSession(false);
@@ -103,7 +104,7 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("Qboard", Qboard);
 				request.setAttribute("Nboard", Nboard);
 				actionUrl = Aurl;
-			}else if(op.equals("key")){
+			}else if(op.equals("key")){//통합검색
 				if(clb!=null){
 					request.setAttribute("clb", clb);
 					actionUrl = "search_main.jsp";
@@ -115,7 +116,7 @@ public class LibPServlet extends HttpServlet {
 					request.setAttribute("cla", cla);
 					actionUrl = "search_main.jsp";
 				}
-			}else if(op.equals("skey")){
+			}else if(op.equals("skey")){//연속간행물
 				if(clb!=null){
 					request.setAttribute("clb", clb);
 					actionUrl = "search_serial.jsp";
@@ -127,7 +128,7 @@ public class LibPServlet extends HttpServlet {
 					request.setAttribute("cla", cla);
 					actionUrl = "search_serial.jsp";
 				}
-			}else if(op.equals("okey")){
+			}else if(op.equals("okey")){//고서
 				if(clb!=null){
 					request.setAttribute("clb", clb);
 					actionUrl = "search_old.jsp";
@@ -138,6 +139,50 @@ public class LibPServlet extends HttpServlet {
 					cla="m";
 					request.setAttribute("cla", cla);
 					actionUrl = "search_old.jsp";
+				}
+			}else if(op.equals("stu")){//관리자 학생
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+			}else if(op.equals("restu")){//관리자 학생삭제
+				ret = LibPDAO.remstu(id);
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("use")){
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+			}else if(op.equals("reuse")){
+				ret = LibPDAO.userrm(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("upuse")){
+				ret = LibPDAO.userup(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("douse")){
+				ret = LibPDAO.userdown(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
 				}
 			}
 			/*
@@ -174,11 +219,14 @@ public class LibPServlet extends HttpServlet {
 		String actionUrl = "";
 		request.setCharacterEncoding("utf-8");
 		String op = request.getParameter("op");
-		String id = request.getParameter("user");
+		String user = request.getParameter("user");
+		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String sbook = request.getParameter("searchbar");
 		String pw = request.getParameter("passwd");
 		String login = request.getParameter("login");
+		String phone = request.getParameter("phone");
+		String mail = request.getParameter("mail");
 		
 		/////////검색
 		//option
@@ -277,6 +325,19 @@ public class LibPServlet extends HttpServlet {
 			dsop40 = "or";
 		}
 		
+		//Bean 선언
+		Student student = new Student();
+		User users = new User();
+		
+		//Bean 값추가
+		student.setId(id);
+		student.setName(name);
+		users.setId(id);
+		users.setName(name);
+		users.setPassword(pw);
+		users.setEmail(mail);
+		users.setPhone(phone);
+		
 		//op가 무엇인지에따라 작업.
 		if(op == null){
 			op = "index";
@@ -294,30 +355,6 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("Serbook", Serbook);
 				actionUrl = "search_result.jsp";
 			}else if(op.equals("deserch")){
-				/*
-				request.setAttribute("dsop1",dsop1 );
-				request.setAttribute("dsop2",dsop2 );
-				request.setAttribute("dsop3",dsop3 );
-				request.setAttribute("dsop4",dsop4 );
-				request.setAttribute("dsop20",dsop20 );
-				request.setAttribute("dsop30",dsop30 );
-				request.setAttribute("dsop40",dsop40 );
-				request.setAttribute("cate0",cate0 );
-				request.setAttribute("cate1",cate1 );
-				request.setAttribute("cate2",cate2 );
-				request.setAttribute("cate3",cate3 );
-				request.setAttribute("cate4",cate4 );
-				request.setAttribute("cate5",cate5 );
-				request.setAttribute("cate6",cate6 );
-				request.setAttribute("cate7",cate7 );
-				request.setAttribute("cate8",cate8 );
-				request.setAttribute("cate9",cate9 );
-				request.setAttribute("dsops1",dsops1 );
-				request.setAttribute("dsops2",dsops2 );
-				request.setAttribute("dsops3",dsops3 );
-				request.setAttribute("dsops4",dsops4 );
-				*/
-				
 				Showlist<Books> Serbook = LibPDAO.DeSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2, dsop30, dsop3, dsops3, dsop40, dsop4, dsops4, cate0, cate1, cate2, cate3, cate4, cate5, cate6, cate7, cate8, cate9);
 				request.setAttribute("Serbook", Serbook);
 				actionUrl = "search_result.jsp";
@@ -331,21 +368,52 @@ public class LibPServlet extends HttpServlet {
 				Showlist<Books> Serbook = LibPDAO.OlSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2);
 				request.setAttribute("Serbook", Serbook);
 				actionUrl = "search_result.jsp";
+			}else if(op.equals("stucre")){
+				ret = LibPDAO.crestu(student);
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("sign")){
+				Student teststu = LibPDAO.stufindid(id);
+				if(teststu.getId() != null){
+					if(teststu.getId().equals(users.getId())){
+						ret = LibPDAO.creuse(users);
+						actionUrl = "index.jsp";
+						if(ret != true){
+							errorMsgs.add("실패했습니다.");
+							actionUrl = "error.jsp";
+						}
+					}
+				}else{
+					errorMsgs.add("죄송합니다 학교에 등록되지않았습니다.");
+				/*
+				request.setAttribute("name",users.getName());
+				request.setAttribute("id",users.getId());
+				request.setAttribute("phone",users.getPhone());
+				request.setAttribute("mail",users.getEmail());
+				request.setAttribute("pw",users.getPassword());
+				request.setAttribute("teststu", teststu);
+				*/
+					actionUrl = "error.jsp";
+				}
 			}
-			
-			if(id!=null){
+			if(user!=null){
 				//test용도//if(op == null || op.equals("index")){
-					User log = LibPDAO.login(id);
+					User log = LibPDAO.login(user);
 					//request.setAttribute("log", log);
 					if(log == null){
 						errorMsgs.add("등록되지않은 아이디입니다.");
 						actionUrl = "error.jsp";
-					}else if(log.getId().equals(id) && log.getPassword().equals(pw)){
-						session.setAttribute("id",id);
+					}else if(log.getId().equals(user) && log.getPassword().equals(pw)){
+						session.setAttribute("user",user);
 						session.setAttribute("name", log.getName());
 						session.setAttribute("admintype", log.getAdmintype());
 						actionUrl = "index.jsp";
-					}else if(log.getId().equals(id) && !log.getPassword().equals(pw)){
+					}else if(log.getId().equals(user) && !log.getPassword().equals(pw)){
 						errorMsgs.add("비밀번호가 일치하지 않습니다.");
 						actionUrl = "error.jsp";
 					}else{

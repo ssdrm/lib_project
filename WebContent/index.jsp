@@ -106,8 +106,8 @@
 							<li class = "focus"><a href="">대출현황조회</a></li>
 							<li><a href="">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
-							<li><a href="">회원관리</a></li>
-							<li><a href="student1.jsp">학생추가 </a></li>
+							<li><a href="LibPServlet?op=use">회원관리</a></li>
+							<li><a href="LibPServlet?op=stu">학생추가 </a></li>
 						</ul>
 					</nav>
 				</div>
@@ -282,9 +282,6 @@
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
 		</div>
 		</div>
-		<a href = "LibPServlet?op=serch&searchbar=1">test</a>
-		<a href = "LibPServlet?op=test&id=99999999">logintest</a>
-		<c:out value = "${log.id }"/>
 	</div>
 </body>
 </html>

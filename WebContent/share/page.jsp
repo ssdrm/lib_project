@@ -9,7 +9,7 @@
 <c:set var = "op" value = "${param.op }"/>
 <c:set var = "option" value = "${param.option }"/>
 <c:set var = "optionvalue" value = "${param.optionvalue }"/>
-<div class="pagination pagination-centered">
+<div class="page">
 
 	<ul>
     <c:choose>
@@ -34,7 +34,7 @@
 	  
 	  <c:choose>
       <c:when test="${ currentPage >= numPages}">
-        <li class="disabled"><a href="#">&raquo;</a></li>
+        <li><a href="#">&raquo;</a></li>
       </c:when>
       <c:otherwise>
         <li><a href="${url}?op=${op }&${option }=${optionvalue }&page=${currentPage + 1}">&raquo;</a></li>
