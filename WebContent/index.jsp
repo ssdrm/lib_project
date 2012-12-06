@@ -61,11 +61,11 @@
 				<div id = "user">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -74,7 +74,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
@@ -90,11 +90,11 @@
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -104,7 +104,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="student1.jsp">학생추가 </a></li>
@@ -116,11 +116,11 @@
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
