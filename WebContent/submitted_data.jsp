@@ -39,8 +39,8 @@
 		신청사유
 		</th>
 		<th id="butt">
-		삭   제
-		</th>
+		Option
+				</th>
 	</tr>
 	<tr>
 	
@@ -59,7 +59,7 @@
 	
 	<td id="butt">
 	
-	<input type="button">
+	<a href="">삭제</a>
 	
 	</td>
 	
