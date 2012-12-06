@@ -130,7 +130,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
