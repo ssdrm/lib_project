@@ -8,6 +8,7 @@ select{width:100px;font-weight:bold;}
 #form{width:930px;height:600px;	margin-top:70px; }
 #box{width:850px;background-color:white;border;margin-left:30px;border-style:ridge;border-width:8px;height:450px;}
 #search{padding:3px;float:right;width:250px;border-style:ridge;border-width: 7px;background-color:#1E90FF;font-weight:bold;height:20px;text-decoration:none;margin-bottom:35px;margin-top:5px;margin-right:15px;font-size:15px;}
+
 #chekm{width:760px;background-color:white;margin-top:20px;margin-left:30px;}
 #number{width:730px;background-color:white;margin-top:20px;margin-left:30px;}
 #butt{width:300px;background-color:white;margin-top:40px;margin-left:300px;}
@@ -22,7 +23,7 @@ ul> li{float:left;list-style-type:none;padding:1px;}
 
 a:link.m{color:black;}
 a:visited.m{color:purple;}
-a:hover.m{color:blue;}
+a:hover.m{color:yellow;}
 
 
 
