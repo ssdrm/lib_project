@@ -127,15 +127,15 @@
 
 			</tr>
 
-
-			<tr class="comment_hide">
+			<tbody class="comment_hide">
+			<tr >
 				<th>남긴이</th>
 				<th>내 용</th>
 				<th> 추가</th>
 			</tr>
-			<tr class="comment_hide">
 
 
+				<tr >
 
 				<td>ㅇㅇ </td>
 		
@@ -143,7 +143,8 @@
 				<td><input type="button" value="서평 추가 " class="add"></td>
 				
 			</tr>
-		
+		</tbody>
+	
 
 
 
@@ -163,8 +164,12 @@
 					type="button" value="+" class="butt"> <input type="button"
 					value="-" class="butt3"></td>
 			</tr>
+
+
+
 			<tr>
 				<td>7</td>
+
 				<td class="img"><img src="img/logo.gif"></td>
 				<td>ㅅ</td>
 				<td>2ㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇ</td>
@@ -176,30 +181,33 @@
 					id="reser"><br> <input type="button" value="서평보기 "
 					class="coms"></td>
 
+
 			</tr>
-			<tr class="comment_hide">
-				<th>남긴이</th>
-				<th>내 용</th>
-				<th></th>
-			</tr>
-			<tr class="comment_hide">
-				<td>서평이러쿵 저러쿵 저쿵ㄹ</td>
-				<td><input type="button" value="서평 추가 " class="add"></td>
-				
-				
-			</tr>
-			<tr class="comment_in">
+
+	
+
+
+
+
+
+
+			<tfoot  class="comment_in">
+
+	<tr>
+
+
+
 				<td class="comment">서평 추가</td>
-				<td class="sub_size">
-					<form>
-					<input type="text" class="text">
-					<input	type="button" value="+" class="butt">
-					<input type="button" value="-" class="butt3">
-				</form>
-				</td>
 
+
+				<td class="sub_size"><input type="text" class="text"><input
+					type="button" value="+" class="butt"> <input type="button"
+					value="-" class="butt3"></td>
 			</tr>
+	<tfoot>
 
+			
+			
 		</table>
 
 
@@ -220,28 +228,29 @@
 	$(function() {
 
 		$(".comment_hide").hide()
-		$("tr.sample").hide()
+		$(".comment_in").hide()
 
 		$(".coms").click(function() {
-			$("tr.comment_hide").slideToggle()("slow");
+			$("tbody.comment_hide:first").slideToggle()("slow")
+		
 
 		});
-		$("tr.comment_in").hide()
+	
 
 		$(".butt1").click(function() {//서평 추가 버튼 누르면 
-			$("tr.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
-			$("tr.comment_in").show()("slow")
+			$("tbody.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
+			$("tfoot.comment_in:").show()("slow");
 
 		});
 		$(".butt3").click(function() {
-			$("tr.comment_in").hide("slow");
+			$("tfoot.comment_in").hide("slow");
 
 		});
 
 		$('.add').click(function() {
-			$("tr.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
-			$("tr.comment_in").show()("slow")
-
+			$("tbody.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
+			
+			$("tfoot.comment_in:first").show("slow")
 		});
 	});
 </script>

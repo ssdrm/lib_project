@@ -5,9 +5,9 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>테마가있는 서재 </title>
+<title>테마가있는 서재 환경과 에너지  </title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/reset2.css" rel="stylesheet" type="text/css">
+
 <link href="css/theme_main.css" rel="stylesheet" type="text/css"> 
 <link href = "css/share.css" rel = "stylesheet" type = "text/css">
 <script src="js/jquery-1.8.2.min.js"></script>
@@ -34,21 +34,25 @@
 <div id="title2">
 	<div id="but">
 	<div class="button">
-		<div class="light"></div>
+		<div class="light">
 		<a href="search_theme_main.jsp">환경과 에너지</a>
+		</div>
 	</div>
 	<div class="button">
-		<div class="light"></div>
+		<div class="light">
 		<a href="search_theme_human.jsp">인   물</a> 
+		</div>
 	</div> 
 
 	<div class="button">
-		<div class="light"></div>
+		<div class="light">
 	<a href="search_theme_culture.jsp">우리 문화 알기 </a> 
 	</div>
+	</div>
 	<div class="button">
-		<div class="light"></div>
+		<div class="light">
 		<a href="search_theme_computer.jsp">컴퓨터</a> 
+		</div>
 	</div>
 
 </div>
@@ -56,15 +60,20 @@
 					
 </div>
 				<div id="tablebox">
-					<table border="1">
+					<table>
 				<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
 						<tr >
-							<td class="td1">fjf</td>
-							<td class="td2">fdf</td>
+							<td class="td1"><img src="img/t.jpg" class="t"></td>
+							<td class="td2">
+							
+								<div class="sub1"> 책이름</div> 
+								<div class="sub2">저자 </div>
+								<div class="sub3">  1988-01-01</div>
+								</td>
 						</tr>
 						<tr>
 							<td class="td1">fdf</td>
@@ -88,29 +97,7 @@
 	
 </body>
 </html> 
-							</th>
-						</tr>
-						<tr>
-							<td id="td1">fjf</td>
-							<td id="td2">fdf</td>
-						</tr>
-						<tr>
-							<td id="td3">fdf</td>
-							<td id="td4">fdf</td>
-						</tr>
-						<tr>
-							<td id="td5">fd</td>
-							<td id="td6">fd</td>
-						</tr>
-		
-
-			</table>
-		</div>
-	</div>
-
-
+							
 
 		
 	
-</body>
-</html>
