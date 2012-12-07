@@ -46,12 +46,19 @@ public class LibPServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//변수선언
+		List<String> errorMsgs = new ArrayList<String>();
 		String op = request.getParameter("op");
 		String id = request.getParameter("id");
 		String sbook = request.getParameter("searchbar");
 		String btype = request.getParameter("btype");
 		String actionUrl = "";
-		boolean ret;
+		String Aurl = request.getParameter("Aurl");
+		
+		String cla = request.getParameter("cla");
+		String clb = request.getParameter("clb");
+		String clc = request.getParameter("clc");
+		
+		boolean ret = false;
 		int bdnumber = getIntFromParameter(request.getParameter("bdnumber"),-1);
 		
 		HttpSession session = request.getSession(false);
@@ -90,14 +97,93 @@ public class LibPServlet extends HttpServlet {
 				request.setAttribute("boards", boards);
 				request.setAttribute("page", page);
 				actionUrl = "board_main.jsp";
-				
 			}else if(op.equals("logout")){//로그아웃.
 				session.invalidate();
 				Showlist<Board> Qboard = LibPDAO.INboard("Q");
 				Showlist<Board> Nboard = LibPDAO.INboard("N");
 				request.setAttribute("Qboard", Qboard);
 				request.setAttribute("Nboard", Nboard);
-				actionUrl = "index.jsp";
+				actionUrl = Aurl;
+			}else if(op.equals("key")){//통합검색
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_main.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_main.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_main.jsp";
+				}
+			}else if(op.equals("skey")){//연속간행물
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_serial.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_serial.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_serial.jsp";
+				}
+			}else if(op.equals("okey")){//고서
+				if(clb!=null){
+					request.setAttribute("clb", clb);
+					actionUrl = "search_old.jsp";
+				}else if(clc!=null){
+					request.setAttribute("clc", clc);
+					actionUrl = "search_old.jsp";
+				}else{
+					cla="m";
+					request.setAttribute("cla", cla);
+					actionUrl = "search_old.jsp";
+				}
+			}else if(op.equals("stu")){//관리자 학생
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+			}else if(op.equals("restu")){//관리자 학생삭제
+				ret = LibPDAO.remstu(id);
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("use")){
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+			}else if(op.equals("reuse")){
+				ret = LibPDAO.userrm(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("upuse")){
+				ret = LibPDAO.userup(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("douse")){
+				ret = LibPDAO.userdown(id);
+				Showlist<User> user = LibPDAO.usefind();
+				request.setAttribute("user", user);
+				actionUrl="sign_up_manage.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
 			}
 			/*
 			else if(op.equals("test")){
@@ -129,14 +215,47 @@ public class LibPServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//변수선언
 		boolean ret = false;
+		int i;
 		String actionUrl = "";
 		request.setCharacterEncoding("utf-8");
 		String op = request.getParameter("op");
-		String id = request.getParameter("user");
+		String user = request.getParameter("user");
+		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String sbook = request.getParameter("searchbar");
 		String pw = request.getParameter("passwd");
 		String login = request.getParameter("login");
+		String phone = request.getParameter("phone");
+		String mail = request.getParameter("mail");
+		
+		/////////검색
+		//option
+		String dsop1 = request.getParameter("dsop1");
+		String dsop2 = request.getParameter("dsop2");
+		String dsop20 = request.getParameter("dsop20");
+		String dsop3 = request.getParameter("dsop3");
+		String dsop30 = request.getParameter("dsop30");
+		String dsop4 = request.getParameter("dsop4");
+		String dsop40 = request.getParameter("dsop40");
+		String skey1 = request.getParameter("skey1");
+		String skey2 = request.getParameter("skey2");
+		String skey3 = request.getParameter("skey3");
+		//input
+		String dsops1 = request.getParameter("dsops1");
+		String dsops2 = request.getParameter("dsops2");
+		String dsops3 = request.getParameter("dsops3");
+		String dsops4 = request.getParameter("dsops4");
+		//category
+		String cate0 = request.getParameter("cate0");
+		String cate1 = request.getParameter("cate1");
+		String cate2 = request.getParameter("cate2");
+		String cate3 = request.getParameter("cate3");
+		String cate4 = request.getParameter("cate4");
+		String cate5 = request.getParameter("cate5");
+		String cate6 = request.getParameter("cate6");
+		String cate7 = request.getParameter("cate7");
+		String cate8 = request.getParameter("cate8");
+		String cate9 = request.getParameter("cate9");
 		
 		List<String> errorMsgs = new ArrayList<String>();
 		
@@ -146,6 +265,78 @@ public class LibPServlet extends HttpServlet {
 		}
 		//test.setId(id);
 		//test.setName(name);
+		
+		//책검색 옵션설정
+		if(dsop1!=null){
+			if(dsop1.equals("저자")){
+				dsop1 = "writer";
+			}else if(dsop1.equals("출판사")){
+				dsop1 = "maker";
+			}else if(dsop1.equals("ISBN")){
+				dsop1 = "isbn";
+			}else{
+				dsop1 = "b_name";
+			}
+		}
+		
+		if(dsop2!=null){
+			if(dsop2.equals("저자")){
+				dsop2 = "writer";
+			}else if(dsop2.equals("출판사")){
+				dsop2 = "maker";
+			}else if(dsop2.equals("ISBN")){
+				dsop2 = "isbn";
+			}else{
+				dsop2 = "b_name";
+			}
+		}
+		
+		if(dsop3!=null){
+			if(dsop3.equals("저자")){
+				dsop3 = "writer";
+			}else if(dsop3.equals("출판사")){
+				dsop3 = "maker";
+			}else if(dsop3.equals("ISBN")){
+				dsop3 = "isbn";
+			}else{
+				dsop3 = "b_name";
+			}
+		}
+		
+		if(dsop4!=null){
+			if(dsop4.equals("저자")){
+				dsop4 = "writer";
+			}else if(dsop4.equals("출판사")){
+				dsop4 = "maker";
+			}else if(dsop4.equals("ISBN")){
+				dsop4 = "isbn";
+			}else{
+				dsop4 = "b_name";
+			}
+		}
+		//책검색을 받지않으면 옵션도없앰.
+		if(dsops2==""){
+			dsop20 = "or";
+		}
+		if(dsops3==""){
+			dsop30 = "or";
+		}
+		if(dsops4==""){
+			dsop40 = "or";
+		}
+		
+		//Bean 선언
+		Student student = new Student();
+		User users = new User();
+		
+		//Bean 값추가
+		student.setId(id);
+		student.setName(name);
+		users.setId(id);
+		users.setName(name);
+		users.setPassword(pw);
+		users.setEmail(mail);
+		users.setPhone(phone);
 		
 		//op가 무엇인지에따라 작업.
 		if(op == null){
@@ -163,21 +354,66 @@ public class LibPServlet extends HttpServlet {
 				Showlist<Books> Serbook = LibPDAO.Serchbook(sbook);
 				request.setAttribute("Serbook", Serbook);
 				actionUrl = "search_result.jsp";
+			}else if(op.equals("deserch")){
+				Showlist<Books> Serbook = LibPDAO.DeSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2, dsop30, dsop3, dsops3, dsop40, dsop4, dsops4, cate0, cate1, cate2, cate3, cate4, cate5, cate6, cate7, cate8, cate9);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+				
+				//actionUrl = "test.jsp";
+			}else if(op.equals("seserch")){
+				Showlist<Books> Serbook = LibPDAO.SeSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+			}else if(op.equals("olserch")){
+				Showlist<Books> Serbook = LibPDAO.OlSerchbook(skey1, skey2, skey3, dsop1, dsops1, dsop20, dsop2, dsops2);
+				request.setAttribute("Serbook", Serbook);
+				actionUrl = "search_result.jsp";
+			}else if(op.equals("stucre")){
+				ret = LibPDAO.crestu(student);
+				Showlist<Student> Student = LibPDAO.stufind();
+				request.setAttribute("Student", Student);
+				actionUrl = "student1.jsp";
+				if(ret != true){
+					errorMsgs.add("실패했습니다.");
+					actionUrl = "error.jsp";
+				}
+			}else if(op.equals("sign")){
+				Student teststu = LibPDAO.stufindid(id);
+				if(teststu.getId() != null){
+					if(teststu.getId().equals(users.getId())){
+						ret = LibPDAO.creuse(users);
+						actionUrl = "index.jsp";
+						if(ret != true){
+							errorMsgs.add("실패했습니다.");
+							actionUrl = "error.jsp";
+						}
+					}
+				}else{
+					errorMsgs.add("죄송합니다 학교에 등록되지않았습니다.");
+				/*
+				request.setAttribute("name",users.getName());
+				request.setAttribute("id",users.getId());
+				request.setAttribute("phone",users.getPhone());
+				request.setAttribute("mail",users.getEmail());
+				request.setAttribute("pw",users.getPassword());
+				request.setAttribute("teststu", teststu);
+				*/
+					actionUrl = "error.jsp";
+				}
 			}
-			
-			if(id!=null){
+			if(user!=null){
 				//test용도//if(op == null || op.equals("index")){
-					User log = LibPDAO.login(id);
+					User log = LibPDAO.login(user);
 					//request.setAttribute("log", log);
 					if(log == null){
 						errorMsgs.add("등록되지않은 아이디입니다.");
 						actionUrl = "error.jsp";
-					}else if(log.getId().equals(id) && log.getPassword().equals(pw)){
-						session.setAttribute("id",id);
+					}else if(log.getId().equals(user) && log.getPassword().equals(pw)){
+						session.setAttribute("user",user);
 						session.setAttribute("name", log.getName());
 						session.setAttribute("admintype", log.getAdmintype());
 						actionUrl = "index.jsp";
-					}else if(log.getId().equals(id) && !log.getPassword().equals(pw)){
+					}else if(log.getId().equals(user) && !log.getPassword().equals(pw)){
 						errorMsgs.add("비밀번호가 일치하지 않습니다.");
 						actionUrl = "error.jsp";
 					}else{

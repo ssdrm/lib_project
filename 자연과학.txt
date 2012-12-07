@@ -1,11 +1,11 @@
-('책이름','글쓴이','출판사','출간일','분류','isbn','위치');
+
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('알고리즘','이충기','명지대','2012-11-11','총류',010001,'위치');
 
 
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(당신이 모르는 줄도 모르는) 100가지 수학 이야기','전대호','마젤란','2010-01-01','자연과학','50001','3층인문예술단행본');
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(세상이 가둔 천재)페렐만'.'전대호','세종서적','2011-01-01','자연과학','50002','3층인문예술단행본');
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('너무 많이 알았던 사람 : 앨런 튜링과 컴퓨터의 발명','승산','2008-01-01','자연과학','53003','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('(세상이 가둔 천재)페렐만','전대호','세종서적','2011-01-01','자연과학','50002','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('너무 많이 알았던 사람 : 앨런 튜링과 컴퓨터의 발명','진승인','승산','2008-01-01','자연과학','53003','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('튜링 : 인공지능 창시자','장 라세구','동양서','2003-01-01','자연과학','53004','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('독일 대학과 과학의 역사 : 독일 수학자들의 계보 ','장수영','학문사','2001-01-01','자연과학','50005','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('수학자들의 전쟁 : 수학사상 가장 흥미로웠던 뉴턴과 라이프니츠의 미적분 전쟁','이광연','웅진씽크빅','2007-01-01','자연과학','50006','3층인문예술단행본');
@@ -22,7 +22,7 @@ INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUE
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('Embedded systems design and applications with the 68HC12 and HCS12','Steven F. Barrett','Prentice Hall ','2004-01-01','자연과학','53017','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('10간 12지를 과학적으로 풀어낸 생활기상과 기상경영을 위한 입문서','장동순','중명출판사','2004-01-01','자연과학','50018','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('생활 기상 이야기','윤성탁','단국대학교','2001-01-01','자연과학','50019','3층인문예술단행본');
-INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('기후와 진화','김준민','민음사',1987-01-01','자연과학','51020','3층인문예술단행본');
+INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('기후와 진화','김준민','민음사','1987-01-01','자연과학','51020','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('해양오염과 생태계','심재형','민음사','1991-01-01','자연과학','51021','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('해양환경정보총람','김학균','국립수산진흥원','2000-01-01','자연과학','50022','3층인문예술단행본');
 INSERT INTO books(b_name, writer, maker, b_date, category, isbn, location) VALUES('3일만에 읽는 몸의 구조','타노이마사오','서울문화사','2001-01-01','자연과학','50023','3층인문예술단행본');

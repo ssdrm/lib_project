@@ -1,0 +1,18 @@
+
+#wrap
+{
+	width:960px; margin:0 auto;
+
+}
+#text{text-align:center;width:130px;}
+#box{margin-top:100px;}
+
+th{background-color:gainsboro;font-size:16px;font-weight:bold;width:100px;}
+td{text-align:center;font-size:15px;}
+
+
+.sub{height:30px;font-size:17px;font-weight:bold;float:right;margin-top:10px;margin-left:5px;}
+
+a:link.sub{color:#1E90FF;}
+a:visited.sub{color:black;}
+a:hover.sub{color:purple;}

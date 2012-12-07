@@ -1,22 +1,23 @@
 ﻿<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
-
+<c:set var = "Aurl" value = "${param.Aurl }"/>
 <div id = "header">
 			<div id = "header_left">
 				<a href="LibPServlet"><img src="img/logo.gif" alt="logo"></a>
 			</div>
 			<div id = "header_right">
 				<c:choose>
-					<c:when test = "${id != NULL}">
-			  		${name }님 환영합니다. <a href="LibPServlet?op=logout">로그아웃</a>
+					<c:when test = "${user != NULL}">
+			  		${name }님 환영합니다. <a href="LibPServlet?op=logout&Aurl=${Aurl }">로그아웃</a>
 					</c:when>
 					<c:otherwise>
 						<form name="form" action="LibPServlet" method="post">
-							ID : <input type="text" name="user" value="" id="id" size="10px">
-							PASSWORD : <input type="password" name="passwd"value="" id="password" size="10px">
+							ID : <input type="text" name="user" id="id" size="10px">
+							PASSWORD : <input type="password" name="passwd" id="password" size="10px">
 							<input type="image" alt="login" src="img/btn_login.gif" value="Login" >
-							<a href=""><img src="img/btnIDSearch.gif" alt="search"></a>
+							<input type="hidden" name="Aurl" value="${Aurl }">
+							<a href="sign_up.jsp">회원가입</a>
 						</form>
 					</c:otherwise>
 				</c:choose>
@@ -28,12 +29,12 @@
 		<div id = "navibar">
 				
 			<ul>
-				<li><a href=""><span>자료검색</span></a>
+				<li><a href="LibPServlet?op=key"><span>자료검색</span></a>
 					<div>
 						<ol>
-							<li class="first"><a href="search_main.jsp">통합검색</a></li>
-							<li><a href="search_serial.jsp">연속간행물</a></li>
-							<li><a href="search_old.jsp">고서</a></li>
+							<li class="first"><a href="LibPServlet?op=key">통합검색</a></li>
+							<li><a href="LibPServlet?op=skey">연속간행물</a></li>
+							<li><a href="LibPServlet?op=okey">고서</a></li>
 							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>
 						</ol>
 					</div>
@@ -59,7 +60,7 @@
 				<li><a href=""><span>도서관 이용안내</span></a>
 					<div>
 						<ol>
-						 	<li class="first"><a href="intro1.htm">도서관 소개</a></li>
+						 	<li class="first"><a href="intro1.jsp">도서관 소개</a></li>
 							<li class="last"><a href="come1.jsp">도서관 오는길</a></li>
 						</ol>
 					</div>

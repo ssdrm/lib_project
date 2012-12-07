@@ -17,8 +17,8 @@
 	<div id="warp">
 	
 	<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+		<jsp:param name="Aurl" value = "search_theme_human.jsp"/>
+	</jsp:include>
 		
 		
 		<div id="title1">

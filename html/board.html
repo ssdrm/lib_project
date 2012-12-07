@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="css/reset.css">
+<link type="text/css" rel="stylesheet" href="css/reset2.css">
+<link type="text/css" rel="stylesheet" href="css/board1.css">
+<link type="text/css" rel="stylesheet" href="css/share.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
+<title>게시판</title>
+</head>
+<body>
+<div id="wrap">
+	
+	 <div id="header">
+			<div id="header_left">
+				<a href="LibPServlet"><img alt="logo" src="img/logo.gif"></a>
+			</div>
+			<div id="header_right">
+				
+					
+					
+						<form method="post" action="LibPServlet" name="form">
+							<input type="text" size="10px" id="id" value="ID" name="user">
+							<input type="password" size="10px" id="password" value="1234" name="passwd">
+							<input type="image" value="Login" src="img/btn_login.gif" alt="login">
+							<a href=""><img alt="search" src="img/btnIDSearch.gif"></a>
+						</form>
+					
+				
+			</div>
+		</div>
+		<div id="line1">
+		</div>
+		
+		<div id="navibar" class="selected">
+				
+			<ul>
+				<li><a href=""><span>자료검색</span></a>
+					<div>
+						<ol>
+							<li class="first"><a href="search_main.jsp">통합검색</a></li>
+							<li><a href="search_serial.jsp">연속간행물</a></li>
+							<li><a href="search_old.jsp">고서</a></li>
+							<li class="last"><a href="search_theme_main.jsp">테마가 있는 서재</a></li>
+						</ol>
+					</div>
+				</li>
+					
+				<li><a href=""><span>도서관 서비스</span></a> 
+					<div>
+						<ol>
+							<li class="first"><a href="data_intro.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrow_intro.jsp">대출현황조회/연장</a></li>
+							<li class="last"><a href="reserve_intro.jsp">도서예약</a></li>
+						</ol>
+					</div>
+				</li>
+				<li class=""><a href=""><span>알림마당</span></a>
+					<div class="selected">
+						<ol>
+						 	<li class="first"><a href="LibPServlet?op=board&amp;btype=N">공지사항</a></li>
+							<li class="last"><a href="LibPServlet?op=board&amp;btype=Q">질의응답</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>도서관 이용안내</span></a>
+					<div>
+						<ol>
+						 	<li class="first"><a href="intro1.htm">도서관 소개</a></li>
+							<li class="last"><a href="come1.jsp">도서관 오는길</a></li>
+						</ol>
+					</div>
+				</li>
+				<li><a href=""><span>마이페이지</span></a>
+					<div>
+						<ol>
+					 		<li class="first"><a href="individual_info.jsp">개인정보관리</a></li>
+							<li><a href="data_application.jsp">자료구입신청/조회</a></li>
+							<li><a href="borrows.jsp">대출현황조회/연장</a></li>
+							<li><a href="individual.jsp">개인연락사항</a></li>
+							<li class="last"><a href="">검색 히스토리</a></li>
+						</ol>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="box">
+<div id="title">공지사항
+	</div>
+<table>
+<tbody><tr>
+<th>글번호</th>
+<th>작성자</th>
+<th style="width:120px;">제목</th>
+<th>날짜</th>
+<th style="width:60px;">조회수</th>
+
+
+</tr>
+<tr>
+<td>17</td>
+<td>99999999</td>
+<td><a href="LibPServlet?op=boardshow&amp;bdnumber=17">공지테스트5</a></td>
+<td>2012-11-30 17:45:32.0</td>
+<td>0</td>
+
+
+
+
+</tr>
+</tbody>
+</table>
+ <div class="page">
+	<ul>
+    
+
+        <li class="disabled"><a href="#">≪</a></li>
+      
+      
+    	<li class="active"><a href="LibPServlet?op=board&amp;btype=N&amp;page=1">1</a></li>
+	      
+	<li><a href="#">≫</a></li>
+      
+
+    
+	</ul>
+<a class="sub" href="BoardServlet?op=write" >글쓰기</a>
+</div>
+
+
+</div>
+</div>
+</body>
+</html>

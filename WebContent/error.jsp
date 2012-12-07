@@ -24,5 +24,6 @@
       </c:if>
     </div>
   </div>
+  <a href="LibPServlet">누르시면 홈으로 이동합니다.</a>
 </body>
 </html>

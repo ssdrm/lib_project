@@ -1,0 +1,8 @@
+#wrap {
+	width:960px; margin:0 auto; 
+}
+th{width:140px;height:10px;background-color:light-blue;font-size:13px;font-weight:bold;text-align:center;}
+td{width:140px;height:10px;background-color:white;}
+table{width:350px;height:100px;margin:0 auto;margin-top:150px;border:solid;font-size:13px;}
+
+#butt{width:20px;}

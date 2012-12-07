@@ -19,8 +19,8 @@
 	<div id="wrap">
 	
 	<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
-		</jsp:include>
+		<jsp:param name="Aurl" value = "reserve_intro.jsp"/>
+	</jsp:include>
 		
 	<div id="box">	
 		<DIV class="guidemsg">

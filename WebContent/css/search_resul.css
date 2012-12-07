@@ -1,7 +1,7 @@
-/* reset.css - ºê¶ó¿ìÀú ½ºÅ¸ÀÏ ÃÊ±âÈ­, 2012 ¨Ï yamoo9.com	
+/* reset.css - ë¸Œë¼ìš°ì € ìŠ¤íƒ€ì¼ ì´ˆê¸°í™”, 2012 â“’ yamoo9.com	
 ---------------------------------------------------------------- */
 
-/* ¸ğµç ¿ä¼Ò °ø°£ 0, ¼­Ã¼ Å©±â 100%, ¼¼·ÎÁ¤·Ä baseline, ¹è°æ»ö Åõ¸í */
+/* ëª¨ë“  ìš”ì†Œ ê³µê°„ 0, ì„œì²´ í¬ê¸° 100%, ì„¸ë¡œì •ë ¬ baseline, ë°°ê²½ìƒ‰ íˆ¬ëª… */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,26 +20,26 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	background: transparent;
 }
 
-/* HTML5 »õ ¿ä¼Ò ÃÊ±âÈ­ */
+/* HTML5 ìƒˆ ìš”ì†Œ ì´ˆê¸°í™” */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { display: block; }
 
-/* º»¹® ±âº» ¼³Á¤, ¸®½ºÆ® ºí¸´ Á¦°Å, ÀÎ¿ë ±¸¹® Á¦°Å */
+/* ë³¸ë¬¸ ê¸°ë³¸ ì„¤ì •, ë¦¬ìŠ¤íŠ¸ ë¸”ë¦¿ ì œê±°, ì¸ìš© êµ¬ë¬¸ ì œê±° */
 body { 
-	font: 13px/1.5 "³ª´® °íµñ", "Nanum Gothic", µ¸¿ò, Dotum, Sans-Serief; 
+	font: 13px/1.5 "ë‚˜ëˆ” ê³ ë”•", "Nanum Gothic", ë‹ì›€, Dotum, Sans-Serief; 
 	color: #323232; 
 	}
-	/* ¿µ¹® ¼³Á¤ */
+	/* ì˜ë¬¸ ì„¤ì • */
 	.lang-en, :lang(en) { font: 12px/1.5 "Helvetica Neue", Helvetica, Verdana, Arial, Sans-Serief; }
 	
-/* ¸ñ·Ï ¹× ÀÎ¿ë */
+/* ëª©ë¡ ë° ì¸ìš© */
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 
-/* hr Á¦°Å */
+/* hr ì œê±° */
 hr { display: none; }
 
-/* Á¦¸ñ ±Û²Ã Å©±â ¼³Á¤ */
+/* ì œëª© ê¸€ê¼´ í¬ê¸° ì„¤ì • */
 h1, h2, h3, h4, h5, h6 { 
 	font-weight: normal; 
 	color: #111; 
@@ -65,13 +65,13 @@ h1, h2, h3, h4, h5, h6 {
 	h1 img, h2 img, h3 img,
 	h4 img, h5 img, h6 img { margin: 0; }
 
-/* Á¦¸ñ, ´Ü¶ô »ó.ÇÏ °ø°£ ¼³Á¤ */
+/* ì œëª©, ë‹¨ë½ ìƒ.í•˜ ê³µê°„ ì„¤ì • */
 p { margin: 0 0 1.5em; }
 
-/* :active, :focus °¡»óÅ¬·¡½º ¾Æ¿ô¶óÀÎ ¼³Á¤ Á¦°Å */
+/* :active, :focus ê°€ìƒí´ë˜ìŠ¤ ì•„ì›ƒë¼ì¸ ì„¤ì • ì œê±° */
 :active, :focus { outline: 0; }
 
-/* ÇÏÀÌÆÛ¸µÅ© ±âº» ½ºÅ¸ÀÏ ÀçÁ¤ÀÇ */
+/* í•˜ì´í¼ë§í¬ ê¸°ë³¸ ìŠ¤íƒ€ì¼ ì¬ì •ì˜ */
 a:link, a:visited { 
 	padding-bottom: .25px; 
 	text-decoration: none;
@@ -82,7 +82,7 @@ a:hover, a:active {
 	color: #424242;
 }
 
-/* img¸¦ Æ÷ÇÔÇÑ a¿ä¼ÒÀÇ º¸´õ, ÆĞµù ÃÊ±âÈ­ ¼³Á¤ */
+/* imgë¥¼ í¬í•¨í•œ aìš”ì†Œì˜ ë³´ë”, íŒ¨ë”© ì´ˆê¸°í™” ì„¤ì • */
 a img {
 	
 	border: 0; 
@@ -103,28 +103,28 @@ del { text-decoration: line-through; }
 
 .title{width:100px;height:35px;background-color:white;;margin-bottom:30px;font-size:20px;font-weight:bold;
 	margin-top:50px;float:left;}
-	html{color:#000;padding:20px 0;font: 12px/18px "¸¼Àº °íµñ", "Malgun Gothic";}
+	html{color:#000;padding:20px 0;font: 12px/18px "ë§‘ì€ ê³ ë”•", "Malgun Gothic";}
 
 	
 
-	.comment{width:100px;height:35px;background-color:#1E90FF;float:left;margin-right:3px;text-align:center;font-weight:bold;font-size:20px;margin-left:35px;padding-top:7px;margin-top:5px;}/*¼­Æòº¸±âÅ¸ÀÌÆ²*/
-	.comment_in{width:800px;background-color:white;float:left;height:50px;border:solid;}/*¼­ÆòÆ²*/
+	.comment{width:100px;height:35px;background-color:#1E90FF;float:left;margin-right:3px;text-align:center;font-weight:bold;font-size:20px;margin-left:35px;padding-top:7px;margin-top:5px;}/*ì„œí‰ë³´ê¸°íƒ€ì´í‹€*/
+	.comment_in{width:800px;background-color:white;float:left;height:80px;border:solid;position:absolute;}/*ì„œí‰í‹€*/
 	.tab {border-collapse:collapse;border-spacing:0;}
 
-	td {border:1px solid #444;font: "¸¼Àº °íµñ";padding:5px;width:85px;height:100px;font-size:15px;}
-	th {border:1px solid #444;font: 12px/18px "¸¼Àº °íµñ", "Malgun Gothic";padding:5px;width:90px;height:50px;background-color:#1E90FF;font-size:20px;text-align:center;padding-top:20px;font-weight:bold;}
-	
+	td {border:1px solid #444;font: "ë§‘ì€ ê³ ë”•";padding:5px;width:85px;height:100px;font-size:15px;}
+	th {border:1px solid #444;font: 12px/18px "ë§‘ì€ ê³ ë”•", "Malgun Gothic";padding:5px;width:90px;height:50px;background-color:#1E90FF;font-size:20px;text-align:center;padding-top:20px;font-weight:bold;}
+
 	.text{float:left;width:400px;height:35px;background-color:white;;margin-left:20px;}
 	
-	td.img>img{width:83px;}/*ÀÌ¹ÌÁöÅ©±â*/
+	td.img>img{width:83px;}/*ì´ë¯¸ì§€í¬ê¸°*/
 
 
 
-	.butt{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*¹öÆ°*/
-	.butt3{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*¹öÆ°*/
+	.butt{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*ë²„íŠ¼*/
+	.butt3{width:70px;height:38px;float:left;background-color:#1E90FF;margin-left:5px;margin-top:3px;}/*ë²„íŠ¼*/
 	.sub_size{width:600px;height:40px;float:left;}
 
-	#wrap{width:960px;margin:0 auto;}/*ÀüÃ¼ Å×ÀÌºí Æ² */
+	#wrap{width:960px;margin:0 auto;}/*ì „ì²´ í…Œì´ë¸” í‹€ */
 
 	table{width:960px;}
 

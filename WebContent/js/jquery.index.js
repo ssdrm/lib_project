@@ -78,4 +78,4 @@ $(function($){
 	$("#other_mid li>a:first").click();
 	
 	});
-})(jQuery);
+});

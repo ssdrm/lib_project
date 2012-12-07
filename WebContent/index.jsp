@@ -29,7 +29,7 @@
 	<div id = "wrap">
 	
 		<jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
+			<jsp:param name="Aurl" value = "index.jsp"/>
 		</jsp:include>
 		<div id = "box">
 		<div id = "libmain">
@@ -47,7 +47,7 @@
 							<input type="text" class="typetext" id="searchbar" name="searchbar">
 							<input type="hidden" name="op" value="serch">
 							<input type="image" alt="검색" src="img/btn_msearch.gif" value="">
-							<a href="search_main.html"><img src="img/btn_searchdetail.gif" height="31px"></a>
+							<a href="search_main.jsp"><img src="img/btn_searchdetail.gif" height="31px"></a>
 							</form>
 					</div>
 				</div>
@@ -61,11 +61,11 @@
 				<div id = "user">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -74,7 +74,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
@@ -90,11 +90,11 @@
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -104,10 +104,10 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
-							<li><a href="">회원관리</a></li>
-							<li><a href="">학생추가 </a></li>
+							<li><a href="LibPServlet?op=use">회원관리</a></li>
+							<li><a href="LibPServlet?op=stu">학생추가 </a></li>
 						</ul>
 					</nav>
 				</div>
@@ -116,11 +116,11 @@
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
-							<li><a href="data_application.html">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
+							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.html">도서관 오는길</a></li>
+							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -130,7 +130,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="">신청된자료조회</a></li>
+							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
@@ -282,9 +282,6 @@
 			 자연캠퍼스 도서관 (우449-728) 경기도 용인시 처인구 명지로 116
 		</div>
 		</div>
-		<a href = "LibPServlet?op=serch&searchbar=1">test</a>
-		<a href = "LibPServlet?op=test&id=99999999">logintest</a>
-		<c:out value = "${log.id }"/>
 	</div>
 </body>
 </html>

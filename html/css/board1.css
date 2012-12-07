@@ -1,0 +1,38 @@
+
+#wrap
+{
+	width:960px; margin:0 auto;
+
+}
+#text{text-align:center;width:130px;}
+#box{margin-top:130px;}
+
+th{background-color:gainsboro;font-size:16px;font-weight:bold;text-align:center;}
+td{text-align:center;font-size:15px;}
+
+.up,.up1{font-weight:bold;}
+.up1>a:link{color:#9400D3;}
+.up1>a:visited{color:blue;}
+.up1>a:hover{color:red;}
+
+.up>a:hover{color:blue;}
+.up>a:visited{color:green;}
+.up>a:link{color:#1E90FF;}
+.page{width:940px;height:50px;}
+
+table{margin-left:1px;border-width:2px;}
+.page>ul{ margin:0; padding:0;}
+.page>ul>li {float:left;font-size:15px;font-weight:bold;margin-top:10px;}
+
+.disabled{margin-left:450px;}
+
+.page >ul>li>a:hover{color:blue;}
+.page >ul>li>a:link{color:#1E90FF;}
+.active{margin-left:1px;margin-right:1px;font-weight:bold;float:left;}
+
+#title{width:210px;height:30px;background-color:gainsboro;font-size:20px;font-weight:bold;text-align:center;
+border:solid;border-width:2px;border-color:gray;margin-bottom:2px;}
+
+.sub{width:100px;height:30px;font-size:15px;font-weight:bold;float:right;margin-top:10px;text-align:right;}
+
+a:link.sub{color:purple;}

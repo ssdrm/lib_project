@@ -19,7 +19,7 @@
     <div id="wrap">
     
     <jsp:include page="share/navi.jsp">
-			<jsp:param name="" value=""/>
+			<jsp:param name="Aurl" value = "data_intro.jsp"/>
 		</jsp:include>
 		
 	<div id="box">	

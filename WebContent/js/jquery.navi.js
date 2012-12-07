@@ -15,8 +15,8 @@
 		
 		//옵션
 		options = {
-			gab : 20,//폭(높이)
-			speed : 400,//애니메이션 이동 스피드
+			gab : 10,//폭(높이)
+			speed : 200,//애니메이션 이동 스피드
 			easing : 'easeInOutElastic',//애니메이션 이동 방법
 			reset : 2000//다시 돌아오는 시간
 		};
@@ -50,7 +50,7 @@
 		
 		$adminmove.css({//adminmove참조 객체에 .css()메소드를 사용하여 스타일링
 			position : 'absolute',//절대위치로 지정
-			top : $admincur.position().top - (options.gab/2),//상단 위치를 admincur요소top위치로 설정.
+			top : $admincur.position().top - (options.gab),//상단 위치를 admincur요소top위치로 설정.
 			left : $admincur.position().left,//왼쪽 위치를 admincur요소 left위치로 설정.
 			width : $admincur.outerWidth(),//가로폭을 admincur요소 가로폭만큼 설정.
 			height : $admincur.outerHeight() + options.gab,//세로폭을 admincur요소 세로폭만큼 설정.
@@ -65,7 +65,7 @@
 				left : $(this).position().left,//usermove 왼쪽 위치를 마우스 포인터를 올려놓은 li의 왼쪽위치로 옮김
 				width : $(this).outerWidth()//usermove 의 가로 폭을 마우스 포인터를 올려놓은 li의 가로 폭으로 바꿈
 			},{
-				duration : 400,//애니메이션의 지속 시간을 400ms(0.4초)로 설정
+				duration : options.speed,//애니메이션의 지속 시간을 200ms(0.2초)로 설정
 				easing : options.easing,//애니메이션 이징 곡선을 탄력 움직임으로 설정
 				queue : false//애니메이션 큐 설정 값을 false
 			});
@@ -77,7 +77,7 @@
 				left : $(this).position().left,//usermove 왼쪽 위치를 마우스 포인터를 올려놓은 li의 왼쪽위치로 옮김
 				width : $(this).outerWidth()//usermove 의 가로 폭을 마우스 포인터를 올려놓은 li의 가로 폭으로 바꿈
 			},{
-				duration : 400,//애니메이션의 지속 시간을 400ms(0.4초)로 설정
+				duration : options.speed,//애니메이션의 지속 시간을 200ms(0.2초)로 설정
 				easing : options.easing,//애니메이션 이징 곡선을 탄력 움직임으로 설정
 				queue : false//애니메이션 큐 설정 값을 false
 			});
