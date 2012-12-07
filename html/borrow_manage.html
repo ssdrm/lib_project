@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>대출업무 </title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/search_resul.css" rel="stylesheet" type="text/css">
+<link href="css/share.css" rel="stylesheet" type="text/css">
+<script src="js/comment.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+			<div class="title">대출업무 </div>
+			<div class="title2"><a href="">메인으로가기</a></div>
+	<div id="rebox">
+			<input type="text" class="typetext" id="searchbar"><a
+				href="../search/search_result.jsp"><img id="s"
+				src="img/btn_msearch.gif"></a>
+
+
+		</div>
+		<form action="LibPServlet" method="post">
+		<table>
+			<tr>
+				<th>번호</th>
+				<th>아이디 </th>
+
+				<th>도서명</th>
+				<th>대출일자 </th>
+				<th>반납일자 </th>
+
+				<th>연장횟수 </th>
+
+				<th>연체일수 </th>
+
+				<th>도서상태</th>
+
+				<th style="width: 140px;"  >대출 관리  </th>
+
+			</tr>
+			<tr>
+				<td>7</td>
+
+				<td>     </td>
+				<td>   </td>
+				<td>   </td>
+				<td>우리궁궐</td>
+				<td>2012-02-02</td>
+				<td> </td>
+				<td> </td>
+				<td >ID : <input type="text" size="10" style="float:right;"><br>
+				 <input type="submit" value="대출등록 "style="float:right;"><br>
+
+				 <a href="" >반납처리 </a>
+				 </td>
+
+			</tr>
+		</div>
+</table>
+			<input type="hidden" name="op" value="">
+</form>
+</html>
