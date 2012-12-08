@@ -58,34 +58,33 @@
 </div>
 				
 					
-</div>
-				<div id="tablebox">
-					<table >
+</div><div id="tablebox">
+					<table border="1">
 				<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
 						<tr >
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
+							<td class="td1"><img src="bookkimages/12004.jpg" class="t"></td>
 							<td class="td2">
-							<div class="sub1"> 책이름</div> 
-								<div class="sub2">저자 </div>
-								<div class="sub3">  1988-01-01</div>
-								</td>
+							<div class="sub1">로버트쿠퍼의인생경영  </div> 
+								<div class="sub2">윤영호  </div>
+								<div class="sub3"> 2002-01-01</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="td1"><img src="bookkimages/92005.jpg" class="t"></td>
+							<td class="td2">
+								<div class="sub1">나는 한없이 살았다 홍사중이본 인간 최종현    </div> 
+								<div class="sub2">홍사중 </div>
+								<div class="sub3">  2002-01-01</div>
+							</td>
 
 						</tr>
-						<tr>
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
-							<td class="td2"></td>
-						</tr>
-						<tr>
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
-							<td class="td2"></td>
-						</tr>
+						
 		
-
-
+		
 
 			</table>
 		</div>

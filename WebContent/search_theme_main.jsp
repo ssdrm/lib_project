@@ -60,31 +60,32 @@
 					
 </div>
 				<div id="tablebox">
-					<table>
+						<div id="tablebox">
+					<table border="1">
 				<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
 						<tr >
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
-							<td class="td2">
+							<td class="td1"><img src="bookkimages/31017.jpg" class="t"></td>
+							<td class="td2"> 
+								<div class="sub1"> 에너지진단 원론</div> 
+								<div class="sub2"> 손학식 </div>
+								<div class="sub3">  2008-01-01</div>
+								 </td>
 							
-								<div class="sub1"> 책이름</div> 
-								<div class="sub2">저자 </div>
-								<div class="sub3">  1988-01-01</div>
-								</td>
 						</tr>
 						<tr>
-							<td class="td1">fdf</td>
-							<td class="td2">fdf</td>
+							<td class="td1"><img src="bookkimages/31018.jpg" class="t"></td>
+							<td class="td2">
+								<div class="sub1"> 에너지 소사이어티</div> 
+								<div class="sub2"> 이동헌 </div>
+								<div class="sub3">  2009-01-01</div>
+							</td>
 						</tr>
-						<tr>
-							<td class="td1">fd</td>
-							<td class="td2">fd</td>
-						</tr>
+						
 		
-
 
 
 			</table>

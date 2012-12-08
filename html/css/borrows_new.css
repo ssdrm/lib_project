@@ -8,10 +8,10 @@ font-weight:bold;margin-top:15px;margin-right:20px;}
 .sub{width:320px;height:34px;margin-top:10px;}
 .sub1{width:150px;height:25px;float:left;background-color:#1E90FF;border:solid;padding-top: 5px;}
 .sub2{width:150px;height:25px;float:left;background-color:#1E90FF;text-align:center;border:solid;padding-top:5px;}
-.tablebox{width:940px;background-color:ivory;border:solid;margin-top:30px;border-radius:20px;padding-left:10px;}
+.tablebox{width:940px;background-color:ivory;border:solid;margin-top:30px;padding-left:10px;}
 
 
-table{border:solid;background-color:gray;width:930px;}
+table{border:solid;background-color:gray;width:930px;border-radius:20px;}
 
 .titles{width:100px;height:25px;font-size:20px;font-weight:bold;margin-left:8px;margin-top:10px;margin-bottom:5px;}
 .titles2{width:100px;height:25px;font-size:20px;font-weight:bold;margin-left:8px;margin-top:10px;margin-bottom:5px;}

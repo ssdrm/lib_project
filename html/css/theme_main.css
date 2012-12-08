@@ -97,7 +97,7 @@ del { text-decoration: line-through; }
 
 #wrap{width:960px;margin:0 auto;border-style:solid;}
 #title1{width:960px;height:80px;font-size:30px;font-weight:bold;padding-top:20px;margin-left:70px;margin-top:30px;}
-#title2{width:710px;background-color:white;height:180px;margin-left:100px;margin-top:10px;
+#title2{width:710px;background-color:gainsboro;height:180px;margin-left:100px;margin-top:10px;border-radius:20px;
 margin-bottom:20px;border:solid;}
 
 #tablebox{width:720px;background-color:white;margin-left:100px;}
@@ -111,7 +111,7 @@ table{width:720px;border-color:black;border-width:3px;}
 .sub2{width:510px;height:30px;float:left;margin-bottom:20px;background-color:gainsboro;font-size:15px;padding-left:10px;font-weight:bold;}
 .sub3{width:510px;height:30px;float:left;margin-bottom:20px;background-color:gainsboro;font-size:15px;padding-left:10px;font-weight:bold;}
 
-th{background-color:#1E90FF;font-size:20px;height:50px;font-weight:bold;text-align:right;border:solid;padding-top:10px;padding-right:10px;}
+th{background-color:#4f93ca;font-size:20px;height:40px;font-weight:bold;text-align:right;border:solid;padding-top:10px;padding-right:10px;}
 #layer1{font-size:40px;z-index:2;margin-left:20px;position:absolute;margin-top:10px;
 	color:blue;font-family:"±Ã¼­";}
 #layer2{font-size:40px;z-index:1;margin-left:22px;position:absolute;margin-top:12px;
@@ -182,7 +182,7 @@ caption {
 	visibility: hidden; 
 	height: 1px;
 }
-#but{background-color:white;width:700px;height:180px;}
+#but{background-color:gainsboro;width:700px;height:180px;border-radius:20px;}
 a{text-decoration:none;}
 a:link,a:visited{
 	color:black;

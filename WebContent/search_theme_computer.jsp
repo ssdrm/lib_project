@@ -63,29 +63,29 @@
 				
 					
 </div>
+				
 				<div id="tablebox">
-					<table>
+					<table border="1">
 						<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
 						<tr >
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
+							<td class="td1"><img src="bookkimages/03019.jpg" class="t"></td>
 							<td class="td2">
-							<div class="sub1"> 책이름</div> 
-								<div class="sub2">저자 </div>
-								<div class="sub3">  1988-01-01</div>
+							<div class="sub1">한글 액세스와 매크로  </div> 
+								<div class="sub2">김소윤 </div>
+								<div class="sub3">  2003-01-01</div>
 							</td>
 						</tr>
 						<tr>
-							<td class="td1"></td>
-							<td class="td2"></td>
+							<td class="td1"><img src="bookkimages/03016.jpg" class="t"></td>
+							<td class="td2">	<div class="sub1">3D MAX  </div> 
+								<div class="sub2">현대건축디자인 학원 </div>
+								<div class="sub3">  2009-01-01</div></td>
 						</tr>
-						<tr>
-							<td class="td1"></td>
-							<td class="td2"></td>
-						</tr>
+					
 		
 
 			</table>
@@ -98,11 +98,4 @@
 	
 </body>
 </html>
-	</div>
-
-
-
-		
 	
-</body>
-</html>

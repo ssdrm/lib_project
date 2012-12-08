@@ -231,10 +231,10 @@
 
 }
 /*theme sub*/
-.text{width:130px;height:80px;}/*제목 이름 틀*/
+.text{width:120px;height:80px;font-size:15px;}/*제목 이름 틀*/
 .img{width:140px;height:80px;}/*이미지크기조절*/
 
-.titletext{width:100px;height:35px; font-size:15px;margin-left:20px;}/*책이름*/
+.titletext{width:100px;height:50px; font-size:15px;margin-left:20px;}/*책이름*/
 .copy{width:100px;height:35px;margin-left:20px;font-size:15px;}/*저자*/
 
 

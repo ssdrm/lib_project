@@ -60,31 +60,30 @@
 					
 </div>
 				<div id="tablebox">
-					<table>
-				<tr>
+					<table border="1">
+							<tr>
 							<th colspan="2">
 								자료명/저자/출판년도 
 							</th>
 						</tr>
-						<tr >
-							<td class="td1"><img src="img/t.jpg" class="t"></td>
+				<tr >
+							<td class="td1"><img src="bookkimages/84030.jpg" class="t"></td>
 							<td class="td2">
-							<div class="sub1"> 책이름</div> 
-								<div class="sub2">저자 </div>
-								<div class="sub3">  1988-01-01</div>
-								</td>
+							<div class="sub1">궁궐의 눈물 </div> 
+								<div class="sub2">우동선  </div>
+								<div class="sub3">  2009-01-01</div>
+							</td>
 						</tr>
 						<tr>
-							<td class="td1"></td>
-							<td class="td2"></td>
+							<td class="td1"><img src="bookkimages/84029.jpg" class="t"></td>
+							<td class="td2">
+								<div class="sub1">우리궁궐 이야기  </div> 
+								<div class="sub2">홍순민  </div>
+								<div class="sub3">  1999-01-01</div>
+							</td>
 						</tr>
-						<tr>
-							<td class="td1"></td>
-							<td class="td2"></td>
-						</tr>
+						
 		
-
-
 
 			</table>
 		</div>
