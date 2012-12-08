@@ -60,7 +60,7 @@
 					
 </div>
 				<div id="tablebox">
-						<div id="tablebox">
+						
 					<table border="1">
 				<tr>
 							<th colspan="2">
