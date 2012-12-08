@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>대출업무 </title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/search_resul.css" rel="stylesheet" type="text/css">
+<link href="css/share.css" rel="stylesheet" type="text/css">
+<script src="js/comment.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.share.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+			<div class="title">대출하기</div>
+			
+			<div class="title2"><a href="">메인으로가기</a><br><a href="">대출조회 </a><br><a href="">반납하기 </a></div>
+	<div id="rebox">
+			<input type="text" class="typetext" id="searchbar" name=""><a
+				href="../search/search_result.jsp"><img id="s"
+				src="img/btn_msearch.gif"></a>
+
+
+		</div>
+
+		<form action="LibPServlet" method="post">
+		<table>
+			<tr>
+				<th class="sub_title">번호</th>
+	
+
+				<th>도서명</th>
+			
+
+				<th>ISBN</th>
+
+			
+				<th style="width: 140px;"  >대출 </th>
+
+			</tr>
+			<tr>
+		
+
+			
+				<td class="sub_title2">  1 </td>
+				<td class="sub_title2">우리궁궐d</td>
+				<td class="sub_title2">10312</td>
+			
+				<td class="sub_title2">ID : <input type="text" size="10" name="" >
+				 <input type="submit" value="대출등록" name="" >
+
+		
+				 </td>
+
+			</tr>
+	
+</table>
+			<input type="hidden" name="op" value="">
+</form>
+</div>
+</body>
+</html>

@@ -4,15 +4,11 @@
 <meta charset="utf-8">
 <title>검색결과</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/search_resul.css" rel="stylesheet" type="text/css">
+<link href="css/search_resul2.css" rel="stylesheet" type="text/css">
 <link href="css/share.css" rel="stylesheet" type="text/css">
 <script src="js/comment.js"></script>
 <script src="js/jquery-1.8.2.min.js"></script>
 <script src="js/jquery.share.js"></script>
-
-
-
-
 </head>
 
 <body>
@@ -81,7 +77,8 @@
 			</ul>
 		</div>
 
-		<div class="title">검색결과</div>
+
+		<div class="title">서평보기/추가 </div>
 		<div id="rebox">
 			<input type="text" class="typetext" id="searchbar"><a
 				href="../search/search_result.jsp"><img id="s"
@@ -89,10 +86,8 @@
 
 
 		</div>
-
-
-
-		<table>
+		<form action="LibPServlet" method="post">
+			<table>
 			<tr>
 				<th>번호</th>
 				<th>이미지</th>
@@ -107,7 +102,6 @@
 
 				<th>도서상태</th>
 
-				<th>예약</th>
 
 			</tr>
 			<tr>
@@ -120,138 +114,31 @@
 				<td>2012-02-02</td>
 				<td>?</td>
 				<td>fff</td>
-				<td style="width: 100px;"><input type="button" value="예약하기"
-					id="reser"><br> <input type="button" value="서평보기 "
-					class="coms"></td>
+			
 
 
 			</tr>
-
-			<tbody class="comment_hide">
-			<tr >
-				<th>남긴이</th>
-				<th>내 용</th>
-				<th> 추가</th>
-			</tr>
-
-
-				<tr >
-
-				<td>ㅇㅇ </td>
-		
-				<td>서평이러쿵 저러쿵 저쿵ㄹ</td>
-				<td><input type="button" value="서평 추가 " class="add"></td>
-				
-			</tr>
-		</tbody>
-	
-
-
-
-
-
-
-
-
-			<tr class="comment_in">
-
-
-
-				<td class="comment">서평 추가</td>
-
-
-				<td class="sub_size"><input type="text" class="text"><input
-					type="button" value="+" class="butt"> <input type="button"
-					value="-" class="butt3"></td>
-			</tr>
-
-
-
+			
 			<tr>
-				<td>7</td>
-
-				<td class="img"><img src="img/logo.gif"></td>
-				<td>ㅅ</td>
-				<td>2ㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇ</td>
-				<td>우리궁궐</td>
-				<td>2012-02-02</td>
-				<td>?</td>
-				<td>fff</td>
-				<td style="width: 100px;"><input type="button" value="예약하기"
-					id="reser"><br> <input type="button" value="서평보기 "
-					class="coms"></td>
-
+				<th colspan="8" style="height:20px; ">서평 보기 </th>
 
 			</tr>
-
-	
-
-
-
-
-
-
-			<tfoot  class="comment_in">
-
-	<tr>
-
-
-
-				<td class="comment">서평 추가</td>
-
-
-				<td class="sub_size"><input type="text" class="text"><input
-					type="button" value="+" class="butt"> <input type="button"
-					value="-" class="butt3"></td>
+			<tr>
+				<td colspan="8" class="comment2"><div class="sub2">작성자 : 프로젝트 |작성내용 : 프로젝트에 대한고찰 ㄱㄷㄱㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄷㄱㄱㄱㅇㅇㄷㄱ |작성일자 : 2012-02-01
+				</div>
+			</td>
 			</tr>
-	<tfoot>
+					<tr >
+						<th colspan="8"style="height:20px; ">서평 추가</th>
+					</tr>
+						<tr >
 
-			
-			
-		</table>
+						<td colspan="8" class="comment"> <div class="sub2">작성내용 :&nbsp;&nbsp;&nbsp;<input type="text" size="80">
+							<input type="submit" value="서평 추가 "></div></td>
+					</tr>
 
-
-
-
-
-
-
-	</div>
-
-
-
-
-</body>
+				</table>
+						<input type="hidden" name="op" value="">
+			</form>
+		</body>
 </html>
-
-<script type="text/javascript">
-	$(function() {
-
-		$(".comment_hide").hide()
-		$(".comment_in").hide()
-
-		$(".coms").click(function() {
-			$("tbody.comment_hide:first").slideToggle()("slow")
-		
-
-		});
-	
-
-		$(".butt1").click(function() {//서평 추가 버튼 누르면 
-			$("tbody.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
-			$("tfoot.comment_in:").show()("slow");
-
-		});
-		$(".butt3").click(function() {
-			$("tfoot.comment_in").hide("slow");
-
-		});
-
-		$('.add').click(function() {
-			$("tbody.comment_hide").hide("slow")//서평 추가 목록 보기 사라지고 
-			
-			$("tfoot.comment_in:first").show("slow")
-		});
-	});
-</script>
-
