@@ -58,9 +58,16 @@
 					<jsp:param name="optionvalue" value="${board.bdtype }" />
 				</jsp:include>
 			</c:forEach>
-			<br>
-			<br>
-			<br> <a class="sub" href="BoardServlet?op=write">글쓰기</a>
+			<c:forEach var="board" items="${boards.list }" begin="0" end="0">
+				<c:choose>
+					<c:when test="${board.bdtype == 'N' && admintype == 'T' }">
+						<a class="sub" href="">글쓰기</a>
+					</c:when>
+					<c:when test="${board.bdtype == 'Q' && admintype == 'T' && admintype == 'F' }">
+						<a class="sub" href="">글쓰기</a>
+					</c:when>
+				</c:choose>
+			</c:forEach>
 		</div>
 	</div>
 </body>

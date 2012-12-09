@@ -37,12 +37,15 @@ A:hover {
     	<jsp:include page="share/navi.jsp">
 				<jsp:param name="Aurl" value = "data_application.jsp"/>
 			</jsp:include>
+			<c:choose>
+			<c:when test="${user != NULL }">
         <div id="box">
     <DIV id="pop_title">
         <p align="center">
             <IMG src="img/appleication_write_title.jpg" width="680" height="83" alt="title">
         </p>
     </DIV>
+    <form action="LibPServlet" method="post">
     <TABLE border="0" cellSpacing="0" cellPadding="0" width="680"
         align="center" height="233">
         <TBODY>
@@ -58,10 +61,10 @@ A:hover {
                     width="26" height="10"><FONT color="#ff0000">*</FONT>
                 <!--도서명--></TD>
                 <TD height="30">
-                    <form name="form2">
-                        <INPUT id="bname" class="inptxt w400" name="bname" maxLength="100"
+                    
+                        <INPUT id="bname" class="inptxt w400" name="bookname" maxLength="100"
                             value="" type="text">
-                    </form>
+                    
                 </TD>
             </TR>
             <TR>
@@ -74,10 +77,11 @@ A:hover {
                     color="#ff0000">*</FONT>
                 <!--저자--></TD>
                 <TD height="30">
-                    <form name="form3">
-                        <INPUT id="bauth" class="inptxt w400" name="bauth" value=""
+                   
+                        <INPUT id="bauth" class="inptxt w400" name="bookwriter" value=""
                             type="text">
-                    </form>
+                            
+                    
                 </TD>
             </TR>
             <TR>
@@ -89,10 +93,10 @@ A:hover {
                     width="27" height="10"><FONT color="#ff0000">*</FONT>
                 <!--출판사--></TD>
                 <TD height="30">
-                    <form name="form4">
-                        <INPUT id="bpub" class="inptxt w400" name="bpub" value=""
+                    
+                        <INPUT id="bpub" class="inptxt w400" name="bookmaker" value=""
                             type="text">
-                    </form>
+                    
                 </TD>
             </TR>
             <TR>
@@ -112,22 +116,30 @@ A:hover {
                 <!--신청사유--></TD>
                 <TD height="98"><TEXTAREA id="reason" onload="change()"
                         class="inptxt  w400" name="reason" rows="5" cols="36"></TEXTAREA><BR>
-                <SPAN style="color: rgb(255, 0, 0); font-size: 9pt;" id="rea_error"
-                    name="rea_error"></SPAN></TD>
+                <SPAN style="color: rgb(255, 0, 0); font-size: 9pt;" id="rea_error"></SPAN></TD>
             </TR>
             <TR>
                 <TD bgColor="#d1d1d1" height="1" colSpan="2"></TD>
             </TR>
         </TBODY>
+        
     </TABLE>
     <p align="center">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <A href=""> <IMG alt=등록 src="img/btn_hope_book_01.gif"></A>
-        &nbsp;&nbsp;<A href=""> <IMG alt=취소 src="img/btn_hope_book_02.gif"></A>
+       <input type="image" alt="등록" src="img/btn_hope_book_01.gif">
+        &nbsp;&nbsp;
     </p>
+    <input type="hidden" name="op" value="addimp">
+    <input type="hidden" name="id" value="${user }">
+    </form>
     </div>
-</div>
+    </c:when>
+	<c:otherwise>
+	로그인을 하셔야 이용할 수 있습니다.<br>
+	<a href="LibPServlet">메인으로</a>
+	</c:otherwise>
+	</c:choose>
 </div>
 
 </body>

@@ -23,7 +23,7 @@
 	</jsp:include>
 		
    <div id="box">		
-<p align="center"><A href="intro1.htm"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4_over.gif"></A></p>
+<p align="center"><A href="intro1.jsp"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4_over.gif"></A></p>
 <h4 class="h4_type" align="left"><b><font size="4" color="#0070C0">▶ 이용수칙</font></b></h4>
 <table class="bbslist_rule">
     <tbody>

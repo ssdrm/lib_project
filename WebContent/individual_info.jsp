@@ -28,33 +28,42 @@
 		<jsp:include page="share/navi.jsp">
 			<jsp:param name="Aurl" value = "individual_info.jsp"/>
 		</jsp:include>
-	<form action="#" method="post">
+		<c:choose>
+		<c:when test="${user != NULL }">
+		<form action="LibPServlet" method="post">
 		<table>
 			<tr>
 				<td colspan="2" class="title">개인정보관리</td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td>아무개 </td>
+				<td><c:out value="${name }"/> </td>
 			</tr>
 			<tr>
 				<td>학번</td>
-				<td>6010</td>
+				
+				<td><c:out value="${user }"/><input type="hidden" name="id" value="${user }"></td>
 			</tr>
 			
 			<tr>
 				<td>휴대전화</td>
-				<td><input type="text" class="box"></td>
+				<td><input type="text" class="box" name="phone" value="${chuser.phone }"></td>
 			</tr>
 			<tr>
 				<td>이메일</td>
-				<td><input type="text" class="box">
-				<input type="button" value="작성완료">
+				<td><input type="text" class="box" name="mail" value="${chuser.email }">
+				<input type="submit" value="작성완료">
+				<input type="hidden" name="op" value="chuse">
 				</td>
 			</tr>
 		</table>
 	</form>
+	</c:when>
+	<c:otherwise>
+	로그인을 하셔야 이용할 수 있습니다.<br>
+	<a href="LibPServlet">메인으로</a>
+	</c:otherwise>
+	</c:choose>
 </div>
-	
 </body>
 	</html>

@@ -39,45 +39,53 @@
 
 		<table>
 			<tr>
-				<th>번호</th>
-				<th>이미지</th>
-				<th>도서명</th>
-				<th>저자</th>
+				<th style="width:30px;">번호</th>
+				<th style="width:120px;">이미지</th>
+				<th style="width:150px;">도서명</th>
+				<th style="width:130px;">저자</th>
 				<th>출판사</th>
 				<th>소장위치</th>
 				<th>isbn</th>
 				<th>도서상태</th>
-				<th>예약</th>
+				<th>서평 </th>
 			</tr>
 			<c:forEach var = "books" items="${Serbook.list }">
 				<tr>
-					<td><c:out value = "${books.b_number }"/></td>
+					<td style="text-align:center;"><c:out value = "${books.b_number }"/></td>
 					<td class="img"><img src="bookkimages/${books.isbn }.jpg"></td>
 					<td><c:out value = "${books.b_name }"/></td>
 					<td><c:out value = "${books.writer }"/></td>
 					<td><c:out value = "${books.maker }"/></td>
 					<td><c:out value = "${books.location }"/></td>
 					<td><c:out value = "${books.isbn }"/></td>
-					<td>fff</td>
-					<td style="width: 100px;"><input type="button" value="예약하기"
-						id="reser"><br> <input type="button" value="서평보기 "
-						class="coms"></td>
+					<td>
+					<c:set var = "count" value="0"/>
+					<c:forEach var = "br" items="${bookborrow.list }">
+					<c:choose>
+					<c:when test="${books.b_number == br.b_number }">
+					<c:set var = "count" value="1"/>
+					</c:when>
+					<c:otherwise>
+					</c:otherwise>
+					</c:choose>
+					</c:forEach>
+					<c:choose>
+					<c:when test="${count==1 }">
+					대출중
+					</c:when>
+					<c:otherwise>
+					대출가능
+					</c:otherwise>
+					</c:choose>
+					</td>
+					<td><a href="LibPServlet?op=commen&b_number=${books.b_number }">
+					서평보기
+					</a></td>
 				</tr>
 				<tr class="comment_hide">
 				<th>남긴이</th>
 				<th>내 용</th>
 				<th> 추가</th>
-			</tr>
-			<tr class="comment_hide">
-				<td>ㅇㅇ </td>
-				<td>서평이러쿵 저러쿵 저쿵ㄹ</td>
-				<td><input type="button" value="서평 추가 " class="add"></td>
-			</tr>
-			<tr class="comment_in">
-				<td class="comment">서평 추가</td>
-				<td class="sub_size"><input type="text" class="text"><input
-					type="button" value="+" class="butt"> <input type="button"
-					value="-" class="butt3"></td>
 			</tr>
 			</c:forEach>
 		</table>

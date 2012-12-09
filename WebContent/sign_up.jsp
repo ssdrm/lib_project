@@ -43,10 +43,7 @@
 						<img src="img/u_check.png">
 					</div>
 					<div id="right1">
-						<input type="text" id="userid" name="id"> <input type="button" value="중복검사"
-							onClick="idCheck()">
-
-
+						<input type="text" id="userid" name="id">
 					</div>
 				</div>
 				</p>

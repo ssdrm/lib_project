@@ -1,0 +1,2 @@
+set character set euckr;
+이것을 해야만 입력할때 한글이 통한다.

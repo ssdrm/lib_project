@@ -61,7 +61,6 @@
 				<input type="hidden" name="skey3" value="${clc }">
 				<div id="butt">
 					<input style="width: 100px;" type="submit" value="검   색 ">
-					<input style="width: 100px;" type="submit" value="나의History">
 				</div>
 				</form>
 			</div>

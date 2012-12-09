@@ -8,13 +8,13 @@
 			</div>
 			<div id = "header_right">
 				<c:choose>
-					<c:when test = "${user != NULL}">
+					<c:when test = "${user != NULL && admintype != 'O'}">
 			  		${name }님 환영합니다. <a href="LibPServlet?op=logout&Aurl=${Aurl }">로그아웃</a>
 					</c:when>
 					<c:otherwise>
 						<form name="form" action="LibPServlet" method="post">
-							ID : <input type="text" name="user" id="id" size="10px">
-							PASSWORD : <input type="password" name="passwd" id="password" size="10px">
+							ID <input type="text" name="user" id="id" size="10px">
+							PASSWORD<input type="password" name="passwd" id="password" size="10px">
 							<input type="image" alt="login" src="img/btn_login.gif" value="Login" >
 							<input type="hidden" name="Aurl" value="${Aurl }">
 							<a href="sign_up.jsp">회원가입</a>
@@ -43,13 +43,12 @@
 				<li><a href=""><span>도서관 서비스</span></a> 
 					<div>
 						<ol>
-							<li class="first"><a href="data_intro.jsp">자료구입신청/조회</a></li>
-							<li><a href="borrow_intro.jsp">대출현황조회/연장</a></li>
-							<li class="last"><a href="reserve_intro.jsp">도서예약</a></li>
+							<li class="first"><a href="data_intro.jsp">자료구입신청</a></li>
+							<li class="last"><a href="borrow_intro.jsp">대출조회/연장/성향</a></li>
 						</ol>
 					</div>
 				</li>
-				<li><a href=""><span>알림마당</span></a>
+				<li><a href="LibPServlet?op=board&btype=N"><span>알림마당</span></a>
 					<div>
 						<ol>
 						 	<li class="first"><a href="LibPServlet?op=board&btype=N">공지사항</a></li>
@@ -57,7 +56,7 @@
 						</ol>
 					</div>
 				</li>
-				<li><a href=""><span>도서관 이용안내</span></a>
+				<li><a href="intro1.jsp"><span>도서관 이용안내</span></a>
 					<div>
 						<ol>
 						 	<li class="first"><a href="intro1.jsp">도서관 소개</a></li>
@@ -65,14 +64,13 @@
 						</ol>
 					</div>
 				</li>
-				<li><a href=""><span>마이페이지</span></a>
+				<li><a href="individual_info.jsp"><span>마이페이지</span></a>
 					<div>
 						<ol>
-					 		<li class="first"><a href="individual_info.jsp">개인정보관리</a></li>
-							<li><a href="data_application.jsp">자료구입신청/조회</a></li>
-							<li><a href="borrows.jsp">대출현황조회/연장</a></li>
-							<li><a href="individual.jsp">개인연락사항</a></li>
-							<li class="last"><a href="">검색 히스토리</a></li>
+					 		<li class="first"><a href="LibPServlet?op=gchuse&id=${user }">개인정보관리</a></li>
+							<li><a href="data_application.jsp">자료구입신청</a></li>
+							<li><a href="LibPServlet?op=userbor&id=${user }">대출조회/연장/성향</a></li>
+							<li class="last"><a href="LibPServlet?op=free&id=${user }">개인연락사항</a></li>
 						</ol>
 					</div>
 				</li>

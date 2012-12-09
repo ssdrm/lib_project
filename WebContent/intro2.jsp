@@ -27,7 +27,7 @@
 	</jsp:include>
 		
 <div id="box">		
-<p align="center"><A href="intro1.htm"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7_over.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
+<p align="center"><A href="intro1.jsp"><IMG alt="도서관장 인사말" src="img/tab1_1.gif"></A><A href="intro2.jsp"><IMG alt="도서관 통계" src="img/tab1_7_over.gif"></A><A href="intro3.jsp"><IMG alt="조직도" src="img/tab1_5.gif"></A><A href="intro4.jsp"><IMG alt="도서관 규정" src="img/tab1_4.gif"></A></p>
 <h4 class="h4_type" align="left"><b><font size="3" color="#0070C0">▶ </font></b><font size="4" color="#0070C0">도서관 통계</font></h4>
 <h5 class="h5_type" align="center"><font size="6">장서현황</font>
     <p class="h5_type_add" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(단위:권, 2011. 3.1 기준)</p>

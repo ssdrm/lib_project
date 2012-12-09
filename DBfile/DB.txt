@@ -1,0 +1,101 @@
+CREATE DATABASE libpro DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+GRANT ALL ON libpro.* TO 'libid'@'localhost' IDENTIFIED BY 'libpass';
+use libpro;
+
+
+
+CREATE TABLE student(
+	id VARCHAR(10) PRIMARY KEY,
+	name VARCHAR(30)
+);
+
+CREATE TABLE books(
+	b_number INT PRIMARY KEY AUTO_INCREMENT,
+	b_name VARCHAR(100),
+	writer VARCHAR(30),
+	maker VARCHAR(30),
+	b_date DATE,
+	category VARCHAR(10),
+	isbn INT,
+	location VARCHAR(50)
+);
+
+CREATE TABLE user(
+	id VARCHAR(10) PRIMARY KEY,
+	name VARCHAR(30),
+	password VARCHAR(100),
+	email VARCHAR(30),
+	phone VARCHAR(13),
+	admintype CHAR(1),
+	CONSTRAINT FOREIGN KEY (id) REFERENCES student(id)
+);
+
+CREATE TABLE borrow(
+	bw_number INT PRIMARY KEY AUTO_INCREMENT,
+	b_number INT,
+	id VARCHAR(10),
+	`borrowdate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	returndate DATE,
+	extendate INT DEFAULT 0,
+	delaydate INT DEFAULT 0,
+	CONSTRAINT FOREIGN KEY (b_number) REFERENCES books(b_number),
+	CONSTRAINT FOREIGN KEY (id) REFERENCES user(id)
+);
+
+CREATE TABLE reserve(
+	re_number INT PRIMARY KEY AUTO_INCREMENT,
+	id VARCHAR(10),
+	b_number INT,
+	`reservedate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	reserveinfo CHAR(1) DEFAULT 'B',
+	CONSTRAINT FOREIGN KEY (id) REFERENCES user(id),
+	CONSTRAINT FOREIGN KEY (b_number) REFERENCES books(b_number)
+);
+
+CREATE TABLE import(
+	im_number INT PRIMARY KEY AUTO_INCREMENT,
+	`importdate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	bookname VARCHAR(100),
+	bookwriter VARCHAR(30),
+	bookmaker VARCHAR(30),
+	reason TEXT,
+	status CHAR(1) DEFAULT 'B',
+	id VARCHAR(10),
+	CONSTRAINT FOREIGN KEY (id) REFERENCES user(id)
+);
+
+CREATE TABLE board(
+	bdnumber INT PRIMARY KEY AUTO_INCREMENT,
+	id VARCHAR(10),
+	title VARCHAR(30),
+	bdcomment TEXT,
+	`bd_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	hits INT,
+	parent_id VARCHAR(10),
+	bdtype CHAR(1),
+	CONSTRAINT FOREIGN KEY (id) REFERENCES user(id),
+	CONSTRAINT FOREIGN KEY (parent_id) REFERENCES user(id)
+);
+
+CREATE TABLE bookcomment(
+	conum INT PRIMARY KEY AUTO_INCREMENT,
+	id VARCHAR(10),
+	co_comment TEXT,
+	`co_date`  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	b_number INT,
+	CONSTRAINT FOREIGN KEY (id) REFERENCES user(id),
+	CONSTRAINT FOREIGN KEY (b_number) REFERENCES books(b_number)
+);
+
+set character set euckr;
+INSERT INTO student(id, name) VALUES('99999999','관리자');
+INSERT INTO user(id, name, password, email, phone, admintype) VALUES('99999999','관리자','1234','test@test.com','01099999999','T');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','질문테스트1','테스트중입니다.','0','Q');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','질문테스트2','테스트중입니다.','0','Q');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','질문테스트3','테스트중입니다.','0','Q');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','질문테스트4','테스트중입니다.','0','Q');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','공지테스트1','테스트중입니다.','0','N');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','공지테스트2','테스트중입니다.','0','N');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','공지테스트3','테스트중입니다.','0','N');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','공지테스트4','테스트중입니다.','0','N');
+INSERT INTO board(id, title, bdcomment, hits, bdtype) VALUES('99999999','공지테스트5','테스트중입니다.','0','N');

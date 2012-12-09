@@ -39,7 +39,6 @@
 			
 				<img alt="mju" src="img/mju.jpg">
 				</div>
-			<!--여기에 사진넣을꺼다.-->
 					<div id = "mainserch">
 							
 							<p style="line-height:50%; margin-top:0; margin-bottom:0;"><img src="./img/searchTab1_c.gif"></p>
@@ -47,7 +46,7 @@
 							<input type="text" class="typetext" id="searchbar" name="searchbar">
 							<input type="hidden" name="op" value="serch">
 							<input type="image" alt="검색" src="img/btn_msearch.gif" value="">
-							<a href="search_main.jsp"><img src="img/btn_searchdetail.gif" height="31px"></a>
+							<a href="LibPServlet?op=key"><img src="img/btn_searchdetail.gif" height="31px"></a>
 							</form>
 					</div>
 				</div>
@@ -61,10 +60,10 @@
 				<div id = "user">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
-							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
-							<li><a href="">현재날짜 / 현재시간</a></li>
-							<li><a href="">개인정보관리</a></li>
+							<li class = "focus"><a href="LibPServlet?op=userbor&id=${user }">대출현황/연장/성향 </a></li>
+							<li><a href="data_application.jsp">자료구입신청</a></li>
+							<li><a href="LibPServlet?op=impid&id=${user }">자료구입조회</a></li>
+							<li><a href="LibPServlet?op=free&id=${user }">개인연락사항</a></li>
 							<li><a href="come1.jsp">도서관 오는길</a></li>
 						</ul>
 					</nav>
@@ -74,7 +73,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
+							<li><a href="">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
@@ -90,11 +89,11 @@
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
-							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
+							<li><a href="data_application.html">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.jsp">도서관 오는길</a></li>
+							<li><a href="come1.html">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -103,9 +102,9 @@
 				<div id = "admin">
 					<nav id = "adminnav">
 						<ul class = "clear">
-							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
-							<li><a href="">도서관리</a></li>
+							<li class = "focus"><a href="borrow_manage.jsp">대출현황/관리</a></li>
+							<li><a href="LibPServlet?op=showimp">신청된자료조회</a></li>
+							<li><a href="bookadd.jsp">도서추가</a></li>
 							<li><a href="LibPServlet?op=use">회원관리</a></li>
 							<li><a href="LibPServlet?op=stu">학생추가 </a></li>
 						</ul>
@@ -113,14 +112,18 @@
 				</div>
 				</c:when>
 				<c:otherwise>
+				<div style="width:180px;height:50px;float:left;margin-left:300px;margin-top:15px;">
+				<script  src="http://widgetprovider.daum.net/view?url=http://widgetcfs1.daum.net/xml/14/widget/2009/03/31/15/20/49d1b62de0f5b.xml&&width=166&height=50&widgetId=336&scrap=1" type="text/javascript"></script></div>
+				<div style="width:200px;height:80px;float:right;margin-right:260px;margin-top:10px;">
+				<script src="http://widgetprovider.daum.net/view?url=http://widgetcfs1.daum.net/xml/12/widget/2008/09/23/11/01/48d84de12a690.xml&up_setLocal=108&&width=166&height=80&widgetId=120&scrap=1" type="text/javascript"></script></div>
 				<div id = "user" style="display:none">
 					<nav id = "usernav">
 						<ul class = "clear">
-							<li class = "focus"><a href="borrows.jsp">대출현황 / 연장 </a></li>
-							<li><a href="data_application.jsp">자료구입 / 신청</a></li>
+							<li class = "focus"><a href="borrows.html">대출현황 / 연장 </a></li>
+							<li><a href="data_application.html">자료구입 / 신청</a></li>
 							<li><a href="">현재날짜 / 현재시간</a></li>
 							<li><a href="">개인정보관리</a></li>
-							<li><a href="come1.jsp">도서관 오는길</a></li>
+							<li><a href="come1.html">도서관 오는길</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -130,7 +133,7 @@
 					<nav id = "adminnav">
 						<ul class = "clear">
 							<li class = "focus"><a href="">대출현황조회</a></li>
-							<li><a href="submitted_data.jsp">신청된자료조회</a></li>
+							<li><a href="">신청된자료조회</a></li>
 							<li><a href="">도서관리</a></li>
 							<li><a href="">회원관리</a></li>
 							<li><a href="">학생추가 </a></li>
@@ -209,7 +212,7 @@
 			</div>
 			<div id = "other_mid">
 				<ul>
-					<li><a href="#"><span>공지사항</span></a>
+					<li><a href="LibPServlet?op=board&btype=N"><span>공지사항</span></a>
 						<div>
 							<ul>
 								<c:forEach var = "inNboard" items="${Nboard.list }" >
@@ -218,7 +221,7 @@
 							</ul>
 					  </div>
 					</li>
-					<li><a href="#"><span>QandA</span></a>
+					<li><a href="LibPServlet?op=board&btype=Q"><span>QandA</span></a>
 						<div>
 							<ul>
 								<c:forEach var = "inQboard" items="${Qboard.list }" >
@@ -231,45 +234,70 @@
 			</div>
 			<div id = "other_right">
 				<ul>
-				<li><a href="#"><span>환경</span></a>
+				<li><a href="search_theme_main.jsp"><span>환경</span></a>
 						<div>
 							<ul>
-								<li ><a ><img src="img/logo.gif" class="img"></a></li>
-								<li class="text"><br><a class="titletext">교수직날로먹는법</a><br>
-									<a  class="copy">저자..이명호 </a>
+								<li ><a ><img src="bookkimages/31017.jpg" class="img"></a></li>
+								<li style="width:150px;height:50px;margin-top:10px;text-overflow:ellipsis;overflow:hidden;margin-left:5px;">
+									
+									<div style="width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;font-size:20px;" > <a href="search_theme_main.jsp"> 에너지진단 원론</a></div>
+									<div style="font-size:20px;width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;" > 
+									 손학식 </div>
+						
+
 
 								</li>
 							</ul>
 
 					
 					  </div>
-					<li><a href="#"><span>인물</span></a>
+					<li><a href="search_theme_human.jsp"><span>인물</span></a>
 						<div>
 							<ul>
-								<li> <a ><img src="img/logo.gif" class="img"></a></li>
-							<li class="text"><br><a class="titletext">23423423423</a><br>
-									<a  class="copy">저자 </a>
+								<li ><a ><img src="bookkimages/12004.jpg" class="img"></a></li>
+								<li style="width:150px;height:50px;margin-top:10px;text-overflow:ellipsis;overflow:hidden;margin-left:5px;">
+									
+									<div style="width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;font-size:20px;" > <a href="search_theme_human.jsp">로버트쿠퍼의인생경영</a></div>
+									<div style="font-size:20px;width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;" > 
+				윤영호 </div>
+						
 
+
+								</li>
 							</ul>
 					  </div>
 					</li>
-					<li><a href="#"><span>문화</span></a>
+					<li><a href="search_theme_culture.jsp"><span>문화</span></a>
 						<div>
 							<ul>
-								<li ><a ><img src="img/logo.gif" class="img"></a></li>
-								<li class="text"><br><a class="titletext">책 이름2 </a><br>
-									<a  class="copy">저자 </a>
+								<li ><a ><img src="bookkimages/84029.jpg" class="img"></a></li>
+								<li style="width:150px;height:50px;margin-top:10px;text-overflow:ellipsis;overflow:hidden;margin-left:5px;">
+									
+									<div style="width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;font-size:20px;" > <a href="search_theme_culture.jsp">우리궁궐 이야기 </a></div>
+									
+									<div style="font-size:20px;width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;" > 
+									홍순민 </div>
+						
 
+
+								</li>
 							</ul>
 					  </div>
 					</li>
-					<li><a href="#"><span>컴퓨터</span></a>
+					<li><a href="search_theme_computer.jsp"><span>컴퓨터</span></a>
 						<div>
 							<ul>
-								<li><a ><img src="img/logo.gif" class="img"></a></li>
-								<li class="text"><br><a class="titletext">책 이름3 </a><br>
-									<a  class="copy">저자 </a>
+								<li ><a ><img src="bookkimages/03019.jpg" class="img"></a></li>
+								<li style="width:150px;height:50px;margin-top:10px;text-overflow:ellipsis;overflow:hidden;margin-left:5px;">
+									
+									<div style="width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;font-size:20px;" > <a href="search_theme_computer.jsp">한글 액세스와 매크로 </a></div>
+									
+									<div style="font-size:20px;width:150px;height:25px;text-overflow:ellipsis;overflow:hidden;" > 
+						김소윤 </div>
+						
 
+
+								</li>
 							</ul>
 					  </div>
 					</li>

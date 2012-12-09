@@ -48,8 +48,8 @@
 				</tbody>
 			</table>
 
-			<a class="sub" href="BoardServlet?op=update&number=${fbn.number }">수정하기</a>&nbsp;&nbsp;
-			<a class="sub" href="BoardServlet?op=delete&number=${fbn.number }">삭제하기</a>
+			<a class="sub" href="">수정하기</a>&nbsp;&nbsp;
+			<a class="sub" href="">삭제하기</a>
 
 			<br>
 			<br>

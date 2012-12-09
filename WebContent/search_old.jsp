@@ -57,14 +57,13 @@
 						</tr>
 					</table>
 					
-					1960이전의 책들만 검색됩니다.
+				
 				<input type="hidden" name="op" value="olserch">
 				<input type="hidden" name="skey1" value="${cla }">
 				<input type="hidden" name="skey2" value="${clb }">
 				<input type="hidden" name="skey3" value="${clc }">
 				<div id="butt">
 					<input style="width: 100px;" type="submit" value="검   색 ">
-					<input style="width: 100px;" type="submit" value="나의History">
 					
 				</div>
 				</form>

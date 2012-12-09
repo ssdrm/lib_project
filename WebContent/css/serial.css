@@ -16,8 +16,9 @@ select{width:100px;font-weight:bold;}
 table{width:810px;margin-top:50px;margin-left:20px;margin-right:5px;}
 ul{margin:0;padding:0;}
 ul> li{float:left;list-style-type:none;padding:1px;}
-ul>li>a{ text-decoration:none;color:black;}
-a:visited,a:link{color:black;}
+a:link.m{color:black;}
+a:visited.m{color:purple;}
+a:hover.m{color:yellow;}
 .chek{margin-left:15px;}
 
 

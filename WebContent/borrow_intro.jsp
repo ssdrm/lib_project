@@ -30,15 +30,15 @@
 				<IMG alt="이용안내" src="img/service_tit5.gif">
 			</H4>
 			<H4 class="h4_type2" align="right">
-				<A href="borrows.jsp"><IMG alt="대출현황 조회/연장 바로가기"
+				<A href="LibPServlet?op=userbor&id=${user }"><IMG alt="대출현황 조회/연장 바로가기"
 					src="img/btn_service2.gif"></A>
 			</H4>
 		</H4>
 		<OL class="guidetext">
-			<LI class="nonum"><font face="HY견고딕">대출된 자료는 1회로 한하여 그
-					기간을 연장할 수 있으며, 연장기간은 최초 대출기간의 1/2로 합니다.</font></LI>
+			<LI class="nonum"><font face="HY견고딕">대출된 자료는 1회에 한하여 그
+					기간을 연장할 수 있으며, 연장기간 2주입니다.</font></LI>
 			<LI class="nonum"><font face="HY견고딕">대출연장은 반납기한 전에 하여야
-					하며, 연체 시 대출연장은 불가능합니다.</font></LI>
+					합니다.</font></LI>
 		</OL>
 	</div>
 </div>
